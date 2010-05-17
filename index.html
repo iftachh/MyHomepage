@@ -247,11 +247,11 @@ DIV.Section1 {
 					researcher at the 	  <a href="http://research.microsoft.com/en-us/labs/newengland/">Microsoft 
 		Research New England</a> since August 2008. Earlier on 2008, I did a six 
 		months postdoc at <a href="http://www.cs.haifa.ac.il/"><font>Department 
-		of Computer Science. University of Haifa.</font></a>, hosted by <a href="http://cs.haifa.ac.il/%7Eronen/">
+		of Computer Science, University of Haifa</font></a>, hosted by <a href="http://cs.haifa.ac.il/%7Eronen/">
 		Ronen shaltiel</a></span><span class="style8" style="">. 
 		I received my PhD in 2008 from the
 	  <a href="http://www.wisdom.weizmann.ac.il/">Faculty of Mathematics and 
-		Computer Science. Weizmann Institute of Science</a></span></span></span><span class="style8" style=""><span class="style4"></span><span class="style18"><span class="style4"> </span> </span>
+		Computer Science, Weizmann Institute of Science</a></span></span></span><span class="style8" style=""><span class="style4"></span><span class="style18"><span class="style4"> </span> </span>
 		</span>
 		
 	  <span class="style8" style="">
@@ -270,8 +270,9 @@ DIV.Section1 {
 	  <font class="style18">
 	  <li>
 
-	  <font class="style4">[2008] The John F. Kennedy Prize (awarded by the
-	  Weizmann Institute)  </font></li><font class="style4"><li>
+	  [2008] The John F. Kennedy Prize (awarded by the
+	  Weizmann Institute)  </li>
+	  <li>
 
 	  [2008] Intel (Israel) award for outstanding Ph.D.
 	  students</li><li>
@@ -284,12 +285,13 @@ DIV.Section1 {
 
 	  [2006] Best paper CRYPTO 2006</li><li>
 
-	  [2006] Best paper award ICALP 2006 track C</li></font>	</font><br>
+	  [2006] Best paper award ICALP 2006 track C</li></font><br>
 
 
 	  <span class="style18"><font class="style18"><b>Program Committees</b><br></font></span>	 
-	   <a href="http://www.iacr.org/conferences/crypto2009/">CRYPTO 2009</a>. <br>
-	   <a href="http://www.crypto.ethz.ch/tcc2010/">Theory of Cryptography Conference (TCC) 2010</a>.
+	   <a href="http://ct-rsa2011.di.uoa.gr/CT-RSA_2011/Welcome___CT-RSA_2011.html">CT-RSA 2011</a> <br>
+	   <a href="http://www.crypto.ethz.ch/tcc2010/">Theory of Cryptography Conference (TCC) 2010</a><br>
+	   <a href="http://www.iacr.org/conferences/crypto2009/">CRYPTO 2009</a> 
 	   </span></span></span></span>
 		<span class="style18">
 
@@ -341,8 +343,7 @@ DIV.Section1 {
 </tbody></table>
 		</div>
 
-	  <br><strong>I'm on the job market for next year!</strong> relevant material (e.g., 
-	  CV, research statement) will be sent upon request.</span></span><br>
+	  </span></span>
 
 	  </font></td>
 
@@ -371,20 +372,56 @@ DIV.Section1 {
       <ul>
       
       
-					<li>
+
+
+<li>
 					<h2><span dir="LTR" style="font-weight: 400;">Iftach Haitner, </span>
 		  <span style="font-weight: 400;"><span dir="LTR" class="style14">
-		  <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold">Omer Reingold</a>,
-		  <span dir="LTR" class="style14">
-		  and <a href="http://www.eecs.harvard.edu/%7Esalil/">Salil Vadhan</a></span></span></span><br>
+		  		  <a href="http://www.cs.technion.ac.il/%7Eyuvali/">Yuval Ishai</a>,
+		  		  <a href="http://www.cs.technion.ac.il/~eyalk/">Eyal 
+					Kushilevitz</a>,
+		  <a href="http://u.cs.biu.ac.il/~lindell//">Yehuda Lindell</a>
+		  and <a href="http://www.cs.technion.ac.il/~erez/">Erez Petrank</a> </span>
+		  </span><br>
+					<span class="style14"><strong>Black-Box Constructions of 
+					Protocols for Secure Computation&nbsp;</strong><img height="11" src="new.gif" width="28"><br>
+					Manuscript 2010</span> <span style="font-weight: 400;"><br>[<a href="javascript:toggle('abstract-BBMPX')">Abstract</a>]<span class="style14"><span dir="LTR" class="style14"><a href="papers/BlackBoxMPC/black-box-mpc.pdf">[PDF]</a><a href="http://research.microsoft.com/en-us/um/people/iftach/papers/FindingCollisions/FindingCollisions.ps"></a><b><i><o:p></o:p></i></b> </span></span></span></h2>
+					</li>
+					
+			<div class="box" id="abstract-BBMPX" style="border-style: solid; border-width: 1px; padding: 1px 4px; display: none; background-color: rgb(255, 255, 255);">
+					  <h2><span style="font-weight: 400;"> It is well known that secure computation without an honest majority requires computational assumptions. 
+					  An interesting question that therefore arises relates to the way such computational assumptions are used. Specifically, can the secure protocol use the underlying primitive (e.g., a one-way trapdoor permutation) in a black-box way, treating it as an oracle, or must it be non-black-box (by referring to the code that computes the primitive)? <br>
+
+Despite the fact that many general constructions of cryptographic schemes refer to the underlying primitive in a black-box way only, there are some constructions that are inherently nonblack-box. Indeed, all known constructions of protocols for general secure computation that are secure in the presence of a malicious adversary and without an honest majority use the underlying primitive in a nonblack-box way (requiring to prove in zero-knowledge statements that relate to the primitive).<br>
+ 
+
+In this paper, we study whether such nonblack-box use is essential. We answer this question in the negative. Concretely, we present a fully black-box reduction from oblivious transfer with security against malicious parties to oblivious transfer with security against semi-honest parties. As a corollary, we get the first constructions of general multiparty protocols (with security against malicious adversaries and without an honest majority) which only make a black-box use of semi-honest oblivious transfer, 
+or alternatively a black-box use of lower-level primitives such as enhanced trapdoor permutations or homomorphic encryption. 			
+  </span></h2>
+					</div>
+
+
+
+
+
+			
+			
+			
+			<li>
+					<h2><span dir="LTR" style="font-weight: 400;">Iftach 
+					Haitner, <span style="font-weight: 400;">
+					<span class="style14" dir="LTR">
+					<a href="http://www.wisdom.weizmann.ac.il/~reingold">Omer 
+					Reingold</a>, and
+					<a href="http://www.eecs.harvard.edu/~salil/">Salil Vadhan</a></span></span></span><br>
 					Efficiency Improvements in Constructing Pseudorandom 
 					Generators from One-way Functions<span class="style14">&nbsp; <img height="11" src="new.gif" width="28"><br>Annual ACM Symposium on Theory of Computing (STOC), 2010</span><span style="font-weight: 400;">.<br>
 		  [<a href="javascript:toggle('abstract-HillRevisted')">Abstract</a>] 
 		  		  <span class="style14"><span dir="LTR" class="style14">
 					<a href="papers/HillRevisted/HillRevisted_STOC.pdf">[PDF]</a><a href="http://research.microsoft.com/en-us/um/people/iftach/papers/FindingCollisions/FindingCollisions.ps"></a><b><i><o:p></o:p></i></b> </span></span> </span></h2>
 		  <span style="font-weight: 400;">
-		  <div class="box" id="abstract-HillRevisted" style="border-style: solid; border-width: 1px; padding: 1px 4px; display: none; background-color: rgb(255, 255, 255);">
-			  <h2><span style="font-weight: 400;">We give a new construction of pseudorandom generators from any one-way 
+		  		  <div class="box" id="abstract-HillRevisted" style="border-style: solid; border-width: 1px; padding: 1px 4px; display: none; background-color: rgb(255, 255, 255);">
+					  <h2><span style="font-weight: 400;">We give a new construction of pseudorandom generators from any one-way 
 function. The construction achieves better parameters and is simpler than that 
 given in the seminal work of Håstad, Impagliazzo, Levin and Luby [SICOMP '99]. 
 The key to our construction is a new notion of <strong>next-block pseudoentropy</strong>, 
@@ -396,10 +433,11 @@ parallelizable and invoke the one-way function in a non-adaptive manner. Using
 pseudorandom generators in NC<sup>0</sup> based on the existence of one-way functions in 
 NC<sup>1</sup>.
 			  </span></h2>
-		  </div>
+					</div>
 		  
       
-      </span></li><li>
+      </span></li>
+					<li>
 					<h2>
 		  <span style="font-weight: 400;"><span dir="LTR" class="style14">
 		  		  <a href="http://www.cs.princeton.edu/%7Eboaz/">Boaz Barak</a>,
