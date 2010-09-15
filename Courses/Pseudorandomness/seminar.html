@@ -1,0 +1,1717 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+  
+  <meta name="ProgId" content="Word.Document">
+
+  
+  <meta name="Generator" content="Microsoft Word 12">
+
+  
+  <meta name="Originator" content="Microsoft Word 12">
+
+  
+  <link rel="File-List" href="http://www.math.tau.ac.il/%7Edcor/Graphics/seminar_files/filelist.xml">
+
+  
+  <link rel="Edit-Time-Data" href="http://www.math.tau.ac.il/%7Edcor/Graphics/seminar_files/editdata.mso">
+
+<!--[if !mso]>
+
+
+<style>
+
+
+v\:* {behavior:url(#default#VML);}
+
+
+o\:* {behavior:url(#default#VML);}
+
+
+w\:* {behavior:url(#default#VML);}
+
+
+.shape {behavior:url(#default#VML);}
+
+
+</style>
+
+
+<![endif]-->
+  <title>Seminar on Pseudorandomess</title>
+
+  
+<!--[if gte mso 9]><xml>
+
+
+ <o:DocumentProperties>
+
+
+  <o:Author>dcor</o:Author>
+
+
+  <o:LastAuthor>dcor</o:LastAuthor>
+
+
+  <o:Revision>109</o:Revision>
+
+
+  <o:TotalTime>47342</o:TotalTime>
+
+
+  <o:LastPrinted>2010-03-01T10:05:00Z</o:LastPrinted>
+
+
+  <o:Created>2002-07-17T14:44:00Z</o:Created>
+
+
+  <o:LastSaved>2010-05-20T17:34:00Z</o:LastSaved>
+
+
+  <o:Pages>2</o:Pages>
+
+
+  <o:Words>994</o:Words>
+
+
+  <o:Characters>4971</o:Characters>
+
+
+  <o:Company>School of CS</o:Company>
+
+
+  <o:Lines>41</o:Lines>
+
+
+  <o:Paragraphs>11</o:Paragraphs>
+
+
+  <o:CharactersWithSpaces>5954</o:CharactersWithSpaces>
+
+
+  <o:Version>12.00</o:Version>
+
+
+ </o:DocumentProperties>
+
+
+</xml><![endif]-->
+  
+  <link rel="themeData" href="http://www.math.tau.ac.il/%7Edcor/Graphics/seminar_files/themedata.thmx">
+
+  
+  <link rel="colorSchemeMapping" href="http://www.math.tau.ac.il/%7Edcor/Graphics/seminar_files/colorschememapping.xml">
+
+<!--[if gte mso 9]><xml>
+
+
+ <w:WordDocument>
+
+
+  <w:Zoom>110</w:Zoom>
+
+
+  <w:TrackMoves>false</w:TrackMoves>
+
+
+  <w:TrackFormatting/>
+
+
+  <w:ValidateAgainstSchemas/>
+
+
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+
+
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+
+
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+
+
+  <w:DoNotPromoteQF/>
+
+
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+
+
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+
+
+  <w:LidThemeComplexScript>HE</w:LidThemeComplexScript>
+
+
+  <w:Compatibility>
+
+
+   <w:BreakWrappedTables/>
+
+
+   <w:SnapToGridInCell/>
+
+
+   <w:WrapTextWithPunct/>
+
+
+   <w:UseAsianBreakRules/>
+
+
+   <w:DontGrowAutofit/>
+
+
+   <w:SplitPgBreakAndParaMark/>
+
+
+   <w:DontVertAlignCellWithSp/>
+
+
+   <w:DontBreakConstrainedForcedTables/>
+
+
+   <w:DontVertAlignInTxbx/>
+
+
+   <w:Word11KerningPairs/>
+
+
+   <w:CachedColBalance/>
+
+
+  </w:Compatibility>
+
+
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+
+
+  <m:mathPr>
+
+
+   <m:mathFont m:val="Cambria Math"/>
+
+
+   <m:brkBin m:val="before"/>
+
+
+   <m:brkBinSub m:val="&#45;-"/>
+
+
+   <m:smallFrac m:val="off"/>
+
+
+   <m:dispDef/>
+
+
+   <m:lMargin m:val="0"/>
+
+
+   <m:rMargin m:val="0"/>
+
+
+   <m:defJc m:val="centerGroup"/>
+
+
+   <m:wrapIndent m:val="1440"/>
+
+
+   <m:intLim m:val="subSup"/>
+
+
+   <m:naryLim m:val="undOvr"/>
+
+
+  </m:mathPr></w:WordDocument>
+
+
+</xml><![endif]--><!--[if gte mso 9]><xml>
+
+
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+
+
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+
+
+  LatentStyleCount="267">
+
+
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+
+
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+
+
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+
+
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="heading 3"/>
+
+
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+
+
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+
+
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+
+
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+
+
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+
+
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+
+
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+
+
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+
+
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+
+
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+
+
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+
+
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+
+
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+
+
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+
+
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+
+
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+
+
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+
+
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+
+
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+
+
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+
+
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+
+
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Table Grid"/>
+
+
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+
+
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+
+
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Shading"/>
+
+
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light List"/>
+
+
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Grid"/>
+
+
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+
+
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+
+
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+
+
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+
+
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+
+
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+
+
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+
+
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Dark List"/>
+
+
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+
+
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful List"/>
+
+
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+
+
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+
+
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+
+
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+
+
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+
+
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+
+
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+
+
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+
+
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+
+
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+
+
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+
+
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+
+
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+
+
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+
+
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+
+
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+
+
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+
+
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+
+
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+
+
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+
+
+ </w:LatentStyles>
+
+
+</xml><![endif]-->
+  
+  <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"MS Mincho";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:Sylfaen;
+	panose-1:1 10 5 2 5 3 6 3 3 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:67110535 0 0 0 159 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:black;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-noshow:yes;
+	mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+p.paperheading, li.paperheading, div.paperheading
+	{mso-style-name:paper_heading;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.style5, li.style5, div.style5
+	{mso-style-name:style5;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.byline, li.byline, div.byline
+	{mso-style-name:byline;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.style16
+	{mso-style-name:style16;
+	mso-style-unhide:no;}
+span.style17
+	{mso-style-name:style17;
+	mso-style-unhide:no;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+  </style><!--[if gte mso 10]>
+
+
+<style>
+
+
+ /* Style Definitions */
+
+
+ table.MsoNormalTable
+
+
+	{mso-style-name:"Table Normal";
+
+
+	mso-tstyle-rowband-size:0;
+
+
+	mso-tstyle-colband-size:0;
+
+
+	mso-style-noshow:yes;
+
+
+	mso-style-priority:99;
+
+
+	mso-style-qformat:yes;
+
+
+	mso-style-parent:"";
+
+
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+
+
+	mso-para-margin:0cm;
+
+
+	mso-para-margin-bottom:.0001pt;
+
+
+	mso-pagination:widow-orphan;
+
+
+	font-size:10.0pt;
+
+
+	font-family:"Times New Roman","serif";}
+
+
+table.MsoTableGrid
+
+
+	{mso-style-name:"Table Grid";
+
+
+	mso-tstyle-rowband-size:0;
+
+
+	mso-tstyle-colband-size:0;
+
+
+	mso-style-priority:59;
+
+
+	mso-style-unhide:no;
+
+
+	border:solid black 1.0pt;
+
+
+	mso-border-themecolor:text1;
+
+
+	mso-border-alt:solid black .5pt;
+
+
+	mso-border-themecolor:text1;
+
+
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+
+
+	mso-border-insideh:.5pt solid black;
+
+
+	mso-border-insideh-themecolor:text1;
+
+
+	mso-border-insidev:.5pt solid black;
+
+
+	mso-border-insidev-themecolor:text1;
+
+
+	mso-para-margin:0cm;
+
+
+	mso-para-margin-bottom:.0001pt;
+
+
+	mso-pagination:widow-orphan;
+
+
+	font-size:10.0pt;
+
+
+	font-family:"Times New Roman","serif";}
+
+
+</style>
+
+
+<![endif]--><!--[if gte mso 9]><xml>
+
+
+ <o:shapedefaults v:ext="edit" spidmax="16386"/>
+
+
+</xml><![endif]--><!--[if gte mso 9]><xml>
+
+
+ <o:shapelayout v:ext="edit">
+
+
+  <o:idmap v:ext="edit" data="1"/>
+
+
+ </o:shapelayout></xml><![endif]-->
+</head><body lang="EN-US" link="black" vlink="blue">
+<div class="Section1">
+<p class="MsoNormal"><span style="font-size: 14pt;"><img style="width: 435px; height: 312px;" src="abacus.jpg" alt="ppssi" v:shapes="Picture_x0020_1"></span><span style="font-size: 14pt;"><span style=""> </span><span style=""></span><o:p></o:p></span></p>
+<h1><span style="font-size: 26pt;">&#1505;&#1502;&#1497;&#1504;&#1512;
+&#1489;&#1508;&#1505;&#1493;&#1493;&#1488;&#1491;&#1493;-&#1488;&#1511;&#1512;&#1488;&#1497;&#1493;&#1514;<br>
+Id: ???<o:p></o:p></span></h1>
+<h2><span style="font-size: 20pt;"><a href="http://www.cs.tau.ac.il/%7Eiftachh/">Iftach Haitner</a></span></h2>
+<h2><span style="font-size: 20pt;">Thursdays 10:00-12:00,&nbsp; room:?</span></h2>
+<p><big><big><big><b><span style="font-size: 14pt;"></span></b></big><span style="font-size: 14pt;">The seminar follows (parts of) <a href="http://people.seas.harvard.edu/%7Esalil">Salil
+Vadhan</a>'s <span style="text-decoration: underline;"></span></span></big></big><big><big><span style="font-size: 14pt;"><a href="http://people.seas.harvard.edu/%7Esalil/pseudorandomness/">monograph</a>&nbsp;</span></big></big><big><big><big><span style="font-size: 14pt;"><span dir="rtl" lang="HE"></span></span></big><span style="font-size: 14pt;">on psuedorandomness, where we more or less
+follow Salil's <span style="text-decoration: underline;"></span></span></big></big><big><big><big><small><small><a href="http://people.seas.harvard.edu/%7Esalil/cs225/">Class</a></small></small></big></big></big><big><big><span style="font-size: 14pt;">.</span></big></big><a href="http://people.seas.harvard.edu/%7Esalil/cs225/"><big><big><span style="font-size: 14pt;"></span></big></big></a><big><big><span style="font-size: 14pt;"></span></big></big></p>
+<p><small><span style="font-size: 14pt;"></span></small><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><big>In each meeting
+one or two (better) students will cover a single topic as listed below (a single
+speaker for the first talk). <br>
+</big></span></p>
+<p><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"></span><span style="font-size: 14pt;">Power Point presentations are
+acceptable, but white boards (&#1500;&#1493;&#1495;) ones are
+preferable.
+<br>
+To do a good job one needs to read background material, see the reading
+section.</span></p>
+<big><big><small>Please write me your topic choice. If you are
+splitting the talk with another student, please send me your partner's
+name. <br>
+</small></big></big>
+<p><br>
+<span style="font-size: 14pt;"> <o:p></o:p></span></p>
+<big><big><big><big><span style="font-size: 14pt;"><big>Topics and
+schedule</big> :<br>
+<br>
+</span></big></big></big></big>
+
+<table class="MsoTableGrid" style="border: medium none ; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr style="">
+      <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113"><big><big> <span style="font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;">When</span></big></big><br>
+      </td>
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142">
+      <p dir="rtl" style="text-align: center; direction: rtl; unicode-bidi: embed;" align="center"><span style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;" lang="HE"><big><big>Who</big></big><br>
+      </span><span dir="ltr" style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></p>
+      </td>
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491">
+      <p class="MsoNormal"><span style="font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><big><big>What</big></big><br>
+      <o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113">
+      <p style="text-align: center;" align="center"><span style="font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><br>
+      <o:p></o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142">
+      <p style="text-align: center;" align="center"><span dir="rtl" style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;" lang="HE">&nbsp;<br>
+      </span><span style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;"><span dir="rtl" lang="HE"></span><o:p></o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491">
+      <p class="MsoNormal"><span style="color: black;" lang="EN-US">Introduction
+(Randomized algorithms)<br>
+      </span><span style="color: black;">Sec. 1</span><br>
+      </p>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113">
+      <p style="text-align: center;" align="center"><span style="font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><br>
+      <o:p></o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142">
+      <p style="text-align: center;" align="center"><span dir="rtl" style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;" lang="HE"><br>
+      </span><span style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491">
+      <p class="MsoNoSpacing"><span style="color: black;" lang="EN-US">Randomized
+Algorithms and Complexity Classes <br>
+      </span><span style="color: black;">Sec. 2.1-2.2</span><br>
+      <b><span style="font-size: 14pt;"><o:p></o:p></span></b></p>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113">
+      <p style="text-align: center;" align="center"><span style="font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><br>
+      <o:p></o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142">
+      <p style="text-align: center;" align="center"><span dir="rtl" style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;" lang="HE"><br>
+      </span><span style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491">
+      <p class="MsoNormal" style=""><span style="color: black;">Continue
+on Complexity Classes, Error Reduction, <o:p></o:p></span></p>
+      <span style="color: black;">Sampling and Approximation Problems </span>
+      <p class="MsoNoSpacing"><span style="color: black;">Sec.
+2.3.1-2.3.2</span><br>
+      <span style="font-size: 14pt; font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(192, 0, 0) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113">
+      <p style="text-align: center;" align="center"><span dir="rtl" style="" lang="HE"><br>
+      </span><span style="font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><o:p></o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(192, 0, 0) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142">
+      <p style="text-align: center;" align="center"><span style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;"><o:p>&nbsp;</o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(192, 0, 0) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491">
+      <p><span style="font-size: 14pt; font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><o:p>&nbsp;</o:p></span></p>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113">
+      <p style="text-align: center;" align="center"><span style="font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><br>
+      <o:p></o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142">
+      <p style="text-align: center;" align="center"><span dir="rtl" style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;" lang="HE"><br>
+      </span><span style="font-family: &quot;Tahoma&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491">
+      <p class="MsoNoSpacing"><span style="color: black;">Approx #DNF,
+MAX-CUT, S-T Connectivity </span><span style="color: black;"><br>
+      </span></p>
+      <p class="MsoNoSpacing"><span style="color: black;">Sec.
+2.3.3-2.4.1</span><br>
+      <span style="font-size: 14pt; font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(192, 0, 0) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113">
+      <p style="text-align: center;" align="center"><span dir="rtl" style="" lang="HE"><br>
+      </span><span style="font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><o:p></o:p></span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(192, 0, 0) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(192, 0, 0) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491"><br>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113">
+      <p style="text-align: center;" align="center"><span style="font-family: &quot;Sylfaen&quot;,&quot;serif&quot;;"><br>
+      </span></p>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491">
+      <p class="MsoNormal" style=""><span style="color: black;">Random
+Walk, Markov Chain Monte Carlo, <o:p></o:p></span></p>
+      <span style="color: black;">Start of Basic Derandomization
+Techniques <br>
+      </span><span style="color: black;">Sec. 2.4-3.2</span><br>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491"><span style="color: black;" lang="EN-US">Basic
+Derandomization Techniques <br>
+      </span><span style="color: black;">Sec. 3.2-3.5</span><br>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491"><span style="color: black;">Pairwise and
+k-wise <st1:place w:st="on"><st1:city w:st="on">Independence<br>
+      </st1:city></st1:place></span><span style="color: black;">Sec. 3.5</span><br>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491">
+      <p class="MsoNormal" style=""><span style="color: black;">Expander
+Graphs: Definition, Measures of Expansion, Existence of <o:p></o:p></span></p>
+      <span style="color: black;">Expanders<br>
+      </span><span style="color: black;">Sec. 4.1</span><br>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491"><span style="color: black;">Random Walks on
+Expanders<br>
+      </span><span style="color: black;">Sec. 4.2</span><span style="color: black;" lang="EN-US"></span> </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491">
+      <p class="MsoNormal" style=""><span style="color: black;">Seeded
+Extractors, Connections with Hash Functions <o:p></o:p></span></p>
+      <span style="color: black;">and Expanders<br>
+      </span><span style="color: black;">Sec. 5.1-2</span><br>
+      <span style="color: black;"></span> </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491">
+      <p class="MsoNormal" style=""><span style="color: black;">Block
+Source, Reducing General Source to Block <o:p></o:p></span></p>
+      <span style="color: black;">Source, Lossless Condenser and
+Expander<br>
+      </span><span style="color: black;">Sec. 5.2, 5.4.1</span><br>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491"><span style="color: black;"></span><span style="color: black;"></span><span style="color: black;">Definition
+and
+Survey of Cryptographic PRGs<br>
+      </span><span style="color: black;">Sec. 7.1-2</span><br>
+      </td>
+    </tr>
+    <tr style="">
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 84.65pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="113"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 106.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="142"><br>
+      </td>
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(250, 191, 143) none repeat scroll 0% 50%; width: 13cm; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="491"><span style="color: black;" lang="EN-US">PRGs
+from Average-Case Hardness <br>
+To cover the material given <span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><span style="text-decoration: underline;"></span></span></span><big><big><big><small><small><a href="http://people.seas.harvard.edu/%7Esalil/cs225/spring07/lecnotes/lec18.pdf">here</a></small></small></big></big></big><a href="http://people.seas.harvard.edu/%7Esalil/cs225/spring07/lecnotes/lec18.pdf"><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"></span></a><span style="font-size: 14pt;"></span><span style="color: black;"></span><span style="color: black;"></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><br>
+</span><br>
+<h2><st1:place w:st="on"><st1:city w:st="on"><span style="">Readings</span></st1:city></st1:place><span style=""> <o:p></o:p></span></h2>
+<p class="MsoNormal"><span style="">We will be following
+a draft of a textbook I am writing based on lecture notes from prior
+offerings
+of this course (which can be found <a href="http://people.seas.harvard.edu/%7Esalil/cs225">here</a>).<span style="">&nbsp; </span><span style="">&nbsp;</span>On the
+course website, there is a place for posting comments and corrections
+on the
+book – any suggestions for improving it are welcome (and will
+contribute to
+your participation grade)! You may also find the following references
+useful.&nbsp; Most of them should be in the libraries, on reserve. <o:p></o:p></span></p>
+<ul type="disc">
+  <li class="MsoNormal" style=""><span class="SpellE"><b style=""><span style="">Pseudorandomness</span></b></span><span class="GramE"><b style=""><span style="">:</span></b></span><span style=""><br>
+    <st1:personname w:st="on"><span class="SpellE">Oded</span> Goldreich</st1:personname>.
+    <i><a href="http://www.wisdom.weizmann.ac.il/%7Eoded/book1.html">Modern
+Cryptography, Probabilistic Proofs, and Pseudorandomness.</a></i>
+Survey-style overview. <br>
+Peter Bro <span class="SpellE">Miltersen</span>. <span class="SpellE"><i>Derandomizing</i></span><i>
+Complexity Classes, in the</i> <i style=""><a href="http://www.daimi.au.dk/%7Ebromille/Papers/index.html">Handbook
+of Randomized Computing</a></i>.<span style="">&nbsp; </span><a href="http://www.daimi.au.dk/%7Ebromille/Papers/dccJun9.ps">Draft</a>
+available online.&nbsp; &nbsp; A good place for an alternative
+viewpoint to the lectures. <br>
+    <st1:personname w:st="on">Oded Goldreich</st1:personname>. <i><a href="http://www.wisdom.weizmann.ac.il/%7Eoded/foc-book.html">Foundations
+of Cryptography (Vol I).</a></i><span style="">&nbsp; </span>Covers
+the BMY definition of pseudorandom generators, pseudorandom functions,
+and their applications in cryptography.<br>
+Michael <span class="SpellE">Luby</span>. <i><a href="http://www.icsi.berkeley.edu/%7Eluby/book.html"><span class="SpellE">Pseudorandomness</span> and Cryptographic Applications.</a>&nbsp;&nbsp;</i>
+Covers the construction of BMY-type pseudorandom generators from any
+one-way function, which is beyond the scope of our course and <span class="SpellE">Goldreich's</span> book.<br>
+&nbsp; <o:p></o:p></span></li>
+  <li class="MsoNormal" style=""><b style=""><span style="">Randomized
+Algorithms and Discrete Probability<span class="GramE">:</span></span></b><span style=""><br>
+Michael Mitzenmacher and Eli <span class="SpellE">Upfal</span>. <i style=""><a href="http://www.amazon.com/dp/0521835402?tag=michaelmitzen-20&amp;camp=14573&amp;creative=327641&amp;linkCode=as1&amp;creativeASIN=0521835402&amp;adid=18TVY4W8THPZZJ8XV15M&amp;">Probability
+and Computing.</a></i><br>
+Rajeev <span class="SpellE">Motwani</span> and <span class="SpellE">Prabhakar</span>
+    <span class="SpellE">Raghavan</span>.&nbsp; <i><a href="http://www.cup.org/ObjectBuilder/ObjectBuilder.iwx?ProcessName=ProductPage&amp;Merchant_Id=1&amp;product_id=0-521-47465-5&amp;origin=search&amp;searchField=ALL&amp;searchString=randomized%20algorithms">Randomized
+Algorithms</a>. <br>
+    </i><span class="SpellE">Noga</span> Alon and Joel Spencer.&nbsp; <i><a href="http://www.cs.nyu.edu/cs/faculty/spencer/nogabook/nogabook.html">The
+Probabilistic Method (2nd <span class="GramE">ed</span>).</a></i><br style="">
+<!--[if !supportLineBreakNewLine]--><br style="">
+<!--[endif]--><o:p></o:p></span></li>
+  <li class="MsoNormal" style=""><b style=""><span style="">Complexity
+Theory<span class="GramE">:</span><br>
+    </span></b><span style="">Michael <span class="SpellE">Sipser</span>.&nbsp;
+    <i><a href="http://www-math.mit.edu/%7Esipser/book.html">Introduction
+to the Theory of Computation.</a> </i>Contains all of the complexity
+theory background you'll need in this course. <br>
+    <st1:personname w:st="on">Oded Goldreich</st1:personname>. <i style=""><a href="http://www.wisdom.weizmann.ac.il/%7Eoded/cc-book.html">Computational
+Complexity: A Conceptual Perspective</a></i>. <br>
+Sanjeev Arora and <st1:personname w:st="on">Boaz Barak</st1:personname>.<span style="">&nbsp; </span><i style=""><a href="http://www.cs.princeton.edu/theory/complexity/">Complexity
+Theory: A Modern Approach.</a></i><br style="">
+<!--[if !supportLineBreakNewLine]--><br style="">
+<!--[endif]--><o:p></o:p></span></li>
+  <li class="MsoNormal" style=""><b style=""><span style="">Algebra</span></b><span style="">:&nbsp; <br>
+Lecture notes by Madhu <st1:country-region w:st="on"><st1:place w:st="on">Sudan</st1:place></st1:country-region> at <a href="http://theory.lcs.mit.edu/%7Emadhu/FT01/scribe/algebra.ps">http://theory.lcs.mit.edu/~madhu/FT01/scribe/algebra.ps</a>
+    <br>
+Rudolf <span class="SpellE">Lidl</span> and Harold <span class="SpellE">Niedereitter</span>, <a href="http://dx.doi.org/10.2277/0521460948">Introduction to Finite
+Fields and their Applications</a>.&nbsp;&nbsp; </span></li>
+</ul>
+<span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><br>
+</span><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><big><br>
+<br>
+</big><br>
+<br>
+<br>
+<br>
+</span></div>
+
+</body></html>
