@@ -139,9 +139,12 @@ DIV.Section1 {
 	color: #000000;
 	font-size: small;
 }
-.auto-style2 {
-	color: #0000FF;
+
+
+
+.auto-style3 {
 	font-size: small;
+	color: #0000FF;
 }
 
 
@@ -396,6 +399,84 @@ in Reverse Chronological Order</font></h1>
 
 
 <li>
+					<p><span style="font-weight: 400;">
+					<span dir="LTR" class="style14">
+		  		    <a href="http://www.cs.nyu.edu/~dodis/">Yevgeniy Dodis</a>, <span dir="LTR" style="font-weight: 400;">
+					Iftach Haitner </span>
+		  and Aris Tentes </span>
+		  </span><br>
+					<span class="style14"><strong>On the (In)Security of
+					<span class="il">RSA</span>&nbsp; Signatures&nbsp;</strong><img height="11" src="new.gif" width="28"><br>
+					Manuscript 2011</span><span style="font-weight: 400;"><br>[<a href="javascript:toggle('abstract-FDH')">Abstract</a>]<span class="style14"><span dir="LTR" class="style14">[<a href="papers/FullDomainHash/seminar.pptx">S<span class="style11">lides</span></a>]&nbsp; </span></span></span>
+					</p>
+					</li>
+					
+			<div class="box" id="abstract-FDH" style="border-style: solid; border-width: 1px; padding: 1px 4px; display: none; background-color: rgb(255, 255, 255);">
+					  <h2> <span dir="LTR"><span class="style18">The <span class="il"><em>RSA</em></span> signature is one of 
+the most elegant and well known signatures schemes, which is extensively used in 
+a wide variety of applications, and is the basis of several existing standards 
+such as <em>PKCS #1</em>. The signature <span class="style11">σ</span> of the message 
+	  <span class="style11">m</span> is 
+computed as </span><span><span class="auto-style3"><br>σ= h(m)<sup>d</sup></span><span class="style18">
+	  <span class="style11">mod n</span></span></span><span class="style18">, 
+and verified as </span> <span><span class="auto-style3">σ<sup>e</sup></span><span class="auto-style1"><span class="style11"> = 
+h(m)</span></span><span class="auto-style3"> mod n</span></span><span class="style18">, where 
+	  <span class="style11">(n,e)</span> is the <span class="il">RSA</span> 
+public key, </span> <span><span class="auto-style3"><br>d = e<sup>-1</sup></span><span class="style18"><span class="style11"> mod Φ(n)</span></span></span><span class="style18"> 
+is the <span class="il">RSA</span> secret key, and <span class="style11">h</span> is an 
+&quot;appropriate&quot; hash function.<br />
+The <span class="il">RSA</span> signature scheme is known to be secure under the 
+standard <span class="il">RSA</span> assumption, when the function
+</span>
+<span class="auto-style3">h</span><span class="style18"> is modeled as a random oracle. A major open 
+question<br />
+is whether it is possible to instantiate the hash function 
+	  <span class="style11">h</span> in the 
+standard model, so that the security of <span class="il">RSA</span> signatures 
+can be proven under a &quot;reasonable assumption&quot;.<br />
+In this work we show that no standard model construction of 
+	  <span class="style11">h</span> 
+allows one to reduce the security of the <span class="il">RSA</span> signatures 
+to any reasonable assumption, provided <strong>the construction and the 
+reduction treat the multiplicative <span class="il">RSA</span> group </strong>
+<span>Z<sub><strong>n</strong></sub><strong>*</strong></span><sub><strong>
+</strong></sub></span></span><strong><span class="style18">in a black-box way</span></strong><span class="style18">. Informally, this 
+means that the construction and the reduction only use the multiplicative 
+structure of <span dir="LTR"><strong>&nbsp;<span>Z<sub>n</sub>*</span></strong></span>, 
+and do not gain any additional insight by looking at the specific representation 
+of group elements.<br />
+<br />
+To the best of our knowledge,&nbsp; all known positive results on building standard 
+model <span class="il">RSA</span> based signatures (including 
+Gennaro-Halevi-Rabin [<em>EUROCRYPT &#39;99</em>], Cramer-Shoup [<em>ACM Trans. Inf. 
+Syst. Secur. &#39;00</em>] and Hohenberger-Waters <em>[Crypto &#39;09]</em>) treat
+<span dir="LTR"><strong>&nbsp;<span>Z<sub>n</sub>*</span></strong></span> as a 
+black-box. Thus, although our results still do not rule out certain types of 
+constructions/reductions, they seem to cover all successful techniques utilized 
+to date, unlike the prior impossibility results for instantiating
+<span class="il">RSA</span> signatures (Dodis et al. [<em>Crypto 05</em>] and 
+Paillier [<em>CT-<span class="il">RSA</span> &#39;07</em>]).<br />
+<br />
+On a positive, we demonstrate the optimality of our negative result by showing 
+that the <span class="il">RSA</span> signatures <strong>can</strong> be proven
+	  </span>
+<span class="auto-style3">t</span><span class="style18">-time secure in the standard model,&nbsp; under the 
+standard <span class="il">RSA</span> assumption, provided that the description 
+of the hash function <span>h</span> can be proportional to
+</span>
+<span class="auto-style3">t</span>.<span class="style18"><br />
+<br />
+Finally, and of independent interest, we show how to adopt the influential 
+``short description&#39;&#39; paradigm of Gennaro and Tevisan&nbsp; [<em>FOCS &#39;00</em>] from 
+the ``random permutation&quot; to the ``generic group&quot; model.</span></p>
+
+      <ul>
+</h2>
+					</div>
+
+
+
+<li>
 					<h2><span dir="LTR" style="font-weight: 400;">Iftach Haitner, </span>
 		  <span style="font-weight: 400;"><span dir="LTR" class="style14">
 		  		  <a href="http://www.cs.technion.ac.il/%7Eyuvali/">Yuval Ishai</a>,
@@ -436,10 +517,14 @@ or alternatively a black-box use of lower-level primitives such as enhanced trap
 					Reingold</a>, and
 					<a href="http://www.eecs.harvard.edu/~salil/">Salil Vadhan</a></span></span></span><br>
 					Efficiency Improvements in Constructing Pseudorandom 
-					Generators from One-way Functions<span class="style14">&nbsp; <img height="11" src="new.gif" width="28"><br>Annual ACM Symposium on Theory of Computing (STOC), 2010</span><span style="font-weight: 400;">.<br>
+					Generators from One-way Functions<span class="style14">&nbsp; <br>Annual ACM Symposium on Theory of Computing (STOC), 2010</span><span style="font-weight: 400;">.<br><strong>
+					Invited to the STOC 2010 special issue of 
+		  SICOMP</strong><br>
 		  [<a href="javascript:toggle('abstract-HillRevisted')">Abstract</a>] 
 		  		  <span class="style14"><span dir="LTR" class="style14">
-					<a href="papers/HillRevisted/HillRevisted_STOC.pdf">[PDF]</a><a href="papers/FindingCollisions/FindingCollisions.ps"></a><b><i><o:p></o:p></i></b> </span></span> </span></h2>
+					<a href="papers/HillRevisted/HillRevisted_STOC.pdf">[PDF]</a><a href="papers/FindingCollisions/FindingCollisions.ps"></a><b><i><o:p></o:p></i></b> 
+					<br>Draft of full version
+					<a href="papers/HillRevisted/HillRevisted_Full.pdf">[PDF]</a></span></span></span></h2>
 		  <span style="font-weight: 400;">
 		  		  <div class="box" id="abstract-HillRevisted" style="border-style: solid; border-width: 1px; padding: 1px 4px; display: none; background-color: rgb(255, 255, 255);">
 					  <h2><span style="font-weight: 400;">We give a new construction of pseudorandom generators from any one-way 
@@ -468,7 +553,7 @@ NC<sup>1</sup>.
 		  </span><span dir="LTR"><b><span dir="LTR" style="font-weight: 400;">
 					<span style="font-weight: 400;">
 					<strong>Bounded Key-Dependent Message Security 
-					<img height="11" src="new.gif" width="28"></strong></span></span></b></span><br>
+					</strong></span></span></b></span><br>
 		  		  <span style="font-weight: 400;">
 
 		  		  <span class="style14"><span dir="LTR" class="style14">Advances in Cryptology - Eurocrypt,
@@ -539,7 +624,7 @@ our proof of security makes to the KDM query function is <strong>inherent</stron
 		  <a href="http://www.cs.berkeley.edu/%7Ehoeteck/">Hoeteck Wee</a></span><br></span>
 		  </span><span dir="LTR"><b>Universal One-Way Hash Functions via 
 					Inaccessible Entropy
-					</b></span><img height="11" src="new.gif" width="28"><br>
+					</b></span><br>
 		  		    <span style="font-weight: 400;">
 		  		  <span class="style14"><span dir="LTR" class="style14">Advances in Cryptology - Eurocrypt,
 				2010.</span></span><br>
