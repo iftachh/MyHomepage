@@ -429,66 +429,65 @@ in Reverse Chronological Order</font></h1>
 					</li>
 					
 			<div class="box" id="abstract-FDH" style="border-style: solid; border-width: 1px; padding: 1px 4px; display: none; background-color: rgb(255, 255, 255);">
-					  <h2> <span dir="LTR"><span class="style18">The <span class="il"><em>RSA</em></span> signature is one of 
-the most elegant and well known signatures schemes, which is extensively used in 
-a wide variety of applications, and is the basis of several existing standards 
-such as <em>PKCS #1</em>. The signature <span class="style11">σ</span> of the message 
-	  <span class="style11">m</span> is 
-computed as </span><span><span class="auto-style3"><br>σ= h(m)<sup>d</sup></span><span class="style18">
-	  <span class="style11">mod n</span></span></span><span class="style18">, 
-and verified as </span> <span><span class="auto-style3">σ<sup>e</sup></span><span class="auto-style1"><span class="style11"> = 
-h(m)</span></span><span class="auto-style3"> mod n</span></span><span class="style18">, where 
-	  <span class="style11">(n,e)</span> is the <span class="il">RSA</span> 
-public key, </span> <span><span class="auto-style3"><br>d = e<sup>-1</sup></span><span class="style18"><span class="style11"> mod Φ(n)</span></span></span><span class="style18"> 
-is the <span class="il">RSA</span> secret key, and <span class="style11">h</span> is an 
-&quot;appropriate&quot; hash function.<br />
-The <span class="il">RSA</span> signature scheme is known to be secure under the 
-standard <span class="il">RSA</span> assumption, when the function
-</span>
-<span class="auto-style3">h</span><span class="style18"> is modeled as a random oracle. A major open 
-question<br />
-is whether it is possible to instantiate the hash function 
-	  <span class="style11">h</span> in the 
-standard model, so that the security of <span class="il">RSA</span> signatures 
-can be proven under a &quot;reasonable assumption&quot;.<br />
-In this work we show that no standard model construction of 
-	  <span class="style11">h</span> 
-allows one to reduce the security of the <span class="il">RSA</span> signatures 
-to any reasonable assumption, provided <strong>the construction and the 
-reduction treat the multiplicative <span class="il">RSA</span> group </strong>
-<span>Z<sub><strong>n</strong></sub><strong>*</strong></span><sub><strong>
-</strong></sub></span></span><strong><span class="style18">in a black-box way</span></strong><span class="style18">. Informally, this 
-means that the construction and the reduction only use the multiplicative 
-structure of <span dir="LTR"><strong>&nbsp;<span>Z<sub>n</sub>*</span></strong></span>, 
-and do not gain any additional insight by looking at the specific representation 
-of group elements.<br />
-<br />
-To the best of our knowledge,&nbsp; all known positive results on building standard 
-model <span class="il">RSA</span> based signatures (including 
-Gennaro-Halevi-Rabin [<em>EUROCRYPT &#39;99</em>], Cramer-Shoup [<em>ACM Trans. Inf. 
-Syst. Secur. &#39;00</em>] and Hohenberger-Waters <em>[Crypto &#39;09]</em>) treat
-<span dir="LTR"><strong>&nbsp;<span>Z<sub>n</sub>*</span></strong></span> as a 
-black-box. Thus, although our results still do not rule out certain types of 
-constructions/reductions, they seem to cover all successful techniques utilized 
-to date, unlike the prior impossibility results for instantiating
-<span class="il">RSA</span> signatures (Dodis et al. [<em>Crypto 05</em>] and 
-Paillier [<em>CT-<span class="il">RSA</span> &#39;07</em>]).<br />
-<br />
-On a positive, we demonstrate the optimality of our negative result by showing 
-that the <span class="il">RSA</span> signatures <strong>can</strong> be proven
-	  </span>
-<span class="auto-style3">t</span><span class="style18">-time secure in the standard model,&nbsp; under the 
-standard <span class="il">RSA</span> assumption, provided that the description 
-of the hash function <span>h</span> can be proportional to
-</span>
-<span class="auto-style3">t</span>.<span class="style18"><br />
-<br />
-Finally, and of independent interest, we show how to adopt the influential 
-``short description&#39;&#39; paradigm of Gennaro and Tevisan&nbsp; [<em>FOCS &#39;00</em>] from 
-the ``random permutation&quot; to the ``generic group&quot; model.</span></p>
-
-      <ul>
-</h2>
+					  <h2><style type="text/css">
+.auto-style1 {
+	font-size: large;
+}
+.auto-style2 {
+	color: #0000FF;
+}
+.auto-style3 {
+	color: #000000;
+}
+.auto-style4 {
+	color: #0F0F4B;
+}
+</style>
+ <span class="style5"> <span class="auto-style4">Bellare and Rogaway [ACM 
+CCS ’93] </span>introduced the famous random oracle model as a “paradigm for 
+designing efficient protocols”. This paradigm has led to several highly 
+efficient and widely used in practice constructions, such as the <em>RSA Full 
+Domain Hash signature scheme</em> <em>(RSA-FDH)</em>. Unfortunately, little is 
+known about the security of the resulting schemes in the standard model, when 
+the random oracle is replaced by a concrete function. In particular, it is 
+unknown whether we can reduce their (standard model) security to any “natural” 
+assumption.</span><br class="style5" />
+<span class="style5">Prior work has shown several “uninstantiability” 
+results for various abstractions of RSA-based schemes, where the RSA function 
+was replaced by a random permutation. These abstractions, however, do not allow 
+either the reduction or the hash function instantiation to use any algebraic 
+properties of RSA function, such as the multiplicative group structure of </span>
+					  <span dir="LTR"><strong><span><span class="auto-style2">Z<sub>n</sub>*</span></span></strong></span><span class="style5">.<br />
+In this work we develop new techniques which rule out such algebraic 
+instantiations, focusing specifically on the case of RSA-FDH. We show that it is 
+impossible to reduce the security of RSA-FDH to any natural assumption, provided 
+that the construction and the reduction</span><br class="style5" />
+<span class="style5">treat the multiplicative RSA group
+</span><span dir="LTR">
+<span class="style5"><strong><span class="auto-style2">Z</span></strong></span><strong><span class="auto-style2"><sub>n</sub>*</span></strong><span class="style5"> 
+i</span></span><span class="style5"><span class="auto-style5">n in a black-box way. To the best of our knowledge, 
+this restriction is satisfied by all positive results for RSA-based signatures, 
+including standard model constructions of <span class="auto-style4">Gennaro et 
+al. [EUROCRYPT ’99], Cramer and Shoup [ACM TISS ’00] and Hohenberger and Waters 
+[CRYPTO ’09]</span>.</span></span><br class="style5" />
+<span class="auto-style5">As our main technical (and conceptual) contribution, 
+we show how to adapt the powerful “short description” paradigm of
+<span class="auto-style4">Gennaro and Trevisan [FOCS ’00] </span>to the “generic 
+group” setting. This paradigm is typically used to rule out one-way permutations 
+based reductions, showing that their security proofs would</span><br class="style5" />
+<span class="style5">imply a (provably impossible) way to “compress” a 
+random permutation. In our setting, the reduction has access to a random group
+<span class="auto-style2">G</span> isomorphic to </span>
+<span dir="LTR">
+<span class="style5"><strong><span class="auto-style2">Z</span></strong></span><strong><span class="auto-style2"><sub>n</sub><span class="style5">*</span></span></strong><span class="style5"> </span></span>
+<span class="style5">, and can use the algebraic properties of
+<span class="auto-style2">G</span>. Still, we show that such a reduction must 
+“know” the factorization of n (and, hence, does not “benefit” from the signature 
+forger), since otherwise it can be used to “compress” our group
+<span class="auto-style2">G</span>. We demonstrate the optimality of our 
+negative result, at least in some sense, by showing that the RSA-FDH signatures 
+can be proven secure in the standard model, under the standard RSA assumption, 
+provided the number of signing queries is a-priori bounded</span><span class="auto-style1">.</span></h2>
 					</div>
 
 
