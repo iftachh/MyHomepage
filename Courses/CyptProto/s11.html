@@ -12,11 +12,24 @@
 	direction: ltr;
 }
 .auto-style2 {
-	font-family: "Times New Roman";
-	font-size: larger;
+	font-size: small;
 }
 .auto-style3 {
-	font-size: medium;
+	font-size: large;
+	font-weight: bold;
+}
+.auto-style4 {
+	font-size: large;
+}
+.auto-style5 {
+	font-weight: bold;
+}
+.auto-style6 {
+	font-size: x-large;
+	font-weight: bold;
+}
+.auto-style7 {
+	font-size: x-large;
 }
 </style>
 </head>
@@ -28,12 +41,13 @@
 	  <a href="http://www.cs.tau.ac.il/">
 	  <img
  src="../tau-cs.gif" height="128" width="752"></a><br><br>
-	  <h1>0368-4171<b>, Spring 2011: </b>
-	  <h1><b>Cryptographic Protocols</b></h1>
+	  <h1><b>Cryptographic Protocols <span class="auto-style6">(</span><span class="auto-style3"><span class="auto-style7">0368-4171</span></span><span class="auto-style6">),
+	  </span>&nbsp;</b><span class="auto-style5">Spring 2011 </span>
+	  <span class="auto-style6">&nbsp;</span><h1>&nbsp;</h1>
 	  <p>
-	  <font-size="12"><b>Mondays 13-16, Room: שנקר 222<br></b></font-size="12">
+	  <font-size="12"><b><span class="auto-style4">Mondays 13-16, Room: שנקר 222</span><br></b></font-size="12">
 	  </p>
-	  <p><b>Instructors: </b></p>
+	  <p><b>I<span class="auto-style4">nstructors: </span> </b></p>
 	  <p><a href="http://www.cs.tau.ac.il/%7Ecanetti/">Ran
 Canetti</a> | Schreiber 304 </p>
 	  <p><a href="http://www.cs.tau.ac.il/%7Eiftachh">Iftach Haitner</a>
@@ -43,92 +57,57 @@ Schreiber 20 (in charge of the administrative issues of this semester, i.e.,
 	  <p class="auto-style1"><big><font face="Times New Roman" size="3"><big><span lang="HE">The
 	  is an advance graduate-level course in Cryptography, which continues the 
 	  course <a href="http://www.cs.tau.ac.il/~iftachh/Courses/FOC/f10.html">
-	  Founatation of Cryptography</a> in this fall .</span></big></font></big></p>
-	  <p><font face="Times New Roman" size="3"><span lang="HE"><big>The
-exact syllabus will be determined as the semester proceeds, based on
-the makeup of the class, but roughly we will go as follows:</big></span></font></p>
-	  <ul>
-		  <li><span class="auto-style2">Week 1: ZK,&nbsp; Review, ZK for DH 
-		  tuples, Sequential composition of ZK</span></li>
-		  <li>Week 2: Proofs of knowledge, impossibility of &nbsp;3 round black-box 
-		  ZK <font face="Times New Roman" size="3"><span lang="HE"><big><br>
-		  Reading:
-		  <a href="http://www.wisdom.weizmann.ac.il/~oded/PS/zk-comp.ps">On the 
-		  Composition of Zero-Knowledge Proof Systems</a></big></span></font></li>
-		  <li><span class="auto-style2">Week 3: Concurrent ZK, &nbsp;Non-BB ZK<br>
-		  Reading: </span></li>
-		  <li>Week 4: NIZK + simulation sound NIZK + CCA secure encryption</li>
-		  <li>Week 5: Non-malleable Commitment </li>
-		  <li>Week 6: &nbsp;Multi-party computation, &nbsp;The GMW<font face="Times New Roman" size="3"><span lang="HE"><big> 
-		  protocol<br>Reading:
-		  <a href="http://www.wisdom.weizmann.ac.il/~oded/gmw2.html" target="_blank">
-		  How to Solve any Multi-Party Protocol Problem</a></big></span></font></li>
-		  <li><span class="auto-style2">Week 7: &nbsp;The&nbsp; BGW Protocol</span><br>
-		  Reading:
-		  <a href="http://www.google.co.il/url?sa=t&amp;source=web&amp;cd=1&amp;ved=0CB0QFjAA&amp;url=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fdownload%3Bjsessionid%3DE6D28B31226247485CB7286EC1EA2260%3Fdoi%3D10.1.1.116.2968%26rep%3Drep1%26type%3Dpdf&amp;ei=OI9iTeaXOYuhOrix0N8N&amp;usg=AFQjCNEbxn7Sgc11mqKk5T2I_dxrMHe-cw&amp;sig2=klfKgNxDHuE269Omb5rDrgn">
-		  <span class="auto-style3">Completeness theorems for non-cryptographic 
-		  fault-tolerant distributed computation</span></a></li>
-		  <li>Week 8: Basic security, UC security, composition theorem<br>
-		  Reading: <a href="eprint.iacr.org/2006/465">Security and Composition 
-		  of Cryptographic Protocols: A Tutorial.</a>&nbsp;&nbsp; <br>
-		  <a href="eprint.iacr.org/2000/067">Universally Composable Security: A 
-		  New Paradigm for Cryptographic Protocols.</a><br>
-		  <a href="eprint.iacr.org/1998/018">Security and composition of 
-		  multi-party cryptographic protocols.</a></li>
-		  <li>Week 9:&nbsp; Proof of security of BGW, beginning of CLOS<br>
-		  Reading: <a href="eprint.iacr.org/2002/140">Universally composable 
-		  two-party and multi-party secure computation.</a></li>
-		  <li>Week 10: UC commitments, CLOS</li>
-		  <li>Week 11-12: &nbsp;Parallel repetition of interactive proofs/arguments<br>
-		  Reading:
-		  <a href="http://www.cs.cornell.edu/~rafael/papers/genpara-proc.pdf">An 
-		  Efficient Parallel Repetition Theorem.</a>&nbsp;&nbsp;
-		  <a href="http://www.cs.tau.ac.il/~iftachh/papers/ArgumentPR/ArgumentPR_CR.pdf">
-		  A Parallel Repetition Theorem for Any Interactive Argument </a></li>
-		  <li>Week 13-14: Black box separations<br>Reading:
-		  <a href="http://www.cs.tau.ac.il/~iftachh/papers/FindingCollisions/FindingCollisions.pdf">
-		  Finding Collisions in Interactive Protocols -- A Tight Lower Bound on 
-		  the Round Complexity of Statistically-Hiding Commitments</a></li>
-	  </ul>
-	  <br><b><a href="#announce"><b>Announcements</b></a> </b>
+	  Founatation of Cryptography</a> </span>given<span lang="HE"> this fall.</span></big></font></big></p>
+	  <b><a href="#Agenda">Agenda</a> <br> </b>
+	  <br><b><a href="#Announcements">Announcements</a> </b>
 	  <p><b>
 	  <a
  href="http://iwww2.tau.ac.il/yedion/syllabus.asp?course=0368416201&amp;year=2010">
-	  <b>Syllabus</b></a> </b></p>
-	  <p><b><a href="#Prerequisite"><b>Prerequisite</b></a></b><a
- href="http://iwww2.tau.ac.il/yedion/syllabus.asp?course=0368416201&amp;year=2010"><font
- face="Times New Roman" size="3"><span lang="HE"></span></font></a></p>
-	  <p><b><b><b><a href="#requirements"><b>Course requirements</b></a></b></b></b><br>
-	  </p>
-	  <p><b><b><b><a href="#Problem_Sets"><b>Problem Sets</b></a></b></b></b></p>
-	  <p><b><b><b><b><a href="#Readings"><b>Readings</b></a></b></b></b></b><b><b><b><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <br></b></b></b></b></p>
-	  <div class="header">
-		  <big><b><b><b><b>Announcements</b></b></b></b></big></div>
-	  <b><b><b><b><br></b></b></b></b>
+	  Syllabus</a> </b></p>
+	  <p><b><a href="#Prerequisite">Prerequisite</a></b></p>
+	  <p><b><a href="#requirements">Course requirements</a></b></p>
+	  <p><b><a href="#Problem_Sets">Problem Sets</a></b></p>
+	  <p><b><a href="#Reading">Futher Reading</a></b></p>
+	  <p><b>&nbsp;&nbsp;&nbsp;&nbsp;
+      </b></p>
+	  <p><font face="Times New Roman" size="3"><span lang="HE"><big>
+		  <a name="Agenda">
+		  <big><b>A</b></big></a></span><big><a name="Agenda">g<b>enda</b></a><b>: </b></big><span lang="HE">
+	  <br>The
+exact syllabus will be determined as the semester proceeds, based on
+the makeup of the class, but roughly we will go as follows:</span></big></font></p>
+	  <iframe src="https://www.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=oped6fm4gldbgh4ev5c9lmecns%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Asia%2FJerusalem" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	  
+	  
 	  <br>
 	  <div class="header">
-		  <big><b><b><b>Prerequisite</b></b></b></big></div>
-	  <b><b><b><br>Basic knowledge of cryptography as covered in <big><font face="Times New Roman" size="3"><big><span lang="HE">&nbsp;<a href="http://www.cs.tau.ac.il/~iftachh/Courses/FOC/f10.html">Founatation 
-	  of Cryptography</a></span></big></font></big>.</b></b></b> <b><b><b><br>
-	  <br><br></b></b></b><b><b><b><a name="requirements"></a></b></b></b><br>
-	  <div class="header">
-		  <big><b><b><b>Course requirements</b></b></b></big></div>
-      <ul>
-          <li><b><b><b>Homework: 2 homework sets</b></b></b></li>
-		  <li><b>Lecture notes: each student will write notes for a single class <br></b></li>
-      </ul>
+		  <big><b><br>A<a name="Announcements"></a>nnouncements</b></big></div>
 	  <b><br></b>
-	  <br><b><b><b></b></b></b>
+	  <br>
 	  <div class="header">
-		  <big><b><b><b>Problem Sets</b></b></b></big></div>
-	  <b><b><b><br>Here are some 
+		  <big><b><b><b>Prerequisite<a name="Prerequisite"></a></b></b></b></big></div>
+	  <b><b><b><br></b></b></b> Basic knowledge of cryptography as covered in&nbsp; <b> <big><font face="Times New Roman" size="3"><big><span lang="HE">&nbsp;<a href="http://www.cs.tau.ac.il/~iftachh/Courses/FOC/f10.html"><span class="auto-style2">Founatation 
+	  of Cryptography</span></a></span></big></font></big>.</b> <b><br>
+	  <br><br></b><b><b><b><a name="requirements"></a></b></b></b><br>
+	  <div class="header">
+		  <big><b><b><b>Course requirements<ul>
+          <li>Homework: 2 homework sets</li>
+		  <li>Lecture notes: each student will write notes for a single class </li>
+      </ul>
+		  </b></b></b></big></div>
+	  <br>
+	  <div class="header">
+		  <big><b>P<a name="Problem_Sets"></a>roblem Sets</b></big></div>
+	  <b><b><b><br>
+	  </b></b></b>
+	  Here are some<b> 
 	  <a
  href="http://www.cs.tau.ac.il/%7Eiftachh/Courses/FOC/f10-materials/ps-guidelines.pdf">guidelines for solutions.</a>
-	  </b></b></b>
-      <b><br></b>
+	  <br>
+	  </b>
+	  <b><br></b>
 	  <div class="header">
-		  <big><b><b><b>Readings</b></b></b></big></div>
+		  <big><b>F<a name="Reading"></a>urther Readings</b></big></div>
 	  <p>You may find the following to be useful references (but beware
 that some of the
 notation, conventions, and definitions may differ slightly from
@@ -148,8 +127,8 @@ of Cryptography.</a>&nbsp;</i> <br></li>
 
       </ul>
  	 <b>Lecture notes:  </b>
-    <ul type="disc">
-        <li class="MsoNormal" style="">Ran Canetti.  
+	  <ul type="disc">
+          <li class="MsoNormal" style="">Ran Canetti.  
 		<a
  href="http://www.cs.tau.ac.il/%7Ecanetti/f08.html">Foundation of Cryptography (The 2008 course)</a>&nbsp; 
 		and <a href="http://people.csail.mit.edu/ronitt/COURSE/S07/lec25.pdf">On 
