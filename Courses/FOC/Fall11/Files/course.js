@@ -24,7 +24,7 @@ if (kuku >= 0 )  break  ;
 }
 
 if (kuku >= 0 ) {  // top right menu
-elements2[i].parentNode.style.backgroundImage="url('reka_selected1.gif')" ;
+elements2[i].parentNode.style.backgroundImage="url('Files/reka_selected1.gif')" ;
 elements2[i].style.color="white" ; }
 
 }
