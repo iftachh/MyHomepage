@@ -1,5 +1,5 @@
 
- var menu='<img src="tau-cs3.jpg" width="899" height="128" alt="" />'+
+ var menu='<img src="Files/tau-cs3.jpg" width="899" height="128" alt="" />'+
 '<table cellpadding=0 cellspacing=0 border=0 class=reka_tab width=900 id=main_menu>'+
 '<tr><tbody class=text>'+
 '<td class=reka align=center ><ul id=menu>'+
