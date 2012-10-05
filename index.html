@@ -402,11 +402,73 @@ in Reverse Chronological Order</font></h1>
 		  		  and <a href="http://u.cs.biu.ac.il/~zarosih/">Hila Z<span class="style11">arosim</span></a>&nbsp; </span>
 		  </span><br>
 					<span class="style14"><strong><span class="style5">On the 
-					Power of Random Oracles</span><span class="style11">&nbsp;</span><span style="font-weight: 400;">[<a href="javascript:toggle('abstract-CoinFlipping')">Abstract</a><span class="style11">] </span></span></strong><br>
+					Power of Random Oracles</span><span class="style11">&nbsp;</span><span style="font-weight: 400;">[<a href="javascript:toggle('abstract-PowerofRO1')">Abstract</a><span class="style11">] </span></span></strong><br>
 					<span style="font-weight: 400;">
 					<span dir="LTR" class="style14">Draft of full version
 					<a href="papers/PowerofRO1/MainFile.pdf">[PDF]</a></span></span></span></p>
-		  <li>
+		
+
+<div class="box" id="abstract-PowerofRO1" style="border-style: solid; border-width: 1px; padding: 1px 4px; display: none; background-color: rgb(255, 255, 255);">
+					  <h2><span style="font-weight: 400;"> In the random oracle model, the parties are given oracle access to a random 
+member of<br />
+a (typically huge) function family, and are assumed to have unbounded 
+computational power<br />
+(though they can only make a bounded number of oracle queries). This model 
+provides powerful<br />
+properties that allow proving the security of many protocols, even such that 
+cannot be proved<br />
+secure in the standard model (under any hardness assumption). The random oracle 
+model is also<br />
+used to show that a given cryptographic primitive cannot be used in a black-box 
+way to construct<br />
+another primitive; in their seminal work, <span class="auto-style1">Impagliazzo 
+and Rudich [STOC ’89]</span> showed that in the<br />
+random function model – when the function family is the set of all functions – 
+it is impossible<br />
+to construct (secure) key-agreement protocols, yielding that key-agreement 
+cannot be black-box<br />
+reduced to one-way functions. Their work has a long line of followup works (<span class="auto-style1">Simon 
+[EC ’98]</span>,<br />
+<span class="auto-style1">Gertner et al. [STOC ’00]</span> and
+<span class="auto-style1">Gennaro et al. [SICOMP ’05]</span>, to name a few), 
+showing that given<br />
+oracle access to a certain type of function family (e.g., the family that 
+“implements” public-key<br />
+encryption) is not sufficient for building a given cryptographic primitive 
+(e.g., oblivious transfer).<br />
+Yet, in the more general sense, the following fundamental question remained 
+open:<br />
+<br />
+<em>What is the exact power of the random oracle model, and more specifically, 
+of the<br />
+random function model?<br />
+</em><br />
+We make progress towards answering the above question, showing that any (no 
+private input)<br />
+semi-honest two-party functionality that can be securely implemented in the 
+random function<br />
+model, can be securely implemented information theoretically (where parties are 
+assumed to be<br />
+all powerful, and no oracle is given). We further generalize the above result to 
+function families<br />
+that provide some natural combinatorial property.<br />
+To exhibit the power of our result, we use the recent information theoretic 
+impossibility result<br />
+of <span class="auto-style1">McGregor et al. [FOCS ’10]</span>, to show the 
+existence of functionalities (e.g., inner product) that<br />
+cannot be computed both accurately and in a differentially private manner in the 
+random<br />
+function model; yielding that protocols for computing these functionalities 
+cannot be black-box<br />
+reduced to the existence of one-way functions.		
+  </span></h2>
+					</div>
+
+
+
+
+
+  <li>
 					<p><span dir="LTR"><span class="style14">Itay Berman</span></span><span style="font-weight: 400;"><span dir="LTR" class="style14"><span dir="LTR" style="font-weight: 400;">
 					and Iftach Haitner</span> </span>
 		  </span><br>
