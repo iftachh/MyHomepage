@@ -394,75 +394,94 @@ in Reverse Chronological Order</font></h1>
 
 
 <li>
+					<p>Itay Berman and Iftach Haitner and&nbsp; Ilan Komargodski 
+					and&nbsp; Moni Naor<br>
+					<strong>Hardness Preserving Reductions via Cuckoo Hashing </strong>
+					<span class="style14"><strong><span style="font-weight: 400;">[<a href="javascript:toggle('abstract-Cuckoo')">Abstract</a><span class="style11">]</span><span dir="LTR" class="style14">&nbsp;<span class="style11"><img height="11" src="new.gif" width="28"></span></span></span></strong><br>
+					TCC 2013 </span></p>
+
+<div class="box" id="abstract-Cuckoo" style="border-style: solid; border-width: 1px; padding: 1px 4px; display: none; background-color: rgb(255, 255, 255);">
+A common method for increasing the usability and uplifting the security of 
+pseudorandom function families (PRFs) is to “hash” the inputs into a smaller 
+domain before applying the PRF.<br />
+This approach, known as “Levin’s trick”, is used to achieve “PRF domain 
+extension” (using a short, e.g., fixed, input length PRF to get a 
+variable-length PRF), and more recently to transform<br />
+non-adaptive PRFs to adaptive ones. Such reductions, however, are vulnerable to 
+a “birthday attack”: after <span class="auto-style1">√|U|</span> queries to the resulting 
+PRF, where <span class="auto-style1">U</span> being the hash function range, a<br />
+collision (i.e., two distinct inputs have the same hash value) happens with high 
+probability. As a consequence, the resulting PRF is insecure against an attacker 
+making this number of queries.<br />
+In this work we show how to go beyond the birthday attack barrier, by replacing 
+the above simple hashing approach with a variant of <strong>cuckoo hashing</strong> 
+— a hashing paradigm typically used<br />
+for resolving hash collisions in a table, by using two hash functions and two 
+tables and cleverly assigning each element into one of the two tables. We use 
+this approach to obtain:<br />
+(i) A domain extension method that requires <strong>just two calls</strong> to 
+the original PRF, can withstand as many queries as the original domain size and 
+has a distinguishing probability that is exponentially small in the non 
+cryptographic work. <br />
+(ii) A <strong>security-preserving</strong> reduction from non-adaptive to 
+adaptive PRFs.
+</div>
+
+
+<li>
 					<p><span style="font-weight: 400;">
 					<span dir="LTR" class="style14">
 		  		    <span dir="LTR" style="font-weight: 400;">
-					Iftach Haitner </span>
-		  		  and <a href="http://u.cs.biu.ac.il/~omrier/">Eran O<span class="style11">mri</span></a>&nbsp; 
+					Iftach Haitner </span>and 
+					<a href="http://u.cs.biu.ac.il/~omrier/">Eran O<span class="style11">mri</span></a>&nbsp; 
 		  		  and <a href="http://u.cs.biu.ac.il/~zarosih/">Hila Z<span class="style11">arosim</span></a>&nbsp; </span>
-		  </span><br>
-					<span class="style14"><strong><span class="style5">On the 
-					Power of Random Oracles</span><span class="style11">&nbsp;</span><span style="font-weight: 400;">[<a href="javascript:toggle('abstract-PowerofRO1')">Abstract</a><span class="style11">] <img height="11" src="new.gif" width="28"></span></span></strong><br>
-					<span style="font-weight: 400;">
-					<span dir="LTR" class="style14">Draft of full version
+		  </span><br><strong><span class="style5">Limits on the Usefulness of 
+					Random Oracles</span><span class="style14"><span class="style11">&nbsp;</span><span style="font-weight: 400;">[<a href="javascript:toggle('abstract-PowerofRO1')">Abstract</a><span class="style11">] 
+					</span></span></span></strong><span class="style14"><br><span style="font-weight: 400;">
+					<span dir="LTR" class="style14">TCC 2013<br>Draft of full version
 					<a href="papers/PowerofRO1/MainFile.pdf">[PDF]</a></span></span></span></p>
 		
 
 <div class="box" id="abstract-PowerofRO1" style="border-style: solid; border-width: 1px; padding: 1px 4px; display: none; background-color: rgb(255, 255, 255);">
-					  <h2><span style="font-weight: 400;"> In the random oracle model, the parties are given oracle access to a random 
-member of<br />
-a (typically huge) function family, and are assumed to have unbounded 
-computational power<br />
-(though they can only make a bounded number of oracle queries). This model 
-provides powerful<br />
+					  <h2><span style="font-weight: 400;"> 
+In the <strong>random oracle</strong> model, parties are given oracle access 
+to a random function (i.e., a uniformly chosen function from the set of all 
+functions), and are assumed to have unbounded computational power (though they 
+can only make a bounded number of oracle queries). This model provides powerful 
 properties that allow proving the security of many protocols, even such that 
-cannot be proved<br />
-secure in the standard model (under any hardness assumption). The random oracle 
-model is also<br />
-used to show that a given cryptographic primitive cannot be used in a black-box 
-way to construct<br />
-another primitive; in their seminal work, <span class="auto-style1">Impagliazzo 
-and Rudich [STOC ’89]</span> showed that in the<br />
-random function model – when the function family is the set of all functions – 
-it is impossible<br />
-to construct (secure) key-agreement protocols, yielding that key-agreement 
-cannot be black-box<br />
-reduced to one-way functions. Their work has a long line of followup works (<span class="auto-style1">Simon 
-[EC ’98]</span>,<br />
-<span class="auto-style1">Gertner et al. [STOC ’00]</span> and
-<span class="auto-style1">Gennaro et al. [SICOMP ’05]</span>, to name a few), 
-showing that given<br />
-oracle access to a certain type of function family (e.g., the family that 
-“implements” public-key<br />
-encryption) is not sufficient for building a given cryptographic primitive 
-(e.g., oblivious transfer).<br />
-Yet, in the more general sense, the following fundamental question remained 
-open:<br />
+cannot be proved secure in the standard model (under any hardness assumption). 
+The random oracle model is also used for showing that a given cryptographic 
+primitive cannot be used in a black-box way to construct another primitive; in 
+their seminal work, <span class="auto-style2">Impagliazzo and Rudich [STOC ’89]</span> 
+showed that no key-agreement protocol exists in the random oracle model, 
+yielding that key-agreement cannot be black-box reduced to one-way functions. 
+Their work has a long line of followup works (<span class="auto-style2">Simon 
+[EC ’98]</span>, <span class="auto-style2">Gertner et al. [STOC ’00]</span> and<span class="auto-style2"> 
+Gennaro et al. [SICOMP ’05]</span>, to name a few), showing that given oracle 
+access to a certain type of function family (e.g., the family that “implements” 
+public-key encryption) is not sufficient for building a given cryptographic 
+primitive (e.g., oblivious transfer). Yet, the following question remained open:
 <br />
-<em>What is the exact power of the random oracle model, and more specifically, 
-of the<br />
-random function model?<br />
+<br />
+<em>What is the exact power of the random oracle model? <br />
 </em><br />
-We make progress towards answering the above question, showing that any (no 
-private input)<br />
-semi-honest two-party functionality that can be securely implemented in the 
-random function<br />
-model, can be securely implemented information theoretically (where parties are 
-assumed to be<br />
-all powerful, and no oracle is given). We further generalize the above result to 
-function families<br />
-that provide some natural combinatorial property.<br />
-To exhibit the power of our result, we use the recent information theoretic 
-impossibility result<br />
-of <span class="auto-style1">McGregor et al. [FOCS ’10]</span>, to show the 
-existence of functionalities (e.g., inner product) that<br />
-cannot be computed both accurately and in a differentially private manner in the 
-random<br />
-function model; yielding that protocols for computing these functionalities 
-cannot be black-box<br />
-reduced to the existence of one-way functions.		
-  </span></h2>
-					</div>
+We make progress towards answering the above question, showing that, 
+essentially, any no private input, semi-honest two-party functionality that can 
+be securely implemented in the random oracle model, can be securely implemented 
+information theoretically (where parties are assumed to be all powerful, and no 
+oracle is given). We further generalize the above result to function families 
+that provide some natural combinatorial property. <br />
+Our result immediately yields that that the only no-input functionalities that 
+can be securely realized in the random oracle model (in the sense of secure 
+function evaluation), are the trivial ones (ones that can be securely realized 
+information theoretically). In addition, we use the recent information theoretic 
+impossibility result of <span class="auto-style2">McGregor et al. [FOCS ’10]</span>, 
+to show the existence of functionalities (e.g., inner product) that cannot be 
+computed both accurately and in a differentially private manner in the random 
+oracle model; yielding that protocols for computing these functionalities cannot 
+be black-box reduced to the existence of one-way functions.					  
+					  
+</div>
 
 
 
@@ -643,8 +662,10 @@ or alternatively a black-box use of lower-level primitives such as enhanced trap
 					<a href="http://www.eecs.harvard.edu/~salil/">Salil Vadhan</a></span></span></span><br>
 					Efficiency Improvements in Constructing Pseudorandom 
 					Generators from One-way Functions<span class="style14">&nbsp; <span style="font-weight: 400;">[<a href="javascript:toggle('abstract-HillRevisted')">Abstract</a>] 
-		  		  </span> <br>Annual ACM Symposium on Theory of Computing (STOC), 2010</span> <span class="style14"><span style="font-weight: 400;"><span dir="LTR" class="style14">
-					<a href="papers/HillRevisted/HillRevisted_STOC.pdf">[PDF]</a><a href="papers/FindingCollisions/FindingCollisions.ps"></a></span></span></span><span style="font-weight: 400;"><span class="style14"><span dir="LTR" class="style14"><br>Draft of full version
+		  		  </span> <br><span style="font-weight: 400;"><span dir="LTR" class="style14"> <span dir="LTR">
+					<span class="style5">SIAM 
+		  Journal of Computing 2013</span></span></span></span><br>Annual ACM Symposium on Theory of Computing (STOC), 2010</span> <span class="style14"><span style="font-weight: 400;"><span dir="LTR" class="style14">
+					<a href="papers/HillRevisted/HillRevisted_STOC.pdf">[PDF]</a></span></span><span dir="LTR"><a href="papers/FindingCollisions/FindingCollisions.ps"></a></span></span><span style="font-weight: 400;"><span class="style14"><span dir="LTR" class="style14"><br>Draft of full version
 					<a href="papers/HillRevisted/HillRevisted_Full.pdf">[PDF]</a></span></span></span></h2>
 		  <span style="font-weight: 400;">
 		  		  <div class="box" id="abstract-HillRevisted" style="border-style: solid; border-width: 1px; padding: 1px 4px; display: none; background-color: rgb(255, 255, 255);">
@@ -866,12 +887,10 @@ long as the verifier is also given a good approximation of the value
 		  <span class="style14"><strong>A Parallel Repetition Theorem for Any 
 		  Interactive Argument </strong><span class="style11">[</span><a href="javascript:toggle('abstract-ParallelRepetition')">Abstract</a><span class="style11">] 
 		  [</span><a href="papers/ArgumentPR/Seminar.pptx">S<span class="style11">lides</span></a><span class="style11">]
-		  </span></span></span></b></span>
-		  <span style="font-weight: 400;">
-		  <span dir="LTR" style="font-weight: 400"><b>
-		  <br></b></span>IEEE Symposium on Foundations of Computer Science 
+		  <br><span class="style5">S<span dir="LTR" class="style14">IAM 
+		  Journal of Computing 2013</span></span></span></span></span></b></span><span style="font-weight: 400;"><span dir="LTR" style="font-weight: 400"><b><br></b></span>IEEE Symposium on Foundations of Computer Science 
 		  (FOCS), 2009 <span dir="LTR"><b>
-		  <span class="style14"><span class="style11">[</span><a href="papers/ArgumentPR/ArgumentPR_CR.pdf">PDF</a><span class="style11">]
+		  <span class="style14"><span class="style11">[</span><a href="papers/ArgumentPR/ArgumentPR_CR.pdf">PDF</a><span class="style11">]</span><span class="style5">
 		  </span></span></b></span>
 		  <br><span style="font-weight: 400;">Draft of full version
 				<a href="papers/ArgumentPR/ArgumentPR.pdf">[PDF]</a><a href="papers/FindingCollisions/FindingCollisions.ps"></a><b><i><o:p></o:p></i></b>
@@ -1170,7 +1189,9 @@ Constructions Based on One-way Functions</b></span><br>
 		  <span dir="LTR"><b>A New Interactive Hashing Theorem </b>
 		  <span class="style11">[</span><a href="javascript:toggle('abstract-IH')">Abstract</a><span class="style11">]
 				</span><a href="papers/IneractiveHashing/IneractiveHashing-CCC.ps"></a>
-		  <span class="style11">[</span><a href="papers/IneractiveHashing/IHSeminar_F.ppt">Slides</a><span style="color: blue;">]</span></span></span><span class="style14"><br>
+		  <span class="style11">[</span><a href="papers/IneractiveHashing/IHSeminar_F.ppt">Slides</a><span class="style5">]<br><span class="style14">
+		  <span dir="LTR" style="font-weight: 400">
+		  <b><i> <span dir="LTR" class="style14"><span dir="LTR" style="font-weight: 400;">Journal of Cryptology 2013</span></span></i></b></span></span></span></span></span><span class="style14"><br>
 		  IEEE Conference on Computational Complexity&nbsp; (CCC), 2007
 		  <span dir="LTR" style="font-weight: 400">
 		  <a href="papers/IneractiveHashing/IneractiveHashing-CCC.pdf">[PDF]</a><b><i> </i>
