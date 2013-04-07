@@ -164,21 +164,21 @@ DIV.Section1 {
 			}
 		}
 
-		function MySwitch(id1,id2) {
+		function MySwitch(id1,id2,id3,id4) {
 			if (document.getElementById)
 			{
-			  if (document.getElementById(id1).style.display == "block") {
-					// hide
-					document.getElementById(id1).style.display = "none";
-				}
+			  	document.getElementById(id2).style.display = "none";
+				document.getElementById(id3).style.display = "none";
+				document.getElementById(id4).style.display = "none";
+				
 
-			  if (document.getElementById(id2).style.display == "none") {
+			  if (document.getElementById(id1).style.display == "none") {
 					// show
-					document.getElementById(id2).style.display = "block";
+					document.getElementById(id1).style.display = "block";
 				}
 				else {
 					// hide
-					document.getElementById(id2).style.display = "none";
+					document.getElementById(id1).style.display = "none";
 				}
 			}
 		}
@@ -208,13 +208,13 @@ DIV.Section1 {
 	  <div class="box" id="Img1" style="border-style: none; border-width: 1px; display: block;">
 
 		<span style="font-weight: 400;"><font style="font-weight: 400; font-size: 9pt;" face="Verdana"><span class="style2" style="">
-		<a href="javascript:MySwitch('Img1','Img2')">
+		<a href="javascript:MySwitch('Img2','Img1','Img1','Img1')">
 		  <img alt="" src="Face.jpg" class="style22" height="233" width="192"></a></span><br></font></span></div>
 
     <div class="box" id="Img2" style="border-style: none; border-width: 1px; display: none;">
 
 		<span style="font-weight: 400;"><font style="font-weight: 400; font-size: 9pt;" face="Verdana"><span class="style2" style="">
-		<a href="javascript:MySwitch('Img2','Img1')"><img alt="" src="iftachC.jpg" class="style22" height="233" width="308"></a></span><br><span class="style18"> 
+		<a href="javascript:MySwitch('Img1','Img2','Img2','Img2')"><img alt="" src="iftachC.jpg" class="style22" height="233" width="308"></a></span><br><span class="style18"> 
 	</span></font></span></div>
 
 
@@ -231,17 +231,17 @@ DIV.Section1 {
       My main research interests are
 	  Cryptography and Computational Complexity.<br>
 
-    [<span><a href="javascript:MySwitch('Bio','Info')">Contact Info</a></span>]
+    [<span><a href="javascript:MySwitch('Info','Bio','OtherA','ProActiv')">Contact Info</a></span>]
 	  
-	 [<a href="javascript:MySwitch('Info','Bio')">Short Bio</a>]
+	 [<a href="javascript:MySwitch('Bio','Info','OtherA','ProActiv')">Short Bio</a>]
 
-	  [<a href="javascript:MySwitch('Info','Bio')">Proffestional Activity</a>]
+	  [<a href="javascript:MySwitch('ProActiv','Info','Bio','OtherA')">Proffestional Activity</a>]
 
-     [<a href="javascript:MySwitch('Info','Bio')">Other</a>]
+     [<a href="javascript:MySwitch('OtherA','Info','Bio','ProActiv')">Other</a>]
 
 
 	  <span><div class="box" id="Bio" style="border-style: solid; border-width: 1px; padding: 5px 4px; display: none; background-color: rgb(255, 255, 255);">
-     <span ><font class="style18"><b>Biography</b></font></span> <span class="style21">
+     	 <font class="auto-style9">Biography</font> <span class="style21">
 
 					<span style="font-weight: 400;"><br class="style4"></span>
 		</span>
@@ -272,7 +272,9 @@ DIV.Section1 {
 		did my undergraduate studies (Mathematics and Computer Science) at
 	  <a href="http://www.tau.ac.il/">Tel-Aviv university</a><font class="style18"><span class="style18">.</span></font><br><br>
 
-	     <span class="style18"><font class="style18"><b>Awards and Fellowships</b><br></font></span>
+	      </span>
+
+	     <span class="auto-style9"><font class="auto-style8">Awards and Fellowships</font></span><span class="style18"><font class="style18"><br></font>
 	  <font class="style18">
 	  <li>
 
@@ -291,31 +293,81 @@ DIV.Section1 {
 
 	  [2006] Best paper CRYPTO 2006</li><li>
 
-	  [2006] Best paper award ICALP 2006 track C</li></font><br>
+	  [2006] Best paper award ICALP 2006 track C</li></font>
 
 
-	  <span class="style18"><font class="style18"><b>Program Committees</b><br></font></span>
-	  <a href="http://www.iacr.org/workshops/tcc2014/">Theory of Cryptography Conference (TCC) 2014</a><br>
+	 </div>
 
-    <a href="http://www.iacr.org/conferences/crypto2013/">CRYPTO 2013</a><br>
 
-	   <a href="http://computationalcomplexity.org/Archive/2013/cfp.html">Conference on Computational Complexity (CCC) 2013</a><br>
-	  <a href="http://www.iacr.org/workshops/tcc2012/">Theory of Cryptography Conference (TCC) 2012</a><br>
-       <a href="http://cist.korea.ac.kr/~asiacrypt2011/">Asiacrypt 2011</a> <br>
-       <a href="http://ct-rsa2011.di.uoa.gr/CT-RSA_2011/Welcome___CT-RSA_2011.html">CT-RSA 2011</a> <br>
-	   <a href="http://www.crypto.ethz.ch/tcc2010/">Theory of Cryptography Conference (TCC) 2010</a><br>
-	   <a href="http://www.iacr.org/conferences/crypto2009/">CRYPTO 2009</a>
-	   </span></span></span></span>
-		<span class="style18">
+	  
+	 
+	  
+	  <div class="box" id="ProActiv" style="border-style: solid; border-width: 1px; padding: 5px 4px; display: none; background-color: rgb(255, 255, 255);">
+     	 
+	  <span><font class="auto-style8">Program Committees</font></span><span><br>
+	  
+ <font class="style18">
+
+	    <span class="style21">
+	  	<span class="style4">
+
+	  <li>
+ <a href="http://www.iacr.org/workshops/tcc2014/">Theory of Cryptography Conference (TCC) 2014</a></li><li>
+
+    <a href="http://www.iacr.org/conferences/crypto2013/">CRYPTO 2013</a></li><li>
+
+
+	   <a href="http://computationalcomplexity.org/Archive/2013/cfp.html">Conference on Computational Complexity (CCC) 2013</a></li><li>
+
+	  <a href="http://www.iacr.org/workshops/tcc2012/">Theory of Cryptography Conference (TCC) 2012</a></li><li>
+
+       <a href="http://cist.korea.ac.kr/~asiacrypt2011/">Asiacrypt 2011</a> </li><li>
+
+       <a href="http://ct-rsa2011.di.uoa.gr/CT-RSA_2011/Welcome___CT-RSA_2011.html">CT-RSA 2011</a></li><li>
+
+	   <a href="http://www.crypto.ethz.ch/tcc2010/">Theory of Cryptography Conference (TCC) 2010</a></li><li>
+
+	   <a href="http://www.iacr.org/conferences/crypto2009/">CRYPTO 2009</a></li>
+
+	   </span>
+
+		  </span>
+
+	  </font></span>
+
+ <font class="style18">
+
+		  <span class="style18">
 
 		<span style="font-weight: 400;">
-	  <span class="style8" style="">
-
-	    <span style="font-weight: 400;">
 
 	    <span class="style21"><class="style4">
 
-		 </class="style4"></span></span></span></span></span></div>
+		 </class="style4"></span></span>
+		 
+		 <br>
+
+	  </span>
+
+<span class="auto-style9"><font class="auto-style8">Workshop Orginizer</font></span><span class="style18"><font class="style18"><br></font>
+
+
+          <li> <a href="http://intractability2013.workshop.org.il/">Modeling Intractability workshop 2013</a><br></li>
+
+		 
+		 
+		 </div>
+
+
+<span><div class="box" id="OtherA" style="border-style: solid; border-width: 1px; padding: 5px 4px; display: none; background-color: rgb(255, 255, 255);">
+     					<span style="font-weight: 400;"><br class="style4"></span>
+		</span>
+
+
+
+	    </div>
+
+
 
 
 
@@ -359,9 +411,11 @@ DIV.Section1 {
 </tbody></table>
 		</div>
 
-	  </span></span>
+	  </span>
 
-	  </font></td>
+	  </font></span>
+
+	  </td>
 
 
 	  </tr>
@@ -601,7 +655,14 @@ We make progress towards answering the above fundamental question, showing that
 .auto-style7 {
 	direction: ltr;
 }
-</style>
+														   .auto-style8 {
+															   font-weight: bold;
+														   }
+														   .auto-style9 {
+															   font-size: medium;
+															   font-weight: bold;
+														   }
+														   </style>
 The hash-and-sign RSA signature is one of the most elegant and well known 
 signatures schemes, extensively used in a wide variety of cryptographic 
 applications. Unfortunately, the only existing analysis of this popular 
