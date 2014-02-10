@@ -535,18 +535,18 @@ weak</em> coin-flipping protocols.</p>
 }
 </style>
 
-<p>In a multiparty, fair coin-tossing protocol, the parties output a common 
+<p>In a multiparty, fair coin-flipping protocol, the parties output a common 
 (close to) unbiased bit, even when some corrupted parties try to bias the 
 output. <span class="auto-style1">Cleve [STOC 1986] </span>has shown that in the 
 case of dishonest majority (i.e., at least half of the parties can be 
 corrupted), the corrupted parties can bias the honest parties common output bit 
 by&nbsp; <span class="auto-style2">Ω(1/m)</span><span class="auto-style1">,</span> in any 
-<span class="auto-style2">m</span>-round, coin- tossing protocol. For more than two decades, 
-however, the best known coin-tossing protocols had bias 
+<span class="auto-style2">m</span>-round, coin-flipping protocol. For more than two decades, 
+however, the best known coin-flipping protocols had bias 
 <span class="auto-style2">Θ(t/√ m) </span>against 
 dishonest majority, where <span class="auto-style2">t </span>is the number of corrupted parties. This was changed 
 by a recent breakthrough result of <span class="auto-style1">Moran et al. [TCC 2009]</span>, who constructed an 
-<span class="auto-style2">m</span>-round, two-party coin-tossing protocol with optimal bias 
+<span class="auto-style2">m</span>-round, two-party coin-flipping protocol with optimal bias 
 <span class="auto-style2">Θ(1/m).</span> Where in a 
 subsequent work, <span class="auto-style1">Beimel et al. [Crypto 2010] </span>extended this result for the 
 multiparty case, in which less than 
@@ -564,7 +564,7 @@ particular, this was the state of affairs for the natural three-party case
 (against two corrupted parties).<br />
 <br />
 We make a step towards eliminating the above gap, presenting an 
-<span class="auto-style2">m</span>-round, three-party, coin-tossing protocol, with bias&nbsp;
+<span class="auto-style2">m</span>-round, three-party, coin-flipping protocol, with bias&nbsp;
 <span class="auto-style2">O(log 2 m)/m</span>. Our 
 approach (which we also apply for the two-party case), does not follow the 
 “threshold round” paradigm used in the work of <span class="auto-style1">Moran et al. and Beimel et al.</span>, 
