@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <style>
+  #iftach_pic {  background-image: url(iftach_pic_back.jpg);  }
+
+ .shadow2 {box-shadow: 5px 5px 20px #888888; border-radius : 8px ; }
+  .backup {   background-position :top   }
+  .backdown {    background-position : bottom   }
+
+  </style>
+   <script>
+
+
+   $(document).ready(function(){
+
+
+
+
+
+ $('#iftach_pic').click(function(){$(this).toggleClass("backdown").fadeIn(3000)});
+
+       });
+
+   </script>
+
+
+</head>
+
+<body>
+
+</body>
+<div style="width : 192px ; height:233px"   alt="" class="backup shadow2" id="iftach_pic"></div>
+
+</html>
