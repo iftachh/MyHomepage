@@ -54,6 +54,94 @@ strong, b {    color : #636363 }
 
 </script>
 
+
+<!-- Google Analytics -->
+<script>
+/**
+ * Creates a temporary global ga object and loads analy  tics.js.
+ * Paramenters o, a, and m are all used internally.  They could have been declared using 'var',
+ * instead they are declared as parameters to save 4 bytes ('var ').
+ *
+ * @param {Window}      i The global context object.
+ * @param {Document}    s The DOM document object.
+ * @param {string}      o Must be 'script'.
+ * @param {string}      g URL of the analytics.js script. Inherits protocol from page.
+ * @param {string}      r Global name of analytics object.  Defaults to 'ga'.
+ * @param {DOMElement?} a Async script tag.
+ * @param {DOMElement?} m First script tag in document.
+ */
+(function(i, s, o, g, r, a, m){
+  i['GoogleAnalyticsObject'] = r; // Acts as a pointer to support renaming.
+
+  // Creates an initial ga() function.  The queued commands will be executed once analytics.js loads.
+  i[r] = i[r] || function() {
+    (i[r].q = i[r].q || []).push(arguments)
+  },
+
+  // Sets the time (as an integer) this tag was executed.  Used for timing hits.
+  i[r].l = 1 * new Date();
+
+  // Insert the script tag asynchronously.  Inserts above current tag to prevent blocking in
+  // addition to using the async attribute.
+  a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-4194129-2', 'auto'); // Creates the tracker with default parameters.
+ga('send', 'pageview');            // Sends a pageview hit.
+</script>
+
+<!-- End Google Analytics -->
+
+
+<!--LOAD JQUERY GOOGLE ANALYTICS OUTBOUND LINKS TRACKER - TEST-->
+<script>
+/* Attach tracking to all download & external links */
+var _gaq = _gaq || [];
+
+function _gaLt(event){
+    var el = event.srcElement || event.target;
+
+    /* Loop through parent elements if clicked element is not a link (ie: <a><img /></a> */
+    while(el && (typeof el.tagName == 'undefined' || el.tagName.toLowerCase() != 'a' || !el.href))
+        el = el.parentNode;
+
+    if(el && el.href){
+        dl = document.location;
+        l = dl.pathname + dl.search;
+        h = el.href;
+        c = !1;
+        if(h.indexOf(location.host) == -1){
+            c = "Outgoing Links";
+            a = h;
+        }
+        else if(h.match(/\/assets\//) && !h.match(/\.(jpe?g|pdf|ps|pptx|ppsx)$/i)){
+            c = "Downloads";
+            a = h.match(/\/assets\/(.*)/)[1];
+        }
+        if(c){
+            _gaq.push(["_trackEvent",c,a,l]);
+            /* Push secondary tracker if set */
+            _gaq2 && _gaq.push(["b._trackEvent",c,a,l]);
+            /* if target not set delay opening of window by 0.5s to allow tracking */
+            if(!el.target || el.target.match(/^_(self|parent|top)$/i)){
+                setTimeout(function(){
+                    document.location.href = el.href;
+                }.bind(el),500);
+                /* Prevent standard click */
+                event.preventDefault ? event.preventDefault() : event.returnValue = !1;
+            }
+        }
+
+    }
+}
+
+var d = document;
+d.addEventListener ? d.addEventListener("click",_gaLt,!1) : d.attachEvent && d.attachEvent("onclick",_gaLt);
+</script>
 </head>
 <body>
 <div id=wrapall>
@@ -1029,14 +1117,6 @@ an implementation of OT based on any dense TDP.
 </p>
 <p align="justify"> </p>
 </div> <!--wrapall-->
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-4194129-2']);
-_gaq.push(['_trackPageview']);
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
+
+
 </body></html>
