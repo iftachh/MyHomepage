@@ -282,6 +282,28 @@ The prizes are given for outstanding papers published in SIAM journals during th
 
 <li>
 <p>
+Iftach Haitner and  <a href="http://www.cs.technion.ac.il/%7Eyuvali/">Yuval Ishai</a> and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a>  and and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a><br>
+<strong>Lower Bounds for Secure Multiparty Computation Without Broadcast </strong>  <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span><br>
+Crypto 2015<br>
+</p>
+
+
+<div class="box">
+<p>
+Motivated by the goal of constructing efficient hash functions, we investigate the possibility of hashing a long message by only making parallel,
+non-adaptive calls to a hash function on short messages. Our main result is a simple construction of a collision-resistant hash function <span class=blu2>h:{0,1}<sup>k</sup> <td>&#8594;</td> {0,1}<sup>k</sup> </span> that makes a polynomial number of parallel calls to a \emph{random} function <span class=blu2> f:{0,1}<sup>k</sup> <td>&#8594;</td> {0,1}<sup>k</sup> </span>, for any polynomial <span class=blu2> n=n(k) </span>.  This should be compared with the traditional use of a Merkle hash tree, that  requires at least <span class=blu2> log(n/k)</span> rounds of calls to <span class=blu2>f</span>, and with a more complex construction of  <span class=blu1> Maurer and Tessaro (Crypto 2007)</span> that requires two rounds of calls to  <span class=blu2>f</span>. We also show that our hash function  <span class=blu2>h</span> satisfies a relaxed form of the notion of indifferentiability of  <span class=blu1> Maurer et al. (TCC 2004)</span> that suffices for implementing the Fiat-Shamir paradigm. As a corollary, we get sublinear-communication non-interactive arguments for NP that only make two rounds of calls to a small random oracle.
+
+An attractive feature of our construction is that  <span class=blu2>h</span> can be implemented by boolean circuits that only contain parity gates in addition to the parallel calls to  <span class=blu2>f</span>. Thus, we get the first domain-extension scheme which is   <em>degree-preserving</em> in the sense that the algebraic degree of  <span class=blu2>h</span> over the binary field is equal to that of  <span class=blu2>f</span>
+
+Our construction makes use of <em>list-recoverable codes</em>, a generalization of list-decodable codes that is closely related to the notion of randomness condensers. We show that list-recoverable codes are necessary for any construction of this type.
+</p>
+</div>
+
+
+
+<li>
+<p>
 <a href="http://u.cs.biu.ac.il/~cohenrb/">Ran Cohen</a> and Iftach Haitner and  <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> <br>
 <strong>Lower Bounds for Secure Multiparty Computation Without Broadcast </strong>  <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span><br>
@@ -296,8 +318,7 @@ A major challenge in the study of cryptography is characterizing the necessary a
 The focus of this work is the necessity of a broadcast channel for secure multiparty computation, involving three or more parties. 
 We show that if one third of the parties might be corrupted, broadcast is necessary for securely computing any symmetric <span class=blu2>n</span>-party 
 functionality that is not an
-<span class=blu2>n/3</span>-junta; a functionality is a <span class=blu2>k</span>-junta, if any <span class=blu2>k</span>-size subset of its input variables can be set to determine its output. The
-above immediately yields that securely computing (in the presence of one-third corruptions) non-junta symmetric functionalities, 
+<span class=blu2>n/3</span>-junta; a functionality is a <span class=blu2>k</span>-junta, if any <span class=blu2>k</span>-size subset of its input variables can be set to determine its output. The above immediately yields that securely computing (in the presence of one-third corruptions) non-junta symmetric functionalities, 
 like Boolean XOR, requires broadcast. It also shows the necessity of broadcast for securely computing symmetric random functionalities like coin-flipping
 protocols (in which all honest parties must output a common value). The above characterization is 
 tight for three-party symmetric functionalities that can be securely computed with broadcast (e.g., Boolean OR), since 
