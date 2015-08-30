@@ -318,7 +318,7 @@ Our construction makes use of <em>list-recoverable codes</em>, a generalization 
 <li>
 <p>
 <a href="http://u.cs.biu.ac.il/~cohenrb/">Ran Cohen</a> and Iftach Haitner and  <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> <br>
-<strong>Lower Bounds for Secure Multiparty Computation Without Broadcast </strong>  <img src="new.png" class=update1><br>
+<strong>Characterization of Secure Multiparty Computation Without Broadcast </strong>  <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span><br>
 Manuscript 2015<br>
 Draft of full version <a href="papers/NoBroadcastCoin/MPCNoBroadcast.pdf">[pdf]</a> 
@@ -327,17 +327,19 @@ Draft of full version <a href="papers/NoBroadcastCoin/MPCNoBroadcast.pdf">[pdf]<
 
 <div class="box">
 <p>
-A major challenge in the study of cryptography is characterizing the necessary and sufficient assumptions required to conduct a given cryptographic task. 
-The focus of this work is the necessity of a broadcast channel for secure multiparty computation, involving three or more parties. 
-We show that if one third of the parties might be corrupted, broadcast is necessary for securely computing any symmetric <span class=blu2>n</span>-party 
-functionality that is not an
-<span class=blu2>n/3</span>-junta; a functionality is a <span class=blu2>k</span>-junta, if any <span class=blu2>k</span>-size subset of its input variables can be set to determine its output. The above immediately yields that securely computing (in the presence of one-third corruptions) non-junta symmetric functionalities, 
-like Boolean XOR, requires broadcast. It also shows the necessity of broadcast for securely computing symmetric random functionalities like coin-flipping
-protocols (in which all honest parties must output a common value). The above characterization is 
-tight for three-party symmetric functionalities that can be securely computed with broadcast (e.g., Boolean OR), since 
-<span class=blu1>Cohen and Lindell [Asiacrypt ’14]</span> showed that such three-party <span class=blu2>1</span>-junta
-symmetric functionalities, can be securely computed without broadcast. Our proof employs a novel extension of the well-known hexagon argument of 
-<span class=blu1>Fischer et al. [PODC ’85]</span>, for the case of non-junta randomized functionalities.
+ A major challenge in the study of cryptography is characterizing the necessary and sufficient assumptions required to carry out a given cryptographic task. The focus of this work is the necessity of a broadcast channel for securely computing symmetric functionalities (where all the parties receive the same output) when one third of the parties, or more, might be corrupted. Assuming all parties are connected via a peer-to-peer network, but no broadcast channel (nor a secure setup phase) is available, we prove the following characterization:<br>
+
+ <ul>
+ <li>
+    A symmetric <span class=blu2>n</span>-party functionality can be securely computed facing <span class=blu2> n/3 &#8804 t &#60 n/2</span>  corruptions (i.e., honest majority), if and only if it is <em><span class=blu2>(n-2t)</span>-dominated</em> a functionality is <span class=blu2>k</span>-dominated, if <em>any</em> <span class=blu2>k</span>-size subset of its input variables can be set to <em>determine</em> its output.
+ </li> 	
+  	
+	
+<li>	
+    Assuming the existence of one-way functions, a symmetric <span class=blu2>n</span>-party functionality can be securely computed facing <br><span class=blu2>t &#8805 n/2</span> corruptions (i.e., no honest majority), if and only if it is <span class=blu2>1</span>-dominated and can be securely computed with broadcast.
+ </li> 	
+</ul>
+  It follows that, in case a third of the parties might be corrupted, broadcast is necessary for securely computing non-dominated functionalities (in which ``small'' subsets of the inputs cannot determine the output), including, as interesting special cases, the Boolean XOR and coin-flipping functionalities.
 </p>
 </div>
 </li>
