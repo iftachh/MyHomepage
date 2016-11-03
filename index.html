@@ -354,57 +354,29 @@ SODA 2017 <a href="papers/3PartyCF/ManyPartyCF_SODA.pdf">[pdf]</a><br>
 <div class="box">
 <p>
 In a multi-party  fair coin-flipping protocol, the parties output a common (close to) unbiased  bit, even when some corrupted parties try to bias the output. 
-In this work we focus on the case of dishonest majority, i.e.,  at least half of the parties can be corrupted.  <span class=blu1> Cleve [STOC 1986] </span> has shown that in <b> any</b> <span class=blu2>m</span>-round coin-flipping protocol the corrupted parties can bias the honest parties' common output bit 
-by <span class=blu2> &Omega;(1/m)</span>. 
-For more than two decades the best known coin-flipping protocols against  majority was the protocol of <span class=blu1> Awerbuch, Blum, Chor, Goldwasser, and Micali [Manuscript 1985]</span>, who presented a <span class=blu2>t</span>-party, <span class=blu2>m</span>-round  protocol with bias  
+In this work we focus on the case of arbitrary number of corrupted parties.  <span class=blu1> Cleve [STOC 1986] </span> has shown that in <b> any</b> such <span class=blu2>m</span>-round coin-flipping protocol, the corrupted parties can bias the honest parties' 
+common output bit  by <span class=blu2> &Omega;(1/m)</span>. For more than two decades, however,  the best known coin-flipping protocol was the one of <span class=blu1> Awerbuch, Blum, Chor, Goldwasser, and Micali [Manuscript 1985]</span>, who presented a <span class=blu2>t</span>-party, <span class=blu2>m</span>-round  protocol with bias  
 <span class=blu2> &Theta;(&radic;<span style="text-decoration:overline;">t</span>/m)</span>. This was changed by a recent breakthrough result of <span class=blu1> Moran et al. [TCC 2009]</span>,
-who constructed an <span class=blu2>m</span>-round,
-two-party coin-flipping protocol with optimal bias <span class=blu2>&Theta;(1/m)</span>. 
+who constructed an <span class=blu2>m</span>-round, two-party coin-flipping protocol with optimal bias <span class=blu2>&Theta;(1/m)</span>. 
 Recently, <span class=blu1> Haitner and Tsfadia [STOC 14] </span>  constructed an <span class=blu2>m</span>-round, three-party coin-flipping protocol with  bias  <span class=blu2> O((log  m)<sup>3</sup>/m</span>. 
-Still for the case of more than three parties,  against arbitrary number of corruptions, the best known protocol remained the <span class=blu2> &Theta;(&radic;<span style="text-decoration:overline;">t</span>/m)</span>-bias protocol of <span class=blu1> Awerbuch et al</span>.
+Still for the case of more than three parties,  the best known protocol remained the <span class=blu2> &Theta;(&radic;<span style="text-decoration:overline;">t</span>/m)</span>-bias protocol of <span class=blu1> Awerbuch et al</span>.
 
 <br>
-We make a step towards eliminating the above gap, presenting a <span class=blu2>t</span>-party,  <span class=blu2>m</span>-round coin-flipping protocol, with bias <span class=blu2>O(t^3 * 2<sup>t</sup> * &radic;<span style="text-decoration:overline;">log m</span>/ m<sup>.5 + 1/(2<sup>t-1</sup>-2)</span>.
- This improves upon the  protocol of <span class=blu1> Awerbuch et al.</span> for any<span class=blu2>t< loglog m/2</span>, and in particular for <span class=blu2>t &#8712 O(1)</span>,  this yields an <span class=blu2>1/m<sup>.5+ &Theta;(1)</sup></span>-bias protocol. For the three-party case, 
-this yields an <span class=blu2> O(&radic;<span style="text-decoration:overline;">log m</span>/m)</span>-bias protocol,  improving over the protocol  of  <span class=blu1> Haitner and Tsfadia </span>.  Our protocol generalizes that of  <span class=blu1> Haitner and Tsfadia </span> 
-by presenting an appropriate ``defense protocols'' for the remaining parties to interact in, in the case that some parties abort or caught cheating.
-
+We make a step towards eliminating the above gap, presenting a <span class=blu2>t</span>-party,  <span class=blu2>m</span>-round coin-flipping protocol, 
+with bias <span class=blu2>O(t^3 * 2<sup>t</sup> * &radic;<span style="text-decoration:overline;">log m</span>/ m<sup>.5 + 1/(2<sup>t-1</sup>-2)</sup>)</span>.
+ This improves upon the  protocol of <span class=blu1> Awerbuch et al.</span> for any <span class=blu2>t< loglog m /2</span>, and in particular for <span class=blu2>t &#8712 O(1)</span>,  it is a <span class=blu2>1/m<sup>.5+ &Theta;(1)</sup></span>-bias protocol. For the three-party case, 
+is is a <span class=blu2> O(&radic;<span style="text-decoration:overline;">log m</span>/m)</span>-bias protocol,  improving over the protocol  of  <span class=blu1> Haitner and Tsfadia </span>.  
 <br>
-We analyze  our new protocols by  presenting  a new paradigm for analyzing fairness of coin-flipping protocols. We map the set of adversarial strategies that try to bias the honest parties outcome in the protocol to the set of the feasible solutions of a linear program. The gain each strategy achieves is the value of the corresponding solution. We then bound the the optimal value of the linear program by constructing a feasible solution to its dual.
+
+Our protocol generalizes that of  <span class=blu1> Haitner and Tsfadia </span> 
+by presenting an appropriate ``defense protocols'' for the remaining parties to interact in, in the case that some parties abort or caught cheating. 
+We analyze  the new protocols by  presenting  a new paradigm for analyzing fairness of coin-flipping protocols. We map the set of adversarial strategies that try to bias the honest parties outcome in the protocol to the set of the feasible solutions of a linear program. The gain each strategy achieves is the value of the corresponding solution. We then bound the the optimal value of the linear program by constructing a feasible solution to its dual.
 
 </p>
 </div>
 </li>
 
 
-<div class="box">
-<p>
-In a multiparty, fair coin-flipping protocol, the parties output a common (close to) unbiased bit, even when some  corrupted parties try to bias the output.
-<span class=blu1> Cleve [STOC 1986] </span> has shown that in the case of dishonest
-majority (i.e., at least half of the parties can be corrupted), the  corrupted parties can bias the honest parties common output bit
-by  <span class=blu2> &Omega;(1/m)</span>, in any m-round, coin-flipping protocol. For more than two decades, however, the best known
-coin-flipping protocols had bias <span class=blu2> &Theta;(&radic;<span style="text-decoration:overline;">t</span>)</span> 
-against dishonest majority, where <span class=blu2>t</span> is the number of
-corrupted parties. This was changed by a recent breakthrough result of <span class=blu1> Moran et al. [TCC 2009]</span>,
-who constructed an <span class=blu2>m</span>-round,
-two-party coin-flipping protocol with optimal bias <span class=blu2>&Theta;(1/m)</span>. Where in a
-subsequent work, <span class=blu1> Beimel et al. [Crypto 2010]</span> extended this result for the multiparty
-case, in which less than  <span class=blu2> <sup>2</sup>⁄<sub>3</sub></span> of case, in which less than  <span class=blu2> <sup>2</sup>⁄<sub>3</sub></span> of
-the parties can be corrupted. More specifically, for any <span class=blu2> t &lt; <sup>2</sup>⁄<sub>3</sub>
-· k </span>, they presented an <span class=blu2>m</span>-round, <span class=blu2>k</span>-party
-protocol, with bias <span class=blu2>&Theta;( 2<sup>2t−k</sup>/m)</span> against (up to) <span class=blu2>t</span>
-corrupted parties. Still for the case  <span class=blu2> <sup>2</sup>⁄<sub>3</sub></span>
-(or more) corrupted parties, the best known protocol had bias <span class=blu2> &Theta;(t/&radic;<span style="text-decoration:overline;">m</span>)</span>. In particular,
-this was the state of affairs for the natural three-party case (against
-two corrupted parties).<br>
-<br>
-We make a step towards eliminating the above gap, presenting an m-round, three-party,
-coin-flipping protocol, with bias <span class=blu2> O(log 3 m)/m</span>. Our approach (which we also apply for the two-party case), does not
-follow the “threshold round” paradigm used in the work of Moran et al. and Beimel et al.,
-but rather is a takeoff of the majority protocol of Cleve (used to obtain the <span class=blu2> &Theta;(&radic;<span style="text-decoration:overline;">t</span>)</span>-bias protocol,
-mentioned above).
-</p>
-</div>
 
 
 
