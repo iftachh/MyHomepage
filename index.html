@@ -179,7 +179,7 @@ Complexity.<br></p>
 
 <b>Postdocs</b><br>
 <ul>
-<li>   <a href="http://www.cs.tau.ac.il/~cohenran/">Ran Choen</a></li>
+<li>   <a href="http://www.cs.tau.ac.il/~cohenran/">Ran Cohen</a></li>
 <li>   <a href="http://wicom.upf.edu/node/98">Nikolaos Makriyannis</a></li>
 </ul>
 <br>
@@ -343,8 +343,8 @@ See the <a href="http://cpiis.cs.tau.ac.il/content/call-postdocs-interns">TAU cr
 
 
 <li>
-Niv Buchbinder and Iftach Haitner and Nissan Levi and Eliad Tsfadia <br>
-<strong>Fair Coin Flipping: Tighter Analysis  and the Many-Party Case</strong><br>
+<a href="http://www.tau.ac.il/~nivb/">Niv Buchbinder</a>  and Iftach Haitner and Nissan Levi and Eliad Tsfadia <br>
+<strong>Fair Coin Flipping: Tighter Analysis and the Many-Party Case</strong>  <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span>  <!-- <a href="papers/3PartyCF/ManyPartySeminar.ppsx">[slides]</a> --> <br>
 SODA 2017 <a href="papers/3PartyCF/ManyPartyCF_SODA.pdf">[pdf]</a><br>
 <!-- Draft of dull version <a href="papers/3PartyCF/ManyParty_Full.pdf">[pdf]</a> <img src="up.png" class=update1> -->
@@ -377,34 +377,9 @@ We analyze  the new protocols by  presenting  a new paradigm for analyzing fairn
 </li>
 
 
-
-
-
 <li>
 <p>
-Iftach Haitner and  <a href="http://www.cs.technion.ac.il/%7Eyuvali/">Yuval Ishai</a> and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a>  and and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a><br>
-<strong>Parallel Hashing via List Recoverability</strong>  <img src="new.png" class=update1><br>
-<span class=abslide>[abstract]</span><br>
-Crypto 2015  <a href="papers/CRHDomainExtension/CRH_Crypto.pdf">[pdf]</a><br>
-</p>
-
-
-<div class="box">
-<p>
-Motivated by the goal of constructing efficient hash functions, we investigate the possibility of hashing a long message by only making parallel,
-non-adaptive calls to a hash function on short messages. Our main result is a simple construction of a collision-resistant hash function <span class=blu2>h:{0,1}<sup>k</sup> <td>&#8594;</td> {0,1}<sup>k</sup> </span> that makes a polynomial number of parallel calls to a \emph{random} function <span class=blu2> f:{0,1}<sup>k</sup> <td>&#8594;</td> {0,1}<sup>k</sup> </span>, for any polynomial <span class=blu2> n=n(k) </span>.  This should be compared with the traditional use of a Merkle hash tree, that  requires at least <span class=blu2> log(n/k)</span> rounds of calls to <span class=blu2>f</span>, and with a more complex construction of  <span class=blu1> Maurer and Tessaro (Crypto 2007)</span> that requires two rounds of calls to  <span class=blu2>f</span>. We also show that our hash function  <span class=blu2>h</span> satisfies a relaxed form of the notion of indifferentiability of  <span class=blu1> Maurer et al. (TCC 2004)</span> that suffices for implementing the Fiat-Shamir paradigm. As a corollary, we get sublinear-communication non-interactive arguments for NP that only make two rounds of calls to a small random oracle.
-
-An attractive feature of our construction is that  <span class=blu2>h</span> can be implemented by boolean circuits that only contain parity gates in addition to the parallel calls to  <span class=blu2>f</span>. Thus, we get the first domain-extension scheme which is   <em>degree-preserving</em> in the sense that the algebraic degree of  <span class=blu2>h</span> over the binary field is equal to that of  <span class=blu2>f</span>
-
-Our construction makes use of <em>list-recoverable codes</em>, a generalization of list-decodable codes that is closely related to the notion of randomness condensers. We show that list-recoverable codes are necessary for any construction of this type.
-</p>
-</div>
-
-
-
-<li>
-<p>
-<a href="http://u.cs.biu.ac.il/~cohenrb/">Ran Cohen</a> and Iftach Haitner and  <a href="http://omrier.wix.com/eran-omri">Eran Omri</a>  and Lior Rotem<br>
+<a href="http://www.cs.tau.ac.il/~cohenran/">Ran Cohen</a> and Iftach Haitner and  <a href="http://omrier.wix.com/eran-omri">Eran Omri</a>  and Lior Rotem<br>
 <strong>Characterization of Secure Multiparty Computation Without Broadcast </strong>  <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span><br>
 TCC 2016-A <a  href="http://link.springer.com/chapter/10.1007/978-3-662-49096-9_25">[link]</a><br>
@@ -431,6 +406,60 @@ Draft of full version <a href="papers/NoBroadcastCoin/MPCNoBroadcast.pdf">[pdf]<
 </div>
 </li>
 
+
+
+
+<li>
+<p>
+Iftach Haitner and  <a href="http://www.cs.technion.ac.il/%7Eyuvali/">Yuval Ishai</a> and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a>  and and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a><br>
+<strong>Parallel Hashing via List Recoverability</strong> <!-- <img src="new.png" class=update1> --><br>
+<span class=abslide>[abstract]</span><br>
+Crypto 2015  <a href="papers/CRHDomainExtension/CRH_Crypto.pdf">[pdf]</a><br>
+</p>
+
+
+<div class="box">
+<p>
+Motivated by the goal of constructing efficient hash functions, we investigate the possibility of hashing a long message by only making parallel,
+non-adaptive calls to a hash function on short messages. Our main result is a simple construction of a collision-resistant hash function <span class=blu2>h:{0,1}<sup>k</sup> <td>&#8594;</td> {0,1}<sup>k</sup> </span> that makes a polynomial number of parallel calls to a \emph{random} function <span class=blu2> f:{0,1}<sup>k</sup> <td>&#8594;</td> {0,1}<sup>k</sup> </span>, for any polynomial <span class=blu2> n=n(k) </span>.  This should be compared with the traditional use of a Merkle hash tree, that  requires at least <span class=blu2> log(n/k)</span> rounds of calls to <span class=blu2>f</span>, and with a more complex construction of  <span class=blu1> Maurer and Tessaro (Crypto 2007)</span> that requires two rounds of calls to  <span class=blu2>f</span>. We also show that our hash function  <span class=blu2>h</span> satisfies a relaxed form of the notion of indifferentiability of  <span class=blu1> Maurer et al. (TCC 2004)</span> that suffices for implementing the Fiat-Shamir paradigm. As a corollary, we get sublinear-communication non-interactive arguments for NP that only make two rounds of calls to a small random oracle.
+
+An attractive feature of our construction is that  <span class=blu2>h</span> can be implemented by boolean circuits that only contain parity gates in addition to the parallel calls to  <span class=blu2>f</span>. Thus, we get the first domain-extension scheme which is   <em>degree-preserving</em> in the sense that the algebraic degree of  <span class=blu2>h</span> over the binary field is equal to that of  <span class=blu2>f</span>
+
+Our construction makes use of <em>list-recoverable codes</em>, a generalization of list-decodable codes that is closely related to the notion of randomness condensers. We show that list-recoverable codes are necessary for any construction of this type.
+</p>
+</div>
+
+
+
+
+<li>
+<p><a name="HHRSJoint"></a> 
+Iftach Haitner, <a href="http://www.wisdom.weizmann.ac.il/%7Eyaakovh">Jonathan J. Hoch</a>, <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold">Omer Reingold</a>
+and <a href="http://www.wisdom.weizmann.ac.il/%7Egils/">Gil Segev</a><br>
+<strong>Finding Collisions in Interactive Protocols — Tight Lower Bounds on the Round Complexity and Communication Complexityof Statistically Hiding Commitments </strong>
+<br>
+<span class=abslide>[abstract]</span><br>
+SIAM Journal of Computing 2015 <a  href="http://epubs.siam.org/doi/abs/10.1137/130938438">[link]</a><br>
+
+Draft of full version <a href="papers/FindingCollisions/FindingCollisions_Joint.pdf"> [pdf]</a>  <img src="up.png" class=update1>
+</p>
+
+
+<div class="box" >
+<p>
+We study the round complexity and communication complexity of various cryptographic protocols. We give tight lower bounds on the 
+round complexity and communication complexity of any fully black-box reduction of a statistically hiding commitment scheme from one-way
+permutations, and from trapdoor permutations. As a corollary, we derive  similar tight lower bounds for several other cryptographic protocols,
+such as single-server private information retrieval, interactive hashing, and oblivious transfer that guarantees statistical security
+for one of the parties. Our techniques extend the collision-finding oracle due to <span class=blu1>Simon [EUROCRYPT 98] </span> to the setting of interactive protocols, 
+and the reconstruction paradigm of
+
+In their seminal work, Impagliazzo and Rudich (STOC’89) showed that no key-agreement protocol exists in the random-oracle model, yielding that key agreement cannot be black-box reduced to one-way functions. In this work, we generalize their result, showing that, to a large extent, no-private-input, semi-honest, two-party functionalities that can be securely implemented in the random oracle model can be securely implemented information theoretically (where parties are assumed to be all powerful, and no oracle is given). Using a recent information-theoretic impossibility result by McGregor et al. (FOCS’10), our result yields that certain functionalities (e.g. inner product) cannot be computed both in an accurately and in a differentially private manner in the random oracle model, implying that protocols for computing these functionalities cannot be black-box reduced to the existence of one-way functions.
+Gennaro and Trevisan [FOCS 00]</span>.
+</p>
+</div>
+</li>
+
 <li>
 <p>
 <a href="http://www.cs.tau.ac.il/%7Eitayberm/">Itay Berman</a> and Iftach Haitner and  <a href="http://cs.nyu.edu/%7Etentes/Homepage.html">Aris Tentes</a><br>
@@ -451,14 +480,12 @@ Haitner and Omri, our result holds also for <em>weak</em> coin-flipping protocol
 </div>
 </li>
 
-
-
 <li>
 Iftach Haitner and Eliad Tsfadia <br>
 <strong>An Almost-Optimally Fair Three-Party Coin-Flipping Protocol</strong><br>
 <span class=abslide>[abstract]</span> <a href="papers/3PartyCF/3Party-full.ppsx">[slides]</a> <br>
 STOC 2014 <a href="papers/3PartyCF/QuasiOptimalCF_CR.pdf">[pdf]</a><br>
-Draft of dull version <a href="papers/3PartyCF/QuasiOptimalCF_Full.pdf">[pdf]</a> <img src="up.png" class=update1>
+Draft of full version <a href="papers/3PartyCF/QuasiOptimalCF_Full.pdf">[pdf]</a> <img src="up.png" class=update1><br><br>
 
 
 
@@ -493,34 +520,24 @@ mentioned above).
 </li>
 
 
+
 <li>
-<p><a name="HHRSJoint"></a> 
-Iftach Haitner, <a href="http://www.wisdom.weizmann.ac.il/%7Eyaakovh">Jonathan J. Hoch</a>, <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold">Omer Reingold</a>
-and <a href="http://www.wisdom.weizmann.ac.il/%7Egils/">Gil Segev</a><br>
-<strong>Finding Collisions in Interactive Protocols — Tight Lower Bounds on the Round Complexity and Communication Complexityof Statistically Hiding Commitments </strong>
-<br>
+Iftach Haitner and <a href="http://u.cs.biu.ac.il/%7Eomrier/">Eran Omri</a> and <a href="http://u.cs.biu.ac.il/%7Ezarosih/">Hila Zarosim</a><br>
+<strong>Limits on the Usefulness of Random Oracles</strong> <br>
 <span class=abslide>[abstract]</span><br>
-SIAM Journal of Computing 2015 <a  href="http://epubs.siam.org/doi/abs/10.1137/130938438">[link]</a><br>
-
-Draft of full version <a href="papers/FindingCollisions/FindingCollisions_Joint.pdf"> [pdf]</a>  <img src="up.png" class=update1>
-</p>
-
-
-<div class="box" >
-<p>
-We study the round complexity and communication complexity of various cryptographic protocols. We give tight lower bounds on the 
-round complexity and communication complexity of any fully black-box reduction of a statistically hiding commitment scheme from one-way
-permutations, and from trapdoor permutations. As a corollary, we derive  similar tight lower bounds for several other cryptographic protocols,
-such as single-server private information retrieval, interactive hashing, and oblivious transfer that guarantees statistical security
-for one of the parties. Our techniques extend the collision-finding oracle due to <span class=blu1>Simon [EUROCRYPT 98] </span> to the setting of interactive protocols, 
-and the reconstruction paradigm of
-
-In their seminal work, Impagliazzo and Rudich (STOC’89) showed that no key-agreement protocol exists in the random-oracle model, yielding that key agreement cannot be black-box reduced to one-way functions. In this work, we generalize their result, showing that, to a large extent, no-private-input, semi-honest, two-party functionalities that can be securely implemented in the random oracle model can be securely implemented information theoretically (where parties are assumed to be all powerful, and no oracle is given). Using a recent information-theoretic impossibility result by McGregor et al. (FOCS’10), our result yields that certain functionalities (e.g. inner product) cannot be computed both in an accurately and in a differentially private manner in the random oracle model, implying that protocols for computing these functionalities cannot be black-box reduced to the existence of one-way functions.
-Gennaro and Trevisan [FOCS 00]</span>.
-</p>
+Journal of Cryptology 2014  <a  href="http://link.springer.com/article/10.1007/s00145-014-9194-9?sa_campaign=email/event/articleAuthor/onlineFirst">[link]</a><br>
+TCC 2013 <a href="papers/PowerofRO1/PowerOfRO_TCC.pdf">[pdf]</a><br>
+Draft of full version  <a href="papers/PowerofRO1/PowerOfRO.pdf">[pdf]</a></p>
+<div class="box">
+In their seminal work, <span class=blu1>Impagliazzo and Rudich [STOC’89]</span> showed that no key-agreement protocol exists in the random-oracle model,
+yielding that key agreement cannot be black-box reduced to one-way functions. 
+In this work, we generalize their result, showing that, to a large extent, no-private-input, semi-honest, two-party functionalities that can
+be securely implemented in the random oracle model can be securely implemented information theoretically (where parties are assumed to be all powerful, 
+and no oracle is given). Using a recent information-theoretic impossibility result by <span class=blu1> McGregor et al. [FOCS’10]</span>, 
+our result yields that certain functionalities (e.g. inner product) cannot be computed both in an accurately and in a differentially private manner in the 
+random oracle model,  implying that protocols for computing these functionalities cannot be black-box reduced to the existence of one-way functions.
 </div>
 </li>
-
 
 
 <li>
@@ -551,23 +568,7 @@ is exponentially small in the non cryptographic work.<br>
 </div>
 </li>
 
-<li>
-Iftach Haitner and <a href="http://u.cs.biu.ac.il/%7Eomrier/">Eran Omri</a> and <a href="http://u.cs.biu.ac.il/%7Ezarosih/">Hila Zarosim</a><br>
-<strong>Limits on the Usefulness of Random Oracles</strong> <br>
-<span class=abslide>[abstract]</span><br>
-Journal of Cryptology 2014  <a  href="http://link.springer.com/article/10.1007/s00145-014-9194-9?sa_campaign=email/event/articleAuthor/onlineFirst">[link]</a><br>
-TCC 2013 <a href="papers/PowerofRO1/PowerOfRO_TCC.pdf">[pdf]</a><br>
-Draft of full version  <a href="papers/PowerofRO1/PowerOfRO.pdf">[pdf]</a></p>
-<div class="box">
-In their seminal work, <span class=blu1>Impagliazzo and Rudich [STOC’89]</span> showed that no key-agreement protocol exists in the random-oracle model,
-yielding that key agreement cannot be black-box reduced to one-way functions. 
-In this work, we generalize their result, showing that, to a large extent, no-private-input, semi-honest, two-party functionalities that can
-be securely implemented in the random oracle model can be securely implemented information theoretically (where parties are assumed to be all powerful, 
-and no oracle is given). Using a recent information-theoretic impossibility result by <span class=blu1> McGregor et al. [FOCS’10]</span>, 
-our result yields that certain functionalities (e.g. inner product) cannot be computed both in an accurately and in a differentially private manner in the 
-random oracle model,  implying that protocols for computing these functionalities cannot be black-box reduced to the existence of one-way functions.
-</div>
-</li>
+
 
 <li>
 <p>
@@ -619,6 +620,61 @@ bias (concretely,<span class=blu2>&radic;<span style="text-decoration:overline;"
 </div>
 </li>
 
+<li>
+<p>
+Iftach Haitner,   <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold">Omer Reingold</a> and <a href="http://www.eecs.harvard.edu/%7Esalil/">Salil Vadhan</a><br>
+<b>Efficiency Improvements in Constructing Pseudorandom Generators from One-way Functions</b><br>
+<span class=abslide>[abstract]</span> <a href="papers/HillRevisted/HillRevisted_Full.pptx">[slides]</a> <br>
+
+SIAM Journal of Computing 2013    <a  href="http://epubs.siam.org/doi/abs/10.1137/100814421">[link]</a><br>
+Annual ACM Symposium on Theory of Computing (STOC), 2010  <a href="papers/HillRevisted/HillRevisted_STOC.pdf">[pdf]</a><br>
+Draft of full version <a href="papers/HillRevisted/HillRevisted_Full.pdf">[pdf]</a>
+</p>
+
+<div class="box" >
+<p>
+We give a new construction of pseudorandom generators from any one-way
+function. The construction achieves better parameters and is simpler
+than that given in the seminal work of <span class=blu1> Håstad, Impagliazzo, Levin and Luby [SICOMP '99]</span>. 
+The key to our construction is a new notion of <strong>next-block pseudoentropy</strong>, which is inspired by the notion of
+``inaccessible entropy'' recently introduced in <span class=blu1> Haitner, Reingold,Vadhan and Wee [STOC '09]</span>. An additional advantage over all previous
+constructions is that our pseudorandom generators are highly parallelizable and invoke the one-way function in a non-adaptive
+manner. Using <span class=blu1>Applebaum, Ishai and Kushilevitz [SICOMP '06]</span>, this implies the existence of pseudorandom generators in 
+<span class=blu2>NC<sup>0</sup></span> based on the existence of one-way functions in <span class=blu2>NC<sup>1</sup></span>.
+</p>
+</div>
+</li>
+
+
+<li>
+<p>
+Iftach Haitner<br>
+<strong>A Parallel Repetition Theorem for Any Interactive Argument </strong><br>
+<span class=abslide>[abstract]</span> <a href="papers/ArgumentPR/Seminar.pptx">[slides]</a> <br>
+SIAM Journal of Computing 2013   <a  href="http://epubs.siam.org/doi/abs/10.1137/100810630">[link]</a><br>
+IEEE Symposium on Foundations of Computer Science (FOCS), 2009<br>
+Draft of full version <a href="papers/ArgumentPR/ArgumentPR.pdf">[pdf]</a>
+</p>
+
+<div class="box"  >
+<p>
+The question whether or not parallel repetition reduces the soundness error is a fundamental question in the theory of protocols. 
+While parallel repetition reduces (at an exponential rate) the error in interactive proofs and (at a weak exponential rate) in special cases of interactive
+arguments (e.g., 3-message protocols - <span class=blu1>Bellare, Impagliazzo and Naor [FOCS '97]</span>, and 
+public-coin protocols - <span class=blu1>Håstad, Pass, Pietrzak and
+WikstrÄom [TCC '10])</span>, Bellare et. al gave example of interactive arguments for which parallel repetition does not reduce the soundness
+error at <strong>all</strong>.<br>
+
+We show that by slightly modifying  <em>any</em> interactive argument, in a way that preserves its completeness and only
+slightly deteriorates its soundness, we get a protocol for which parallel repetition does reduce the error at a weak exponential rate.
+In this modified version, the verifier flips at the beginning of each round an <span class=blu2>(1 - (1/4m), 1/4m)</span> biased
+coin (i.e., <span class=blu2>1</span> is tossed with probability <span class=blu2>1/4m</span>), where <span class=blu2>m</span> is the round complexity of the
+(original) protocol. If the coin is one, the verifier halts the interaction and accepts, otherwise it sends the same message that the
+original verifier would. At the end of the protocol (if reached), the
+verifier accepts if and only if the original verifier would.
+</p>
+</div>
+</li>
 
 <li>
 <p> 
@@ -694,30 +750,7 @@ homomorphic encryption.
 </li>
 
 
-<li>
-<p>
-Iftach Haitner,   <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold">Omer Reingold</a> and <a href="http://www.eecs.harvard.edu/%7Esalil/">Salil Vadhan</a><br>
-<b>Efficiency Improvements in Constructing Pseudorandom Generators from One-way Functions</b><br>
-<span class=abslide>[abstract]</span> <a href="papers/HillRevisted/HillRevisted_Full.pptx">[slides]</a> <br><br>
 
-SIAM Journal of Computing 2013    <a  href="http://epubs.siam.org/doi/abs/10.1137/100814421">[link]</a><br>
-Annual ACM Symposium on Theory of Computing (STOC), 2010  <a href="papers/HillRevisted/HillRevisted_STOC.pdf">[pdf]</a><br>
-Draft of full version <a href="papers/HillRevisted/HillRevisted_Full.pdf">[pdf]</a>
-</p>
-
-<div class="box" >
-<p>
-We give a new construction of pseudorandom generators from any one-way
-function. The construction achieves better parameters and is simpler
-than that given in the seminal work of <span class=blu1> Håstad, Impagliazzo, Levin and Luby [SICOMP '99]</span>. 
-The key to our construction is a new notion of <strong>next-block pseudoentropy</strong>, which is inspired by the notion of
-``inaccessible entropy'' recently introduced in <span class=blu1> Haitner, Reingold,Vadhan and Wee [STOC '09]</span>. An additional advantage over all previous
-constructions is that our pseudorandom generators are highly parallelizable and invoke the one-way function in a non-adaptive
-manner. Using <span class=blu1>Applebaum, Ishai and Kushilevitz [SICOMP '06]</span>, this implies the existence of pseudorandom generators in 
-<span class=blu2>NC<sup>0</sup></span> based on the existence of one-way functions in <span class=blu2>NC<sup>1</sup></span>.
-</p>
-</div>
-</li>
 
 <li>
 <p>
@@ -842,35 +875,7 @@ as the verifier is also given a good approximation of the value <span class=blu2
 </div>
 </li>
 
-<li>
-<p>
-Iftach Haitner<br>
-<strong>A Parallel Repetition Theorem for Any Interactive Argument </strong><br>
-<span class=abslide>[abstract]</span> <a href="papers/ArgumentPR/Seminar.pptx">[slides]</a> <br>
-SIAM Journal of Computing 2013   <a  href="http://epubs.siam.org/doi/abs/10.1137/100810630">[link]</a><br>
-IEEE Symposium on Foundations of Computer Science (FOCS), 2009<br>
-Draft of full version <a href="papers/ArgumentPR/ArgumentPR.pdf">[pdf]</a>
-</p>
 
-<div class="box"  >
-<p>
-The question whether or not parallel repetition reduces the soundness error is a fundamental question in the theory of protocols. 
-While parallel repetition reduces (at an exponential rate) the error in interactive proofs and (at a weak exponential rate) in special cases of interactive
-arguments (e.g., 3-message protocols - <span class=blu1>Bellare, Impagliazzo and Naor [FOCS '97]</span>, and 
-public-coin protocols - <span class=blu1>Håstad, Pass, Pietrzak and
-WikstrÄom [TCC '10])</span>, Bellare et. al gave example of interactive arguments for which parallel repetition does not reduce the soundness
-error at <strong>all</strong>.<br>
-
-We show that by slightly modifying  <em>any</em> interactive argument, in a way that preserves its completeness and only
-slightly deteriorates its soundness, we get a protocol for which parallel repetition does reduce the error at a weak exponential rate.
-In this modified version, the verifier flips at the beginning of each round an <span class=blu2>(1 - (1/4m), 1/4m)</span> biased
-coin (i.e., <span class=blu2>1</span> is tossed with probability <span class=blu2>1/4m</span>), where <span class=blu2>m</span> is the round complexity of the
-(original) protocol. If the coin is one, the verifier halts the interaction and accepts, otherwise it sends the same message that the
-original verifier would. At the end of the protocol (if reached), the
-verifier accepts if and only if the original verifier would.
-</p>
-</div>
-</li>
 
 <li>
 <p><a name="HONRV"></a>
