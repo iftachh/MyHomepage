@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta charset=utf-8">
+ <title>Seminar on  Differential Privacy</title> 
+ <style>td{text-align:center;padding:5px} </style>
+</head>
+
+<body style = "padding-left:40px; font-size:120%">
+
+
+<h1><span style="FONT-SIZE: 26pt">Seminar on  Differential Privacy <br> </span>  <span style="FONT-SIZE: 18pt">Id: 0368418701</span></h1> 
+
+
+<img alt="" height="334" src="dp.jpg" width="500"><br>
+                                                            
+<h2 style="FONT-SIZE: 20pt"> <a href="http://www.cs.tau.ac.il/%7Eiftachh/">Iftach Haitner</a> and Nikolaos Makriyannis</h2>
+
+
+<span style="FONT-SIZE: 20pt"> Tuesdays: 10:00-12:00,  Room: ?</span> <br><br><br>
+                                                                                              
+
+Differential Privacy is an exciting mathematically rigorous definition of data privacy. After defining Differential Privacy, we we will  motivate and discuss the meaning of this definition,  and learn the fundamental techniques for achieving it.  
+
+In most parts, the seminar will  follow the <a href="https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf">The Algorithmic Foundations
+of Differential Privacy</a>  monograph by by Cynthia Dwork and Aaron Roth.<br><br>
+ 
+In each meeting one student will cover a single topic as listed below. <br><br>
+	
+
+<h2>Prerequisites</h2>
+This is an advanced seminar, so background in the theory of computation (Algorithm, Computability, Complexity) is required. Students with particularly strong math background
+are also welcome. 
+<!-- Cryptography course, like Foundation of Cryptography or Introduction to Modern Cryptography,  recommended but not required. 
+--!>
+
+<h3>Undergrad students</h3>	 Third year students who are <b> willing to work hard</b>, are welcome to join the seminar, but please consult me via email before registering.
+
+
+<h2>Presentations</h2>
+Power Point presentations are acceptable, but white boards ones are preferable.<br>
+To do a good job one needs to <strong>read background material</strong>, see the reading section. <br> 
+
+In addition, the speakers of the week will have to give me a <strong>practice talk</strong> a week before (right after the talk of that week).
+
+
+<br> <br>
+<h2>Topics and schedule </h2> 
+
+Will be published before before spring semester starts.
+<!--
+(see Additional reading for further reading on your lecture topic)
+<br> <br>
+
+ 
+
+<table  border=1 style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-COLLAPSE:
+ collapse; BORDER-TOP: medium none; BORDER-RIGHT: medium none" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+ 
+ 
+ <tr> 
+    	<td> # </td> <td> When </td> <td> Who </td> <td> What </td>     
+ </tr>
+ 
+
+<tr  style= "BACKGROUND: rgb(149,179,215) 0% 50%">
+    	<td> 1 </td> <td> 14/03 </td> <td> Ran Cohen  </td> 
+	<td> 
+	<div align="left">
+	<b>Introduction</b> <br> <i></i> 
+	</div>
+	</td>     
+</tr>
+
+<tr  style= "BACKGROUND: rgb(250,191,143) 0% 50%">
+   	<td> 2 </td> <td> 21/03 </td> <td> Nathanel Ozeri   </td> 
+	<td> 
+	<div align="left">
+	<b>Definitions for two-party computation</b> (semi-honest and malicious) <br> 
+	<i>[HL10] sections 2.1-2.3</i> 
+	</div>
+	</td>     
+ </tr>
+
+
+ <tr  style= "BACKGROUND: rgb(255,0,0) 0% 50%">
+   	<td> </td> <td> 28/03 </td> <td> NO CLASS </td> <td> <span style= "color:#3300CC"></span>  <br> <i></i> </td>     
+ </tr>
+
+<tr  style= "BACKGROUND: rgb(250,191,143) 0% 50%">
+	<td> 3 </td> <td> 04/04 </td> <td> Shlomi Shamir
+   </td> 
+	<td> 
+	<div align="left">
+	<b>Yao's Garbled Circuit</b> (semi-honest two-party protocol)<br> 
+	<i>[HL10] sections 3.1-3.4 (section 3.2 only at a high level)</i> 
+	</div>
+	</td>     
+ </tr>
+
+ 
+<tr  style= "BACKGROUND: rgb(149,179,215) 0% 50%">
+	<td> 4 </td> <td> 05/04 (Wednesday!)</td> <td>  Gal Arnon  </td> 
+	<td>  
+	<div align="left">
+	<b>Oblivious transfer</b><br>  
+	<ul> 
+		<li> 
+		1-out-of-k OT from 1-out-of-2 OT: <i>[<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4568208" target="_blank">BCR86</a>] section 2.2</i>
+		</li>
+		<li> 
+		Precomputing OT: <i>[<a href="http://link.springer.com/chapter/10.1007%2F3-540-44750-4_8" target="_blank">Bea95</a>] sections 3.1 and 3.2</i>
+		</li>
+		<li> 
+		OT extension: <i>[<a href="http://drona.csa.iisc.ernet.in/~arpita/StudyGroupOT15/BeaSTOC96.pdf" target="_blank">Bea96</a>] section 3</i>
+		</li>
+		<li> 
+		OT is symmetric: <i>[<a href="https://eprint.iacr.org/2004/336.pdf" target="_blank">WW06</a>] section 4</i>
+		</li>
+	</ul> 
+	</div>
+	</td>
+</tr>
+
+ <tr  style= "BACKGROUND: rgb(250,191,143) 0% 50%"> 
+	 <td> 5 </td> <td>  25/4  </td> <td> Noam Nissan</td> 
+	<td>
+	<div align="left">
+	<b>GMW protocol</b> (semi-honest multi-party protocol)<br>
+	<i>[Gol04] sections 7.3.3, 7.3.4, and 7.5.2</i>
+	</div>
+	</td>   	 
+ </tr>
+
+ <tr  style= "BACKGROUND: rgb(149,179,215) 0% 50%">
+   
+	<td> 6 </td> <td>  09/05  </td> <td>
+Lev Pachmanov </td> 
+	<td> 
+	<div align="left">
+	<b>BGW protocol</b> (unconditionally secure MPC for honest majority)<br>
+	<i>[<a href="https://eprint.iacr.org/2011/136.pdf" target="_blank">AL17</a>] sections 3 and 4</i> 
+	</div>
+	</td>    
+ </tr>
+ 
+ <tr  style= "BACKGROUND: rgb(250,191,143) 0% 50%">
+    	<td> 7 </td> <td>   16/05  </td> <td> Adam Alon  </td> 
+	<td> 
+	<div align="left">
+	<b>BMR protocol</b> (constant-round MPC)<br>
+	<i>[<a href="http://www.cs.stevens.edu/~nicolosi/classes/12fa-cs693/final/f2-1.pdf" target="_blank">BNP08</a>] sections 3 and 4</i> 
+	</div>
+	</td>        
+ </tr>
+
+ <tr  style= "BACKGROUND: rgb(149,179,215) 0% 50%">
+	<td> 8 </td> <td> 23/05 </td> <td> Doron Sobol   </td> 
+	<td>  	
+	<div align="left">
+	<b>GMW compiler</b> (enforcing semi-honest behavior)<br>
+	<i>[Gol04] sections 7.4.1, 7.4.3, and 7.4.4</i>
+	</div>
+	</td>     
+ </tr>
+
+ <tr  style= "BACKGROUND: rgb(250,191,143) 0% 50%">
+      	<td> 9 </td> <td> 06/06 </td> <td>Jhonatan Tavori</td> 
+	<td>  
+	<div align="left">
+	<b>IKOS zero-knowledge proofs</b> (two-party ZKP from MPC)<br>
+	<i>[<a href="http://web.cs.ucla.edu/~rafail/PUBLIC/77.pdf" target="_blank">IKOS09</a>]</i>
+	</div>
+	</td>     
+ </tr>
+ 
+ 
+ <tr  style= "BACKGROUND: rgb(149,179,215) 0% 50%">
+    	<td> 10 </td> <td> 13/06  </td> <td> Assaf Yifrach </td> 
+	<td> 
+	<div align="left">
+	<b>Cut and choose</b> (Yao's protocol for malicious adversaries)<br>
+	<i>[<a href="https://eprint.iacr.org/2010/284.pdf" target="_blank">LP12</a>]</i>
+	</div>
+	</td>     
+ </tr>
+
+ <tr  style= "BACKGROUND: rgb(250,191,143) 0% 50%">    
+	<td> 11 </td> <td> 20/06    </td> <td> ? </td> 
+	<td> 
+	<div align="left">
+	<b>Sigma protocols</b><br>
+	<i> [HL10] sections 4.1-4.3</i>
+	</div>
+	</td>   
+ </tr>
+ 
+<tr  style= "BACKGROUND: rgb(149,179,215) 0% 50%">
+    	<td> 12 </td> <td> 27/06 </td> <td> ? </td> 
+	<td> 	
+	<div align="left">
+	<b>Secure computation of specific functionalities</b><br>	
+	<ul> 
+		<li> 
+		Finding the median: <i>[HL10] chapter 8</i>
+		</li>
+		<li> 
+		Private set intersection: <i>[<a href="http://www.pinkas.net/PAPERS/FNP04.pdf" target="_blank">FNP04</a>]</i>
+		</li>
+	</ul> 
+	</div>
+	</td>     
+ </tr>
+ 
+</tbody>
+</table>
+--!> 
+
+<br><br> 
+
+
+<h2> Additional Reading</h2>
+Will be published before before spring semester starts.
+
+<!--
+<ul> 
+	<li> 
+		<b>Lecture 2</b><br>
+		<ul> 
+			<li> 
+			[Gol04] Section 7.2
+			</li>
+			<li> 
+			First BIU winter school (Lindell) [<a href="https://www.youtube.com/watch?v=z3U-5mf6hGw" target="_blank">video</a>]
+			</li>
+			<li> 
+			Fifth BIU winter school (Lindell) [<a href="https://www.youtube.com/watch?v=C6WRWtym2JY&list=PLXF_IJaFk-9BFn8M-dsEm5x3-5Cvji3V9&index=1" target="_blank">video</a>]
+			</li>
+		</ul> 
+	</li>
+
+	<li> 
+		<b>Lecture 3</b><br>
+		<ul> 
+			<li> 
+			[<a href="https://eprint.iacr.org/2004/175.pdf" target="_blank">LP09</a>]
+			</li>
+			<li> 
+			First BIU winter school (Lindell) [<a href="https://www.youtube.com/watch?v=mtKCDJe4a48" target="_blank">video</a>]
+			</li>
+			<li> 
+			Fifth BIU winter school (Pinkas) [<a href="https://www.youtube.com/watch?v=GjhvJxelIVQ&index=2&list=PLXF_IJaFk-9BFn8M-dsEm5x3-5Cvji3V9" target="_blank">video</a>]
+			</li>
+		</ul> 
+	</li>
+
+	<li> 
+		<b>Lecture 4</b><br>
+		<ul> 
+			<li> 
+			[<a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=44A11189BAD0D5F91A8321D5D5DD4DEC?doi=10.1.1.10.2385&rep=rep1&type=pdf" target="_blank">IKNP03</a>] (introduction)
+			</li>
+		</ul> 
+	</li>
+
+	<li> 
+		<b>Lecture 5</b><br>
+		<ul> 
+			<li> 
+			[<a href="http://www.math.ias.edu/~avi/PUBLICATIONS/MYPAPERS/GMW87/GMW87.pdf" target="_blank">GMW87</a>]
+			</li>
+			<li> 
+			First BIU winter school (Pinkas) [<a href="https://www.youtube.com/watch?v=kiCv9qGn_8M" target="_blank">video</a>]
+			</li>
+			<li> 
+			Fifth BIU winter school (Pinkas) [<a href="https://www.youtube.com/watch?v=4YwvZaA9IEg&index=3&list=PLXF_IJaFk-9BFn8M-dsEm5x3-5Cvji3V9" target="_blank">video</a>]
+			</li>
+		</ul> 
+	</li>
+
+	<li> 
+		<b>Lecture 6</b><br>
+		<ul> 
+			<li> 
+			[<a href="https://pdfs.semanticscholar.org/bcb4/9a06e4fb7ea831257e146073d84234f4d238.pdf" target="_blank">BGW88</a>]
+			</li>
+			<li> 
+			First BIU winter school (Pinkas) [<a href="https://www.youtube.com/watch?v=bHQYUcMn1do" target="_blank">video</a>]
+			</li>
+		</ul> 
+	</li>
+
+	<li> 
+		<b>Lecture 7</b><br>
+		<ul> 
+			<li> 
+			[<a href="https://pdfs.semanticscholar.org/e530/2edfa2fa077525008333fcb56d9c2f3451ef.pdf" target="_blank">BMR90</a>]
+			</li>
+			<li> 
+			Fifth BIU winter school (Pinkas) [<a href="https://www.youtube.com/watch?v=GjhvJxelIVQ&index=2&list=PLXF_IJaFk-9BFn8M-dsEm5x3-5Cvji3V9" target="_blank">video</a>]
+			</li>
+		</ul> 
+	</li>
+
+	<li> 
+		<b>Lecture 8</b><br>
+		<ul> 
+			<li> 
+			Fifth BIU winter school (Lindell) [<a href="https://www.youtube.com/watch?v=kSrTHBPLsgE&index=5&list=PLXF_IJaFk-9BFn8M-dsEm5x3-5Cvji3V9" target="_blank">video</a>]
+			</li>
+		</ul> 
+	</li>
+
+	<li> 
+		<b>Lecture 9</b><br>
+		<ul> 
+			<li> 
+			First BIU winter school (Ishai) [<a href="https://www.youtube.com/watch?v=lCLkG4qxIWw" target="_blank">video</a>] (first half an hour)
+			</li>
+		</ul> 
+	</li>
+
+	<li> 
+		<b>Lecture 10</b>
+		<ul> 
+			<li> 
+			First BIU winter school (Lindell) [<a href="https://www.youtube.com/watch?v=Mheyw7fIc1Q" target="_blank">video</a>]
+			</li>
+		</ul> 
+	</li>
+
+
+	<li> 
+		<b>Lecture 11</b> 
+		<ul> 
+			<li> 
+			First BIU winter school (Lindell) [<a href="https://www.youtube.com/watch?v=nwsmG3S9wIc" target="_blank">video</a>]
+			</li>
+			<li> 
+			Fifth BIU winter school (Lindell) [<a href="https://www.youtube.com/watch?v=Vahw28dValA&index=4&list=PLXF_IJaFk-9BFn8M-dsEm5x3-5Cvji3V9" target="_blank">video</a>]
+			</li>
+		</ul> 
+	</li>
+
+	<li> 
+		<b>Lecture 12</b>
+		<ul> 
+			<li> 
+			[<a href="http://theory.stanford.edu/~nmishra/Papers/secureComputationMedianOtherElementsSpecifiedRanks.pdf" target="_blank">AMP10</a>]
+			</li>
+			<li> 
+			Fifth BIU winter school (Pinkas) [<a href="https://www.youtube.com/watch?v=WnHczokVDHc" target="_blank">video</a>]
+			</li>
+		</ul> 
+	</li>
+
+</ul> 
+
+
+<br> 
+
+--!>
+
+
+<!--
+<h2> References</h2>
+
+<ul> 
+	<li> 
+	[AL17]  G. Asharov and Y. Lindell. <I>A Full Proof of the BGW Protocol for Perfectly Secure Multiparty Computation.</I> Journal of Cryptology, 30(1): pages 58-15, 2017.
+	</li>
+	<li> 
+	[AMP10]  G. Aggarwal, N. Mishra and B. Pinkas. <I>Secure Computation of the Median (and Other Elements of Specified Ranks).</I> Journal of Cryptology, 23(3): pages 373-401, 2010. (Extended abstract appeared in EUROCRYPT 2004.)
+	</li>
+	<li> 
+	[BMR90]  D. Beaver, S. Micali and P. Rogaway. <I>The round complexity of secure protocols.</I> In 22nd STOC, 503–513, 1990.
+	</li>
+	<li> 
+	[Bea95]  D. Beaver. <I>Precomputing Oblivious Transfer.</I> In CRYPTO 1995, pages 97-109.
+	</li>
+	<li> 
+	[Bea96]  D. Beaver. <I>Correlated Pseudorandomness and the Complexity of Private Computations.</I> In 28th STOC, pages 479-488, 1996.
+	</li>
+	<li> 
+	[BGW88]  M. Ben-Or, S. Goldwasser and A. Wigderson. <I>Completeness Theorems for Non-Cryptographic Fault-Tolerant Distributed Computations.</I> In 20th STOC, pages 1-10, 1988.
+	</li>
+	<li> 
+	[BNP08]  A. Ben-David, N. Nisan and B. Pinkas. <I>FairplayMP: a system for secure multi-party computation.</I> ACM CCS 2008: 257-266.
+	</li>
+	<li> 
+	[BCR86]  G. Brassard, C. Crépeau and J. Robert. <I>All-or-Nothing Disclosure of Secrets.</I> CRYPTO 1986, pages 234-238.
+	</li>
+	<li> 
+	[FNP04]  M. J. Freedman, K. Nissim and B. Pinkas. <I>Efficient Private Matching and Set Intersection.</I> EUROCRYPT 2004, pages 1-19.
+	</li>
+	<li> 
+	[GMW87]  O. Goldreich, S. Micali and A. Wigderson. <I>How to Play Any Mental Game – A Completeness Theorem for Protocols with Honest Majority.</I> In 19th STOC, pages 218–229, 1987.
+	</li>
+	<li> 
+	[Gol04]  O. Goldreich. <I>Foundations of Cryptography: Volume 2 – Basic Applications.</I> Cambridge University Press, 2004.
+
+	</li>
+	<li> 
+	[HL10]  C. Hazay and Y. Lindell. <I>Efficient Secure Two-Party Protocols: Techniques and Constructions.</I> Springer, 2010.
+
+	</li>
+	<li> 
+	[IKNP03]  Y. Ishai, J. Kilian, K. Nissim, E. Petrank. <I>Extending Oblivious Transfers Efficiently.</I>  In CRYPTO 2003, pages 145-161.
+	</li>
+	<li> 
+	[IKOS09]  Y. Ishai, E. Kushilevitz, R. Ostrovsky and A. Sahai. <I>Zero-Knowledge Proofs from Secure Multiparty Computation.</I>  SIAM Journal of Computation 39(3): 1121-1152, 2009. (Extended abstract appeared in STOC 2007.)
+	</li>
+	<li> 
+	[LP09]  Y. Lindell and B. Pinkas. <I>A Proof of Security of Yao’s Protocol for Two-Party Computation.</I> Journal of Cryptology, 22(2):161–188, 2009.
+	</li>
+	<li> 
+	[LP12]  Y. Lindell and B. Pinkas. <I>Secure Two-Party Computation via Cut-and-Choose Oblivious Transfer.</I> Journal of Cryptology, 25(4):680-722, 2012. (Extended abstract appeared in TCC 2011.)
+	</li>
+	<li> 
+	[WW06]  S. Wolf and J. Wullschleger. <I>Oblivious Transfer Is Symmetric.</I> In EUROCRYPT 2006, pages 222-232.
+	</li>
+</ul> 
+  
+<br>
+
+--!>
+  </body>
+</html>
