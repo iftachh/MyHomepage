@@ -348,6 +348,36 @@ See the <a href="http://cpiis.cs.tau.ac.il/postdoc-fellowships-internships/">TAU
 <ul id=pub1>
 
 <li>
+<a href="https://www.cs.bgu.ac.il/~beimel/">Amos Beimel </a> and Iftach Haitner and Nikolaos Makriyannis</a> and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> <br>
+<strong>Tighter Bounds on Multi-Party Coin Flipping, via
+Augmented Weak Martingales and Dierentially Private Sampling</strong>  <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span>   <a href="papers/FairCoinLB/FairCoinLB.pdf">[pdf]</a><br><br>
+
+
+
+
+<div class="box">
+<p>
+In his seminal work, <span class=blu1> Cleve [STOC 1986] </span>  has proved that any <span class=blu2> r</span>-round coin-flipping protocol
+can be efficiently biassed by <span class=blu2> &Omega;(1/r)</span>. The above lower bound was met for the two-party case by
+<span class=blu1> Moran, Naor, and Segev [Journal of Cryptology '16]</span>, and the three-party case (up to a polylog
+factor) by <span class=blu1>  Haitner and Tsfadia [SICOMP '17]</span>, and was approached for <span class=blu2> n</span>-party protocols when <span class=blu2>n < loglog r </span> by Buchbinder, <span class=blu1> Haitner, Levi, and Tsfadia [SODA '17]</span>. For <span class=blu2> n > loglog r</span>, however,
+the best bias for  <span class=blu2>n</span>-party coin-flipping protocols remains <span class=blu2> &Theta;(n/&radic;<span style="text-decoration:overline;">r</span>)</span> achieved by the majority
+protocol of  <span class=blu1> Awerbuch, Blum, Chor, Goldwasser, and Micali [Manuscript '85]</span>.<br><br>
+
+Our main result is a tighter lower bound on the bias of coin-flipping protocols, showing that, for every constant <span class=blu2> &epsilon; > 0</span>, an <span class=blu2> r<sup>&epsilon;</sup></span>-party <span class=blu2> r</span>-round coin-flipping protocol can be efficiently biased by <span class=blu2> &Omega;(1/&radic;<span style="text-decoration:overline;">r</span>)</span>. As far as we know, this is the rst improvement of Cleve's bound that holds in the
+standard model, and is only <span class=blu2> r<sup>&epsilon;</sup></span> (multiplicative) far from the aforementioned upper bound of <span class=blu1>  Awerbuch et al</span>.<br><br>
+
+For proving the above lower bound, we present two new results that we believe are of independent interest. The first result is that a sequence of (augmented) weak martingales have large gap: with constant probability there exists two adjacent variables whose gap is at least
+the ratio between the gap between the first and last variables and the square root of the number
+of variables. This generalizes the result of <span class=blu1> Cleve and Impagliazzo [Manuscript '93]</span>, who proved
+that the above holds for strong martingales. The second result is a new sampling algorithm that
+uses a differentially private mechanism to minimize the effect of data divergence.</p>
+</div>
+</li>
+
+
+<li>
 Iftach Haitner and <a href="http://www.eecs.harvard.edu/%7Esalil/"> Salil Vadhan </a> <br>
 <strong>The Many Entropies in One-Way Functions</strong>  <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span>   <a href="papers/ManyEntInOWF/ManyEntInOWF_SingleFile.pdf">[pdf]</a><br>
@@ -520,7 +550,7 @@ In a multiparty, fair coin-flipping protocol, the parties output a common (close
 <span class=blu1> Cleve [STOC 1986] </span> has shown that in the case of dishonest
 majority (i.e., at least half of the parties can be corrupted), the  corrupted parties can bias the honest parties common output bit
 by  <span class=blu2> &Omega;(1/m)</span>, in any m-round, coin-flipping protocol. For more than two decades, however, the best known
-coin-flipping protocols had bias <span class=blu2> &Theta;(&radic;<span style="text-decoration:overline;">t</span>)</span> 
+coin-flipping protocols had bias <span class=blu2> &Theta;(t/&radic;<span style="text-decoration:overline;">m</span>)</span> 
 against dishonest majority, where <span class=blu2>t</span> is the number of
 corrupted parties. This was changed by a recent breakthrough result of <span class=blu1> Moran et al. [TCC 2009]</span>,
 who constructed an <span class=blu2>m</span>-round,
