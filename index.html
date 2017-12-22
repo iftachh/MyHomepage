@@ -347,6 +347,53 @@ See the <a href="http://cpiis.cs.tau.ac.il/postdoc-fellowships-internships/">TAU
 
 <ul id=pub1>
 
+
+<li>
+Iftach Haitner  and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> and <a href="http://people.cs.georgetown.edu/~kobbi/">Kobbi Nissim</a> and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a> and  Jad Silbak<br>
+<strong>Computational Two-Party Correlation</strong>  <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span>   <a href="papers/ComputationalCor/ComputationalCorrelation.pdf">[pdf]</a><br><br>
+
+
+
+
+<div class="box">
+<p>
+We prove a dichotomy theorem for two-party protocols, and show that for every poly-time
+two-party protocol with single-bit output, at least one of following holds:<br><br>
+
+<ul>  
+
+<li> The protocol can be used to construct a key-agreement protocol.</li> <br>
+
+<li> For every constant <span class=blu2>&rho; > 0</span> the parties' output is <em> <span class=blu2>&rho;</span>-uncorrelated</em>: let  <span class=blu2>(X; Y; T)</span> denote the
+parties' outputs and the protocol's transcript respectively. A protocol is <span class=blu2>&rho;</span>-uncorrelated if
+there exists an efficient "decorralizer" algorithm Decor, that when given a random transcript
+<span class=blu2>T</span>, produces two numbers <span class=blu2>P<sub>A</sub>; P<sub>B</sub></span>, such that no efficient algorithm can distinguish
+<span class=blu2>  (U<sub>P<sub>A</sub></sub> ;U<sub>P<sub>B</sub></sub> ; T)</span> (where <span class=blu2> U<sub>p</sub></span> 
+denotes a biassed coin with bias <span class=blu2> p</span> from <span class=blu2>(X; Y; T)</span>, with distinguishing
+advantage larger than <span class=blu2>&rho;</span>.</li><br>
+</ul> 
+Namely, if the protocol cannot be used to construct key-agreement, then its output distribution
+<span class=blu2>(X; Y; T)</span> is trivial: it can be simulated non-interactively by the parties given public
+randomness (used to sample <span class=blu2>T</span>). (The precise statement also has qualifiers of the form: "on
+infinitely many choices of the security parameter").<br>
+
+We use the above characterization to prove that <span class=blu2>(&alpha;= 24&epsilon;<sup>2</sup>)</span>-correct
+differentially private symmetric protocol for computing XOR, implies the existence of key-agreement protocol. The
+above dependency between <span class=blu2>&alpha;</span> and <span class=blu2>&epsilon;</span> is tight since an <span class=blu2>&Theta;(&epsilon;<sup>2</sup>)</span>-correct "-differentially private
+protocol for computing XOR is known to exists unconditionally. It also improves, in the <span class=blu2>(&epsilon;,&alpha;)</span>
+dependency aspect, upon <span class=blu1> Goyal et al. [ICALP '16] </span> who showed that, for some constant <span class=blu2>c > 0</span>,
+a <span class=blu2>c</span>-correct "-differentially private protocol for computing XOR implies oblivious transfer. Our
+result extends to a weaker notion of dierential privacy in which the privacy only requires to
+hold against external observer. Interestingly, the reductions used for proving the above results
+are non black box.
+</p>
+</div>
+</li>
+
+
+
+
 <li>
 <a href="https://www.cs.bgu.ac.il/~beimel/">Amos Beimel </a> and Iftach Haitner and Nikolaos Makriyannis</a> and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> <br>
 <strong>Tighter Bounds on Multi-Party Coin Flipping, via
@@ -465,7 +512,7 @@ Draft of full version <a href="papers/NoBroadcastCoin/MPCNoBroadcast.pdf">[pdf]<
 
 <li>
 <p>
-Iftach Haitner and  <a href="http://www.cs.technion.ac.il/%7Eyuvali/">Yuval Ishai</a> and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a>  and and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a><br>
+Iftach Haitner and  <a href="http://www.cs.technion.ac.il/%7Eyuvali/">Yuval Ishai</a> and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a>  and   <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a><br>
 <strong>Parallel Hashing via List Recoverability</strong> <!-- <img src="new.png" class=update1> --><br>
 <span class=abslide>[abstract]</span><br>
 Crypto 2015  <a href="papers/CRHDomainExtension/CRH_Crypto.pdf">[pdf]</a><br>
