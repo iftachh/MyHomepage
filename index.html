@@ -353,6 +353,38 @@ See the <a href="http://cpiis.cs.tau.ac.il/postdoc-fellowships-internships/">TAU
 
 
 <li>
+Iftach Haitner  and Noam Mazor and <a href="http://www.cs.tau.ac.il/~roshman/">Rotem Oshman</a> and  <a href="https://engineering.stanford.edu/people/omer-reingold">Omer Reingold</a> and  <a href="https://yehudayoff.net.technion.ac.il/">Amir Yehudayoff</a><br>
+<strong>On the Communication Complexity of Key-Agreement Protocols</strong>  <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span> <br>
+Draft of full version <a href="papers/KeyAgreementLB/KeyAgreementLB.pdf">[pdf]</a><br><br>
+
+<div class="box">
+<p>
+Key-agreement protocols whose security is proven in the random oracle model are an important alternative to the more common public-key based key-agreement protocols. In the random
+oracle model, the parties and the eavesdropper have access to a shared random function (an "oracle"), but they are limited in the number of queries they can make to it. Unfortunately,
+as shown by <span class=blu1> Impagliazzo and Rudich [STOC '89] and Barak and Mahmoody [Crypto '09]</span>, such
+protocols can only guarantee limited secrecy: the key of any <span class=blu2>&ell;</span>-query protocol can be revealed
+by an <span class=blu2>O(&ell;<sup>2</sup>)</span>-query adversary. This quadratic gap between the query complexity of the honest
+parties and the eavesdropper matches the gap obtained by the Merkle's Puzzles protocol of
+<span class=blu1>Merkle [CACM '78]</span>. <br><br>
+
+In this work we tackle a new aspect of key-agreement protocols in the random oracle model:
+their communication complexity. In Merkle's Puzzles, to obtain secrecy against an eavesdropper that makes roughly <span class=blu2>&ell;<sup>2</sup></span> queries, the honest parties need to exchange 
+<span class=blu2>&Omega;(&ell;)</span> bits. We show that for protocols with certain natural properties, ones that Merkle's Puzzle has, such high
+communication is unavoidable. Specifically, this is the case if the honest parties' queries are uniformly random, or alternatively if the protocol uses non-adaptive queries and has only two
+rounds. Our proof for the first setting uses a novel reduction from random-oracle protocols to
+the set-disjointness problem in two-party communication complexity, which is known to have
+high communication cost. For the second setting we prove the lower bound directly, using
+information-theoretic arguments.<br>
+
+Understanding the communication complexity of protocols whose security is proven in the
+random-oracle model is an important question in the study of practical protocols. Our results
+and proof techniques are a first step in this direction.
+</p>
+</div>
+</li>
+
+<li>
 Iftach Haitner  and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> and <a href="http://people.cs.georgetown.edu/~kobbi/">Kobbi Nissim</a> and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a> and  Jad Silbak<br>
 <strong>Computational Two-Party Correlation</strong>  <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span> <br>
