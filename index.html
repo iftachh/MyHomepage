@@ -315,19 +315,22 @@ The prizes are given for outstanding papers published in SIAM journals during th
 <h2> Teaching  </h2>
 <ul>
 
+<li><a href="http://moodle.tau.ac.il/course/view.php?id=368220001">Computational Models (Fall 18)</a></li>
+
+ <li><a href="http://moodle.tau.ac.il/course/view.php?id=368419701"> Seminar on pseudorandomness (student seminar)&nbsp; (Fall 18)</a></li>
+
+
 <li><a href="http://www.cs.tau.ac.il/%7Eiftachh/Courses/Info/Spring18/index.html"> Applications of Information Theory&nbsp; (Spring 18)</a></li>
 	
  <li><a href="http://www.cs.tau.ac.il/%7Eiftachh/Courses/Seminars/DP/Spring18.html"> Seminar on Differential Privacy (student seminar)&nbsp; (Spring 18)</a></li>
 
-
-<li><a href="http://moodle.tau.ac.il/2017/course/view.php?id=368220001">Computational Models (Fall 17)</a></li>
 
 
  <li><a  href="http://moodle.tau.ac.il/2016/course/view.php?id=368413101"> Foundation  of Cryptography, Advanced Topics (Spring 17)</a></li>
 
  <li><a  href="http://moodle.tau.ac.il/2016/course/view.php?id=368416201">Foundation  of Cryptography, the Basics (Fall 16)</a></li>
 
-  <li><a href="http://www.cs.tau.ac.il/%7Eiftachh/Courses/Seminars/MPC/Spring17.html"> Multi Party Computation (student seminar)&nbsp; (Spring 17)</a></li>
+  <li><a href="http://www.cs.tau.ac.il/%7Eiftachh/Courses/Seminars/MPC/Spring17.html"> Multi-Party Computation (student seminar)&nbsp; (Spring 17)</a></li>
 
   
 
@@ -367,6 +370,7 @@ See the <a href="http://cpiis.cs.tau.ac.il/postdoc-fellowships-internships/">TAU
 Iftach Haitner and Nikolaos Makriyannis</a> and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> <br>
 <strong>On the Complexity of Fair Coin Flipping</strong>  <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span> <br>
+TCC 2018<br>
 Draft of full version  <a href="papers/CFtoKA/TwoPartyCoinFlipToKA.pdf">[pdf]</a><br><br>
 
 
@@ -393,42 +397,13 @@ case, the recent attack of <span class=blu1>  Beimel et al [ECCC '17]</span> on 
 </li>
 
 
-<li>
-Iftach Haitner  and Noam Mazor and <a href="http://www.cs.tau.ac.il/~roshman/">Rotem Oshman</a> and  <a href="https://engineering.stanford.edu/people/omer-reingold">Omer Reingold</a> and  <a href="https://yehudayoff.net.technion.ac.il/">Amir Yehudayoff</a><br>
-<strong>On the Communication Complexity of Key-Agreement Protocols</strong>  <img src="new.png" class=update1><br>
-<span class=abslide>[abstract]</span> <br>
-Draft of full version <a href="papers/KeyAgreementLB/KeyAgreementLB.pdf">[pdf]</a><br><br>
 
-<div class="box">
-<p>
-Key-agreement protocols whose security is proven in the random oracle model are an important alternative to the more common public-key based key-agreement protocols. In the random
-oracle model, the parties and the eavesdropper have access to a shared random function (an "oracle"), but they are limited in the number of queries they can make to it. Unfortunately,
-as shown by <span class=blu1> Impagliazzo and Rudich [STOC '89] and Barak and Mahmoody [Crypto '09]</span>, such
-protocols can only guarantee limited secrecy: the key of any <span class=blu2>&ell;</span>-query protocol can be revealed
-by an <span class=blu2>O(&ell;<sup>2</sup>)</span>-query adversary. This quadratic gap between the query complexity of the honest
-parties and the eavesdropper matches the gap obtained by the Merkle's Puzzles protocol of
-<span class=blu1>Merkle [CACM '78]</span>. <br><br>
-
-In this work we tackle a new aspect of key-agreement protocols in the random oracle model:
-their communication complexity. In Merkle's Puzzles, to obtain secrecy against an eavesdropper that makes roughly <span class=blu2>&ell;<sup>2</sup></span> queries, the honest parties need to exchange 
-<span class=blu2>&Omega;(&ell;)</span> bits. We show that for protocols with certain natural properties, ones that Merkle's Puzzle has, such high
-communication is unavoidable. Specifically, this is the case if the honest parties' queries are uniformly random, or alternatively if the protocol uses non-adaptive queries and has only two
-rounds. Our proof for the first setting uses a novel reduction from random-oracle protocols to
-the set-disjointness problem in two-party communication complexity, which is known to have
-high communication cost. For the second setting we prove the lower bound directly, using
-information-theoretic arguments.<br>
-
-Understanding the communication complexity of protocols whose security is proven in the
-random-oracle model is an important question in the study of practical protocols. Our results
-and proof techniques are a first step in this direction.
-</p>
-</div>
-</li>
 
 <li>
 Iftach Haitner  and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> and <a href="http://people.cs.georgetown.edu/~kobbi/">Kobbi Nissim</a> and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a> and  Jad Silbak<br>
 <strong>Computational Two-Party Correlation</strong>  <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span> <br>
+FOCS 2018<br>
 Draft of full version <a href="papers/ComputationalCorrelation/ComputationalCorrelation.pdf">[pdf]</a><br><br>
 
 <div class="box">
@@ -500,8 +475,9 @@ setup, and is in some sense non-black box.
 <li>
 <a href="https://www.cs.bgu.ac.il/~beimel/">Amos Beimel </a> and Iftach Haitner and Nikolaos Makriyannis</a> and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> <br>
 <strong>Tighter Bounds on Multi-Party Coin Flipping, via
-Augmented Weak Martingales and Differentially Private Sampling</strong>  <img src="new.png" class=update1><br>
+Augmented Weak Martingales and Dierentially Private Sampling</strong>  <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span> <br>
+FOCS 2018<br>
 Draft of full version  <a href="papers/FairCoinLB/FairCoinLB.pdf">[pdf]</a><br><br>
 
 
@@ -528,6 +504,63 @@ uses a differentially private mechanism to minimize the effect of data divergenc
 </li>
 
 
+<li>
+<p>
+<a href="http://www.cs.tau.ac.il/~cohenran/">Ran Cohen</a> and Iftach Haitner and  <a href="http://omrier.wix.com/eran-omri">Eran Omri</a>  and Lior Rotem<br>
+<strong>﻿From Fairness to Full Security in Multiparty Computation</strong> <br>
+<span class=abslide>[abstract]</span><br>
+SCN 2018<br>
+</p>
+
+
+<div class="box">
+<p>
+ ﻿In the setting of secure multiparty computation (MPC), a set of mutually distrusting parties wish to jointly compute a function, while guaranteeing the privacy of their inputs and the correctness of the output. An MPC protocol is called \emph{fully secure} if no adversary can prevent the honest parties from obtaining their outputs. A protocol is called \emph{fair} if an adversary can prematurely abort the computation, however, only before learning any new information.
+
+We present highly efficient transformations from fair computations to fully secure computations, assuming the fraction of honest parties is constant (e.g., $1\%$  of the parties are honest).
+Compared to previous transformations that require linear invocations (in the number of parties) of the fair computation, our transformation require super-logarithmic, and sometimes even super-constant, such invocations.
+The main idea is to delegate the computation to chosen random committees that invoke the fair computation. Apart from the benefit of uplifting security, the reduction in the number of parties is also useful, since only committee members are required to work, whereas the remaining parties simply ``listen'' to the computation over a broadcast channel.
+
+One application of these transformations is a new $\delta$-bias coin-flipping protocol,  whose round complexity has a super-logarithmic dependency on the number of parties, improving over the protocol of Beimel, Omri, and Orlov (Crypto 2010) that has a linear dependency. A second application is a new fully secure protocol for computing the Boolean OR function, with a super-constant round complexity, improving over the protocol of Gordon and Katz (TCC 2009) whose round complexity is linear in the number of parties.
+
+Finally, we show that our positive results are in a sense optimal, by proving that for some functionalities, a super-constant number of (sequential) invocations of the fair computation is necessary for computing the functionality in a fully secure manner.
+ 
+ </p>
+</div>
+</li>
+
+
+<li>
+Iftach Haitner  and Noam Mazor and <a href="http://www.cs.tau.ac.il/~roshman/">Rotem Oshman</a> and  <a href="https://engineering.stanford.edu/people/omer-reingold">Omer Reingold</a> and  <a href="https://yehudayoff.net.technion.ac.il/">Amir Yehudayoff</a><br>
+<strong>On the Communication Complexity of Key-Agreement Protocols</strong>  <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span> <br>
+Draft of full version <a href="papers/KeyAgreementLB/KeyAgreementLB.pdf">[pdf]</a><br><br>
+
+<div class="box">
+<p>
+Key-agreement protocols whose security is proven in the random oracle model are an important alternative to the more common public-key based key-agreement protocols. In the random
+oracle model, the parties and the eavesdropper have access to a shared random function (an "oracle"), but they are limited in the number of queries they can make to it. Unfortunately,
+as shown by <span class=blu1> Impagliazzo and Rudich [STOC '89] and Barak and Mahmoody [Crypto '09]</span>, such
+protocols can only guarantee limited secrecy: the key of any <span class=blu2>&ell;</span>-query protocol can be revealed
+by an <span class=blu2>O(&ell;<sup>2</sup>)</span>-query adversary. This quadratic gap between the query complexity of the honest
+parties and the eavesdropper matches the gap obtained by the Merkle's Puzzles protocol of
+<span class=blu1>Merkle [CACM '78]</span>. <br><br>
+
+In this work we tackle a new aspect of key-agreement protocols in the random oracle model:
+their communication complexity. In Merkle's Puzzles, to obtain secrecy against an eavesdropper that makes roughly <span class=blu2>&ell;<sup>2</sup></span> queries, the honest parties need to exchange 
+<span class=blu2>&Omega;(&ell;)</span> bits. We show that for protocols with certain natural properties, ones that Merkle's Puzzle has, such high
+communication is unavoidable. Specifically, this is the case if the honest parties' queries are uniformly random, or alternatively if the protocol uses non-adaptive queries and has only two
+rounds. Our proof for the first setting uses a novel reduction from random-oracle protocols to
+the set-disjointness problem in two-party communication complexity, which is known to have
+high communication cost. For the second setting we prove the lower bound directly, using
+information-theoretic arguments.<br>
+
+Understanding the communication complexity of protocols whose security is proven in the
+random-oracle model is an important question in the study of practical protocols. Our results
+and proof techniques are a first step in this direction.
+</p>
+</div>
+</li>
 <li>
 Iftach Haitner and <a href="http://www.eecs.harvard.edu/%7Esalil/"> Salil Vadhan </a> <br>
 <strong>The Many Entropies in One-Way Functions</strong> <br>
@@ -1402,7 +1435,7 @@ functions, and further develops them.
 <span class=abslide>[abstract]</span> <a href="papers/SCfromRegularOWF/SCfromRegularOWF.pps">[slides]</a><br>
 Journal of Cryptology 2009 <a  href="http://link.springer.com/content/pdf/10.1007/s00145-007-9012-8">[link]</a><br>
 Advances in Cryptology - Eurocrypt, 2005  <a href="papers/SCfromRegularOWF/SCfromRegularOWF-eurocrypt.pdf">[pdf]</a><br>
-Draft of full version  <a href="papers/SCfromRegularOWF/SCfromRegularOWF-JOC.pdf">[pdf]</a>
+Draft of full version  <a href="papers/SCfromRegularOWF/SCfromRegularOWF.pdf">[pdf]</a>
 </p>
 <div class="box"  >
 <p>
