@@ -265,6 +265,7 @@ The prizes are given for outstanding papers published in SIAM journals during th
 
 <b>Grants</b><br>
 <ul>
+<li>[2020-2021] Blavatnik ICRC (Interdisciplinary Cyber Research) -- Group grant. </li>
 <li>[2019-2023] Israel  Science Foundation (ISF) -- Individual research grant. </li>
 <li>[2015-2020] European Research Council (ERC) Starting Grant  -- Individual research grant. </li>
 <li>[2015-2018] Blavatnik ICRC (Interdisciplinary Cyber Research) -- Group grant. </li>
@@ -411,6 +412,75 @@ See the <a href="http://cpiis.cs.tau.ac.il/postdoc-fellowships-internships/">TAU
 
 
 <li>
+Dror Chawin and Iftach Haitner and Noam Mazor. <br>
+<strong>Lower Bounds on the Time/Memory Tradeoff of Function Inversion</strong>  <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span> <br>
+Manuscript 2020<br>
+Draft of full version  <a href="papers/TimeMemTO/TimeMemTO.pdf">[pdf]</a><br><br>
+
+<div class="box">
+<p>
+
+</p>
+</div>
+</li>
+
+<li>
+Iftach Haitner and Yonatan Karidi-Heller. <br>
+<strong>A Tight Lower Bound on Adaptively Secure Full-Information Coin Flip</strong>  <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span> <br>
+Manuscript 2020<br>
+Draft of full version  <a href="papers/FullCoin/FullCoin.pdf">[pdf]</a><br><br>
+
+<div class="box">
+<p>
+In a distributed coin-flipping protocol, Blum [ACM Transactions on Computer Systems '83],
+the parties try to output a common (close to) uniform bit, even when some adversarially chosen parties try to bias the common output. In an adaptively secure full-information coin flip, Ben-Or and Linial [FOCS '85], the parties communicate over a broadcast channel and a computationally unbounded adversary can choose which parties to corrupt during the protocol execution. Ben-Or and Linial proved that the n-party majority protocol is resilient to o(n)  corruptions (ignoring log factors), and conjectured this is a tight upper bound for any n-party protocol (of any round complexity). Their conjecture was proved to be correct for single-turn (each party sends a single message) single-bit (a message is one bit) protocols, Lichtenstein, Linial, and Saks [Combinatorica '89], symmetric protocols Goldwasser, Kalai, and Park [ICALP '15], and recently for (arbitrary message length) single-turn protocols Tauman Kalai, Komargodski, and Raz [DISC '18]. Yet, the question for many-turn (even single-bit) protocols was left completely open.
+
+In this work we close the above gap, proving that no n-party protocol (of any round complexity) is resilient to O(n)  (adaptive) corruptions.
+</p>
+</div>
+</li>
+
+
+<li>
+<a href="http://people.csail.mit.edu/itayberm/">Itay Berman</a> and Iftach Haitner and Eliad Tsfadia. <br>
+<strong>A Tight Parallel Repetition Theorem for Partially Simulatable Interactive Arguments via Smooth KL-Divergence</strong>  <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span> <br>
+Crypto 2020<br>
+Draft of full version  <a href="papers/TightPR/TightPR.pdf">[pdf]</a><br><br>
+
+<div class="box">
+<p>
+Hardness amplification is a central problem in the study of interactive protocols. 
+While "natural" parallel repetition transformation is known to reduce the soundness error of some special cases of interactive arguments: 
+ three-message protocols (<span class=blu1>Bellare, Impagliazzo, and Naor[FOCS '97]</span>) and public-coin protocols (<span class=blu1>Haastad, Pass, Wilkstrom, and Pietrzak [TCC '10]</span>,<span class=blu1> Chung and Lu [TCC '10]</span> and <span class=blu1>Chung and Pass [TCC '15]</span>), 
+it fails to do so in the general case (the above <span class=blu1>Bellare, Impagliazzo, and Naor</span>; also <span class=blu1>Pietrzak and Wikstroom [TCC '07]</span>).
+ <br> <br>
+
+The only known round-preserving approach that applies to all interactive arguments is <span class=blu1>Haitner's</span> random-terminating transformation  <span class=blu1>[FOCS '09, SiCOMP '13]</span>, 
+who showed that the parallel repetition of the transformed protocol reduces the soundness error at a weak exponential rate: 
+if the original <span class=blu2> m</span>-round protocol has soundness error  <span class=blu2> 1- &epsilon;</span>, then the <span class=blu2>n</span>-fold 
+repetition of its random-terminating variant has soundness error <span class=blu2> (1- &epsilon;)<sup>&epsilon;n/m<sup>4</sup></sup></span> 
+(omitting constant factors). Hastad et al. have generalized this result to partially simulatable interactive arguments, 
+showing that the <span class=blu2> n</span>-fold repetition of an <span class=blu2> m</span>-round <span class=blu2> &delta;</span>-simulatable argument of 
+soundness error  <span class=blu2> 1- &epsilon;</span> has soundness error <span class=blu2> (1- &epsilon;)<sup>&epsilon;&delta;<sup>2</sup>n/m<sup>2</sup></sup></span>.
+When applied to random-terminating arguments, the Hastad et al. bound matches that of Haitner.
+<br> <br>
+ 
+In this work we prove that parallel repetition of random-terminating arguments reduces the soundness error at a much stronger exponential rate: 
+the soundness error of the  <span class=blu2>n</span>-fold  repetition is <span class=blu2> (1- &epsilon;)<sup>n/m</sup></span>, only an <span class=blu2>m</span> 
+factor from the optimal rate of <span class=blu2> (1- &epsilon;)<sup>n</sup></span> achievable in public-coin and three-message arguments. 
+The result generalizes to <span class=blu2> &delta;</span>- arguments, for which we prove a bound of <span class=blu2> (1- &epsilon;)<sup>&delta;n/m</sup></span>. 
+This is achieved by presenting a tight bound on a relaxed variant of the KL-divergence between the distribution induced by our reduction and its ideal variant, 
+a result whose scope extends beyond parallel repetition proofs. We prove the tightness of the above bound for random-terminating arguments, 
+by presenting a matching protocol.
+</p>
+</div>
+</li>
+
+
+<li>
 <a href="https://people.csail.mit.edu/rancohen/">Ran Cohen</a> and Iftach Haitner and Nikolaos Makriyannis and Matan Orland and <a href="http://www.cs.huji.ac.il/~salex/">Alex Samorodnitsky</a></a><br>
 <strong>On the Round Complexity of Randomized Byzantine Agreement</strong> <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span> <br>
@@ -476,28 +546,7 @@ extends to functions (over many bits) that "contain" an "embedded copy" of the X
 
 
 
-<li>
-<a href="http://people.csail.mit.edu/itayberm/">Itay Berman</a> and Iftach Haitner and Eliad Tsfadia. <br>
-<strong>A Tight Parallel-Repetition Theorem
-for Random-Terminating Interactive Arguments</strong>  <img src="new.png" class=update1><br>
-<span class=abslide>[abstract]</span> <br>
-Manuscript 2019<br>
-Draft of full version  <a href="papers/TightPR/TightPR.pdf">[pdf]</a><br><br>
 
-<div class="box">
-<p>
-Soundness amplification is a central problem in the study of interactive protocols. While
-natural parallel repetition transformation is known to reduce the soundness error of some
-special cases of interactive arguments: three-message protocols (<span class=blu1>Bellare, Impagliazzo, and Naor[FOCS '97]</span>) and public-coin protocols (<span class=blu1>Haastad, Pass, Wilkstrom, and Pietrzak [TCC '10]</span>,<span class=blu1> Chung and Lu [TCC '10]</span> and <span class=blu1>Chung and Pass [TCC '15]</span>), it fails to do so in the general case (the above <span class=blu1>Bellare, Impagliazzo, and Naor</span>; also <span class=blu1>Pietrzak and Wikstroom [TCC '07]</span>). <br> <br>
-
-The only known round-preserving approach that applies to the general case of interactive arguments is <span class=blu1>Haitner's</span> "random-terminating" transform <span class=blu1>[FOCS '09, SiCOMP '13]</span>. Roughly speaking, a protocol <span class=blu2> A</span> is first transformed into a new slightly modified protocol <span class=blu2> &Atilde;</span>, referred as the random terminating variant of <span class=blu2> A</span>, and then parallel repetition is applied. <span class=blu1>Haitner's</span> analysis shows that the parallel repetition of <span class=blu2> &Atilde;</span> does reduce the soundness error at a weak exponential rate. More precisely, if <span class=blu2> A</span> has <span class=blu2> m</span> rounds and soundness error <span class=blu2> 1- &epsilon;</span>, then <span class=blu2> &Atilde;<sup>k</sup></span>, the <span class=blu2> k</span>-parallel repetition of <span class=blu2> &Atilde;</span>, has soundness error <span class=blu2> (1- &epsilon;)<sup>&epsilon;k/m<sup>4</sup></sup></span>. Since the security of many cryptographic protocols (e.g., binding) depends on the soundness of a related interactive argument, improving the above analysis is a key challenge in the study of cryptographic protocols.<br> <br>
-
-In this work we introduce a different analysis for the above method, proving that parallel
-repetition of random terminating protocols reduces the soundness error at a much stronger
-exponential rate: the soundness error of <span class=blu2> &Atilde;<sup>k</sup></span> is <span class=blu2> (1- &epsilon;)<sup>k/m</sup></span>, only an <span class=blu2> m</span> factor from the optimal rate of <span class=blu2> (1- &epsilon;)<sup>k</sup></span>, achievable in public-coin and three-message protocols. We prove the tightness of our analysis by presenting a matching protocol.
-</p>
-</div>
-</li>
 
 
 <li>
