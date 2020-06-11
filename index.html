@@ -420,6 +420,36 @@ Draft of full version  <a href="papers/TimeMemTO/TimeMemTO.pdf">[pdf]</a><br><br
 
 <div class="box">
 <p>
+We study time/memory tradeoffs of function inversion: an algorithm, i.e.,  an  inverter,  equipped with  an <span class=blu2>s</span>-bit advice for a randomly chosen function <span class=blu2>f:[n]&rarr;[n]</span> and using <span class=blu2>q</span>  oracle queries to <span class=blu2>f</span>,
+ tries to invert a randomly chosen output <span class=blu2>y</span> of <span class=blu2>f</span>  (i.e., to find <span class=blu2>x</span> such that <span class=blu2>f(x)=y</span>).  <br><br>
+  
+ Much progress was done regarding  adaptive function inversion---the inverter is allowed to make  adaptive  oracle queries. 
+ <span class=blu1>Hellman [IEEE transactions on Information Theory '80]  </span> presented an adaptive  inverter   that inverts with high probability  a random <span class=blu2>f</span>. 
+ <span class=blu1>Fiat and Naor [SICOMP '00]</span> proved that  for any <span class=blu2>s,q</span> with <span class=blu2>s<sup>2</sup>q = n<sup>2</sup></span>  (ignoring low-order  terms), an <span class=blu2>s</span>-advice, <span class=blu2>q</span>-query   
+ variant of Hellman's  algorithm inverts a constant fraction of the image points of any function.   <span class=blu1>Yao  [STOC '90]</span> proved a lower bound of <span class=blu2>sq &ge;  n</span> for  this problem. 
+ Closing the gap between the above lower and upper bounds is a long-standing open question.
+
+<br><br>
+
+Very little is known for the non-adaptive variant of the question---the inverter chooses  its queries in advance. 
+The only known upper bounds, i.e., inverters, are the trivial ones (with <span class=blu2>s+q= n</span>), and the only lower bound is the above bound of  <span class=blu1>Yao</span>. 
+In a recent work, <span class=blu1>Corrigan-Gibbs and Kogan  [TCC '19]</span> partially justified the difficulty of finding lower bounds on non-adaptive inverters, 
+showing that  a lower bound on the time/memory tradeoff of  non-adaptive inverters implies a lower  bound on low-depth Boolean circuits. Bounds that  for a strong  enough choice of parameters, are notoriously hard to prove. 
+<br><br>
+
+
+We make progress on the above intriguing  question, both for the adaptive and the non-adaptive case, proving the  following lower bounds on restricted families of  inverters:<br><br>
+
+	<ul> Linear-advice (adaptive inverter). If the advice string is a linear function of <span class=blu2>f</span> (e.g., <span class=blu2>A&times; f</span>, viewing <span class=blu2>f</span> as  a vector in <span class=blu2>[n]<sup>n</sup></span>), 
+	then <span class=blu2>s+q &isin; &Omega;(n)</span>.</ul> <br>
+	
+	<ul>Affine non-adaptive decoders. If the  non-adaptive inverter  has an affine decoder---it  
+	outputs  a linear function, determined by the advice string and the element to invert, of the query answers---then <span class=blu2>s &isin; &Omega;(n)</span> (regardless of   <span class=blu2>q</span>).</ul> <br>
+	
+	<ul>Affine non-adaptive decision trees. If the  non-adaptive inversion algorithm is a d-depth affine decision tree---it outputs the evaluation of a decision tree whose nodes compute  a linear function of the answers to the queries---and <span class=blu2>q < cn</span> for 
+	some universal <span class=blu2>c>0</span>, then <span class=blu2>s &isin; &Omega;(n/d*log(n))</span>.</ul>  
+
+
 
 </p>
 </div>
