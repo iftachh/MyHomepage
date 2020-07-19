@@ -423,7 +423,7 @@ Draft of full version  <a href="papers/TimeMemTO/TimeMemTO.pdf">[pdf]</a><br><br
 We study time/memory tradeoffs of function inversion: an algorithm, i.e.,  an  inverter,  equipped with  an <span class=blu2>s</span>-bit advice for a randomly chosen function <span class=blu2>f:[n]&rarr;[n]</span> and using <span class=blu2>q</span>  oracle queries to <span class=blu2>f</span>,
  tries to invert a randomly chosen output <span class=blu2>y</span> of <span class=blu2>f</span>  (i.e., to find <span class=blu2>x</span> such that <span class=blu2>f(x)=y</span>).  <br><br>
   
- Much progress was done regarding  adaptive function inversion---the inverter is allowed to make  adaptive  oracle queries. 
+Much progress was done regarding  adaptive function inversion---the inverter is allowed to make  adaptive  oracle queries. 
  <span class=blu1>Hellman [IEEE transactions on Information Theory '80]  </span> presented an adaptive  inverter   that inverts with high probability  a random <span class=blu2>f</span>. 
  <span class=blu1>Fiat and Naor [SICOMP '00]</span> proved that  for any <span class=blu2>s,q</span> with <span class=blu2>s<sup>2</sup>q = n<sup>2</sup></span>  (ignoring low-order  terms), an <span class=blu2>s</span>-advice, <span class=blu2>q</span>-query   
  variant of Hellman's  algorithm inverts a constant fraction of the image points of any function.   <span class=blu1>Yao  [STOC '90]</span> proved a lower bound of <span class=blu2>sq &ge;  n</span> for  this problem. 
@@ -455,19 +455,18 @@ We make progress on the above intriguing  question, both for the adaptive and th
 </div>
 </li>
 
-<li>
-Iftach Haitner and Yonatan Karidi-Heller. <br>
+<li>Iftach Haitner and Yonatan Karidi-Heller. <br>
 <strong>A Tight Lower Bound on Adaptively Secure Full-Information Coin Flip</strong>  <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span> <br>
-Manuscript 2020<br>
+FOCS 2020<br>
 Draft of full version  <a href="papers/FullCoin/FullCoin.pdf">[pdf]</a><br><br>
 
 <div class="box">
 <p>
-In a distributed coin-flipping protocol, Blum [ACM Transactions on Computer Systems '83],
-the parties try to output a common (close to) uniform bit, even when some adversarially chosen parties try to bias the common output. In an adaptively secure full-information coin flip, Ben-Or and Linial [FOCS '85], the parties communicate over a broadcast channel and a computationally unbounded adversary can choose which parties to corrupt during the protocol execution. Ben-Or and Linial proved that the n-party majority protocol is resilient to o(n)  corruptions (ignoring log factors), and conjectured this is a tight upper bound for any n-party protocol (of any round complexity). Their conjecture was proved to be correct for single-turn (each party sends a single message) single-bit (a message is one bit) protocols, Lichtenstein, Linial, and Saks [Combinatorica '89], symmetric protocols Goldwasser, Kalai, and Park [ICALP '15], and recently for (arbitrary message length) single-turn protocols Tauman Kalai, Komargodski, and Raz [DISC '18]. Yet, the question for many-turn (even single-bit) protocols was left completely open.
+In a distributed coin-flipping protocol, <span class=blu1>Blum [ACM Transactions on Computer Systems '83]</span>, the parties try to output a common (close to) uniform bit, 
+even when some adversarially chosen parties try to bias the common output.  In an adaptively secure full-information coin flip, <span class=blu1>Ben-Or and Linial [FOCS '85]</span>, the parties communicate over a broadcast channel and a computationally unbounded adversary can choose which parties to corrupt during the protocol execution. Ben-Or and Linial proved that the <span class=blu2>n</span>-party majority protocol is resilient to <span class=blu2>o(&radic;<span style="text-decoration:overline;">n</span>)</span>  corruptions (ignoring log factors), and conjectured this is a tight upper bound for any <span class=blu2>n</span>-party protocol (of any round complexity). Their conjecture was proved to be correct for limited variant of single-turn (each party sends a single message) single-bit (a message is one bit) protocols, <span class=blu1>Lichtenstein, Linial, and Saks [Combinatorica '89]</span>, symmetric protocols <span class=blu1>Goldwasser, Kalai, and Park [ICALP '15]</span>, and recently for (arbitrary message length) single-turn protocols  <span class=blu1>Kalai, Komargodski, and Raz [DISC '18]</span>. Yet, the question for many-turn (even single-bit) protocols was left completely open.<br><br>
 
-In this work we close the above gap, proving that no n-party protocol (of any round complexity) is resilient to O(n)  (adaptive) corruptions.
+In this work we close the above gap, proving that no <span class=blu2>n</span>-party protocol (of any round complexity) is resilient to <span class=blu2>O(&radic;<span style="text-decoration:overline;">n</span>)</span>  (adaptive) corruptions. That is, up tp polylog factors, the single-bit, single-message majority protocol is the optimal  protocol against adaptive corruptions.   
 </p>
 </div>
 </li>
