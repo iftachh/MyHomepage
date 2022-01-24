@@ -537,11 +537,10 @@ In this work we close the above gap, proving that no <span class=blu2>n</span>-p
 Iftach Haitner,   <a href="https://omereingold.wordpress.com/">Omer Reingold</a>,
 <a href="http://www.eecs.harvard.edu/%7Esalil/">Salil Vadhan</a> and  <a href="https://www.di.ens.fr/~wee/">Hoeteck Wee</a><br>
  <b>IE1: Inaccessible Entropy Generators and Statistically Hiding
-Commitments from One-Way Functions</b> <img src="up.png" class=update1><br>Manuscript 2020<br>
+Commitments from One-Way Functions</b> <br>Manuscript 2020 <a  href="https://arxiv.org/abs/2010.05586">[arXiv]</a><br>
 <span class=abslide>[abstract]</span> <br>
-Draft of full version  <a  href="https://arxiv.org/abs/2010.05586">[arXiv]</a><br>
 
-A preliminary version, with a different notion of accessible entropy, appeared in <span class=blu1>Inaccessible Entropy [STOC '09]</span><br><br>
+A preliminary version, with a different notion of accessible entropy, appeared as <span class=blu1>Inaccessible Entropy [STOC '09]</span><br><br>
 <div class="box">
 <p>
 We put forth a new computational notion of entropy, measuring the (in)feasibility of sampling
@@ -557,6 +556,48 @@ of statistically hiding commitment schemes from arbitrary one-way functions.
 </p>
 </div>
 </li>
+
+
+<li>
+<p>
+Iftach Haitner, <a href="http://research.microsoft.com/users/thomahol/">Thomas Holenstein</a>, <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold">Omer
+Reingold</a>, <a href="http://www.eecs.harvard.edu/%7Esalil/">Salil Vadhan</a> and  <a href="http://www.cs.berkeley.edu/%7Ehoeteck/">Hoeteck Wee</a><br>
+<b>Inaccessible Entropy II: IE Functions and Universal One-Way Hashing</b>  <!--<img src="up.png" class=update1>--><br>
+<span class=abslide>[abstract]</span><br>
+
+Theory of Computing 2020 <a  href="http://theoryofcomputing.org/articles/v016a008/">[link]</a> <br>
+
+A preliminary version appeared as <span class=blu1>Universal One-Way Hash Functions via Inaccessible Entropy [Eurocrypt, 2010]</span><br><br>
+</p>
+
+
+<div class="box">
+<p>
+This paper revisits the construction of Universally One-Way Hash Functions (UOWHFs) from any one-way function due to <span class=blu1> Rompel [STOC 1990}</span>.
+We give a simpler construction of UOWHFs which also obtains better efficiency and security. The construction exploits a strong connection to the recently
+introduced notion of <strong>inaccessible entropy</strong> <span class=blu1> Haitner et
+al. [STOC 2009]</span>. With this perspective, we observe that a small tweak of
+any one-way function <span class=blu2> f</span> is already a weak form of a UOWHF: Consider
+<span class=blu2> F(x,i)</span> that outputs the <span class=blu2>i</span>-bit long
+prefix of <span class=blu2>f(x)</span>. If <span class=blu2>F</span> were a UOWHF then given a
+random <span class=blu2>x</span> and i it would be hard to come up with <span class=blu2>x' ≠ x</span> such
+that <span class=blu2>F(x,i)=F(x',i)</span>. While this may not be the case, we show (rather easily) that it is hard
+to sample <span class=blu2>x'</span> with almost full entropy among all the possible such values of <span class=blu2>x'</span>. The rest of our construction
+simply amplifies and exploits this basic property.<br>
+With this and other recent works we have that the constructions of
+three fundamental cryptographic primitives (Pseudorandom Generators,
+Statistically Hiding Commitments and UOWHFs) out of one-way functions
+are to a large extent unified. In particular, all three constructions
+rely on and manipulate computational notions of entropy in similar
+ways. Pseudorandom Generators rely on the well-established notion of
+pseudoentropy, whereas Statistically Hiding Commitments and UOWHFs rely
+on the newer notion of inaccessible entropy.
+</p>
+</div>
+</li>
+
+
+
 
 
 <li>
@@ -1375,45 +1416,6 @@ usage of the query function in our proof of security makes to the KDM query func
 </div>
 </li>
 
-<li>
-<p>
-Iftach Haitner, <a href="http://research.microsoft.com/users/thomahol/">Thomas Holenstein</a>, <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold">Omer
-Reingold</a>, <a href="http://www.eecs.harvard.edu/%7Esalil/">Salil Vadhan</a> and  <a href="http://www.cs.berkeley.edu/%7Ehoeteck/">Hoeteck Wee</a><br>
-<b>Universal One-Way Hash Functions via Inaccessible Entropy </b><br>
-<span class=abslide>[abstract]</span><br>
-Advances in Cryptology - Eurocrypt, 2010 <a href="papers/RompelRevisted/RompelRevisited-EurocryptCamera.pdf">[pdf]</a><br>
-
-Theory of Computing 2020 <a  href="http://theoryofcomputing.org/articles/v016a008/">[link]</a> <img src="up.png" class=update1><br>
-
-Draft of full version <a href="papers/RompelRevisted/RompelRevisited-eprint.pdf">[pdf]</a>
-</p>
-
-
-<div class="box">
-<p>
-This paper revisits the construction of Universally One-Way Hash Functions (UOWHFs) from any one-way function due to <span class=blu1> Rompel [STOC 1990}</span>.
-We give a simpler construction of UOWHFs which also obtains better efficiency and security. The construction exploits a strong connection to the recently
-introduced notion of <strong>inaccessible entropy</strong> <span class=blu1> Haitner et
-al. [STOC 2009]</span>. With this perspective, we observe that a small tweak of
-any one-way function <span class=blu2> f</span> is already a weak form of a UOWHF: Consider
-<span class=blu2> F(x,i)</span> that outputs the <span class=blu2>i</span>-bit long
-prefix of <span class=blu2>f(x)</span>. If <span class=blu2>F</span> were a UOWHF then given a
-random <span class=blu2>x</span> and i it would be hard to come up with <span class=blu2>x' ≠ x</span> such
-that <span class=blu2>F(x,i)=F(x',i)</span>. While this may not be the case, we show (rather easily) that it is hard
-to sample <span class=blu2>x'</span> with almost full entropy among all the possible such values of <span class=blu2>x'</span>. The rest of our construction
-simply amplifies and exploits this basic property.<br>
-With this and other recent works we have that the constructions of
-three fundamental cryptographic primitives (Pseudorandom Generators,
-Statistically Hiding Commitments and UOWHFs) out of one-way functions
-are to a large extent unified. In particular, all three constructions
-rely on and manipulate computational notions of entropy in similar
-ways. Pseudorandom Generators rely on the well-established notion of
-pseudoentropy, whereas Statistically Hiding Commitments and UOWHFs rely
-on the newer notion of inaccessible entropy.
-</p>
-</div>
-</li>
-
 
 <li>
 <p>
@@ -1485,39 +1487,6 @@ prover can convince the verifier of a false statement). These results resolve an
 
 
 
-<li>
-<p>
-Iftach
-Haitner,   <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold">Omer Reingold</a>,
-<a href="http://www.eecs.harvard.edu/%7Esalil/">Salil Vadhan</a> and  <a href="http://www.cs.berkeley.edu/%7Ehoeteck/">Hoeteck Wee</a><br>
- <b>Inaccessible Entropy</b><br>
-<span class=abslide>[abstract]</span> <a href="papers/AccessibleEntropy/AccEntSemniar.pptx">[slides]</a> 
-<a href="http://intractability.princeton.edu/videos/stream/videoplay.html?videofile=cs/IW2009-500kb/Iftach%20Haitner.mp4">[video (appx. 1 hour)]</a><br>
- Annual ACM Symposium on Theory of Computing (STOC), 2009  <a href="papers/AccessibleEntropy/AE-stoc.pdf">[pdf]</a><br>
-</p>
-
-
-<div class="box">
-<p>
-We put
-forth a new computational notion of entropy, which measures the (in)feasibility of sampling high entropy strings that are consistent
-with a given protocol. Specifically, we say that the <span class=blu1> i</span>’th round of a protocol <span class=blu1> (A,B)</span> has <em>accessible
-entropy</em> at most <span class=blu1>k</span>, if no polynomial-time strategy <span class=blu1>A*</span> can
-generate messages for <span class=blu1>A></span> such that the entropy of its message in the <span class=blu1>i</span>’th round has entropy
-greater than <span class=blu1>k</span> when conditioned both on prior messages of the protocol and on prior coin tosses of <span class=blu1> A*</span>. 
-As applications of thisnotion, we
-<ul>
-<li>Give a much simpler and more efficient construction of statistically hiding
-commitment schemes from arbitrary one-way functions.
-</li>
-<li>Prove that constant-round statistically hiding
-commitments are necessary for constructing constant-round zero-knowledge proof systems for NP that 
-remain secure under parallel composition (assuming the existence of
-one-way functions).</li>
-</ul>
-</p>
-</div>
-</li>
 
 <li>
 <p>Iftach Haitner,   <a href="http://www.eecs.harvard.edu/%7Ealon/">Alon Rosen</a> and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a><br>
