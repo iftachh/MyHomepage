@@ -419,12 +419,44 @@ See the <a href="http://cpiis.cs.tau.ac.il/postdoc-fellowships-internships/">TAU
 <ul id=pub1>
 
 
+<li>
+Iftach Haitner and Noam Mazor and <a href="https://sites.google.com/view/jadsilbak">Jad Silbak</a><br>
+<strong>Incompressiblity and Next-Block Pseudoentropy</strong> <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span> <br>
+Draft of full version  <a  href="https://eccc.weizmann.ac.il/report/2022/032/">[eccc]</a><br><br>
+
+
+
+<div class="box">
+<p>
+A distribution is k-incompressible, Yao [FOCS ’82], if no efficient compression scheme compresses it to less than k bits. While being a natural measure, its relation to other computational analogs of entropy such as pseudoentropy, Hastad, Impagliazzo, Levin, and Luby [SICOMP 99], and to other cryptographic hardness assumptions, was unclear.<br><br>
+
+We advance towards a better understating of this notion, showing that a k-incompressible distribution has (k?2) bits of next-block pseudoentropy, a refinement of pseudoentropy introduced by Haitner, Reingold, and Vadhan [SICOMP ’13]. We deduce that a samplable distribution X that is (H(X) + 2)-incompressible, implies the existence of one-way functions.
+</p>
+</div>
+
+</li>
+
+
+<li>
+Iftach Haitner and Daniel Nukrai and <a href="https://www.eylonyogev.com/about">Eylon Yogev</a> <br>
+<strong>Lower Bound on SNARGs in the Random Oracle Model</strong> <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span> <br>
+Draft of full version  <a  href="https://eprint.iacr.org/2022/178">[ePrint]</a><br><br>
+
+<div class="box">
+<p>
+Succinct non-interactive arguments (SNARGs) have become a fundamental primitive in the cryptographic community. The focus of this work is constructions of SNARGs in the Random Oracle Model (ROM). Such SNARGs enjoy post-quantum security and can be deployed using lightweight cryptography to heuristically instantiate the random oracle. A ROM-SNARG is \emph{(t,ε)-sound} if no t-query malicious prover can convince the verifier to accept a false statement with probability larger than ε. Recently, Chiesa-Yogev (CRYPTO '21) presented a ROM-SNARG of length Θ(log(t/ε)⋅logt) (ignoring logn factors, for n being the instance size). This improvement, however, is still far from the (folklore) lower bound of Ω(log(t/ε)).<br><br>
+Assuming the \textit{randomized exponential-time hypothesis}, we prove a tight lower bound of Ω(log(t/ε)⋅logt) for the length of {(t,ε)-sound} ROM-SNARGs. Our lower bound holds for constructions with non-adaptive verifiers and strong soundness notion called \textit{salted soundness}, restrictions that hold for \emph{all} known constructions (ignoring contrived counterexamples). We prove our lower bound by transforming any short ROM-SNARG (of the considered family) into a same length ROM-SNARG in which the verifier asks only a \emph{few} oracles queries, and then apply the recent lower bound of Chiesa-Yogev (TCC '20) for such SNARGs.
+</p>
+</div>
+</li>
 
 <li>
 Iftach Haitner and Nikolaos Makriyannis and Samuel Ranellucci  and <a href="https://sites.google.com/view/eliadtsfadia">Eliad Tsfadia</a> <br>
 <strong>Highly Efficient OT-Based Multiplication Protocols</strong> <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span> <br>
-Manuscript 2021<br>
+Eurocrypt 2022<br>
 Draft of full version  <a  href="https://eprint.iacr.org/2021/1373">[ePrint]</a><br><br>
 
 <div class="box">
@@ -435,10 +467,10 @@ We present a new OT-based two-party multiplication protocol that is almost as ef
 </li>
 
 <li>
-Iftach Haitner and Noam Mazor and Jad Silbak and <a href="https://sites.google.com/view/eliadtsfadia">Eliad Tsfadia</a> <br>
+Iftach Haitner and Noam Mazor and <a href="https://sites.google.com/view/jadsilbak">Jad Silbak</a> and <a href="https://sites.google.com/view/eliadtsfadia">Eliad Tsfadia</a> <br>
 <strong>On the Complexity of Two-Party Differential Privacy</strong> <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span> <br>
-Manuscript 2021<br>
+STOC 2022<br>
 Draft of full version  <a  href="https://arxiv.org/abs/2108.07664">[arxiv]</a><br><br>
 
 
@@ -642,7 +674,7 @@ by presenting a matching protocol.
 <strong>On the Round Complexity of Randomized Byzantine Agreement</strong> <br>
 <span class=abslide>[abstract]</span> <br>
 DISC  2019<br>
-Journal of Cryptology 2022 <!--<a  href="https://link.springer.com/article/10.1007/s00145-021-09415-x">[link]</a>--><br>
+Journal of Cryptology 2022 <a  href="https://link.springer.com/article/10.1007/s00145-022-09421-7">[link]</a><br>
 Draft of full version  <a  href="https://arxiv.org/abs/1907.11329">[arXiv]</a><br><br>
 
 
@@ -674,7 +706,7 @@ The third bound essentially matches the recent protocol of <span class=blu1>Mica
 
 
 <li>
-Iftach Haitner and Noam Mazor and <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a> and Jad Silbak. <br>
+Iftach Haitner and Noam Mazor and <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a> and <a href="https://sites.google.com/view/jadsilbak">Jad Silbak</a>. <br>
 <strong>Channels of Small Log-Ratio Leakage and
 Characterization of Two-Party Differentially Private Computation</strong><br>
 <span class=abslide>[abstract]</span> <br>
@@ -774,6 +806,7 @@ Iftach Haitner and Nikolaos Makriyannis</a> and <a href="http://omrier.wix.com/e
 <strong>On the Complexity of Fair Coin Flipping</strong> <br>
 <span class=abslide>[abstract]</span> <br>
 TCC 2018<br>
+Theoretical Computer Science 2022  <a  href="https://www.sciencedirect.com/science/article/pii/S0304397522000949">[link]</a><br>
 Draft of full version  <a  href="https://eccc.weizmann.ac.il/report/2018/084/">[eccc]</a><br><br>
 
 
@@ -803,7 +836,7 @@ case, the recent attack of <span class=blu1>  Beimel et al [ECCC '17]</span> on 
 
 
 <li>
-Iftach Haitner  and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> and <a href="http://people.cs.georgetown.edu/~kobbi/">Kobbi Nissim</a> and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a> and  Jad Silbak<br>
+Iftach Haitner  and <a href="http://omrier.wix.com/eran-omri">Eran Omri</a> and <a href="http://people.cs.georgetown.edu/~kobbi/">Kobbi Nissim</a> and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a> and  <a href="https://sites.google.com/view/jadsilbak">Jad Silbak</a><br>
 <strong>Computational Two-Party Correlation</strong><br>
 <span class=abslide>[abstract]</span> <br>
 FOCS 2018<br>
