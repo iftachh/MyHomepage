@@ -423,6 +423,7 @@ See the <a href="http://cpiis.cs.tau.ac.il/postdoc-fellowships-internships/">TAU
 Iftach Haitner and Noam Mazor and <a href="https://sites.google.com/view/jadsilbak">Jad Silbak</a><br>
 <strong>Incompressiblity and Next-Block Pseudoentropy</strong> <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span> <br>
+Manuscript 2022<br>
 Draft of full version  <a  href="https://eccc.weizmann.ac.il/report/2022/032/">[eccc]</a><br><br>
 
 
@@ -566,13 +567,53 @@ In this work we close the above gap, proving that no <span class=blu2>n</span>-p
 </div>
 </li>
 
+
+
+<li>
+<a href="http://people.csail.mit.edu/itayberm/">Itay Berman</a> and Iftach Haitner and <a href="https://sites.google.com/view/eliadtsfadia">Eliad Tsfadia</a> <br>
+<strong>A Tight Parallel Repetition Theorem for Partially Simulatable Interactive Arguments via Smooth KL-Divergence</strong> <br>
+<span class=abslide>[abstract]</span> <br>
+Crypto 2020<br>
+Draft of full version  <a  href="https://eccc.weizmann.ac.il/report/2019/049/">[eccc]</a><br><br>
+
+<div class="box">
+<p>
+Hardness amplification is a central problem in the study of interactive protocols. 
+While "natural" parallel repetition transformation is known to reduce the soundness error of some special cases of interactive arguments: 
+ three-message protocols (<span class=blu1>Bellare, Impagliazzo, and Naor[FOCS '97]</span>) and public-coin protocols (<span class=blu1>Haastad, Pass, Wilkstrom, and Pietrzak [TCC '10]</span>,<span class=blu1> Chung and Lu [TCC '10]</span> and <span class=blu1>Chung and Pass [TCC '15]</span>), 
+it fails to do so in the general case (the above <span class=blu1>Bellare, Impagliazzo, and Naor</span>; also <span class=blu1>Pietrzak and Wikstroom [TCC '07]</span>).
+ <br> <br>
+
+The only known round-preserving approach that applies to all interactive arguments is <span class=blu1>Haitner's</span> random-terminating transformation  <span class=blu1>[FOCS '09, SiCOMP '13]</span>, 
+who showed that the parallel repetition of the transformed protocol reduces the soundness error at a weak exponential rate: 
+if the original <span class=blu2> m</span>-round protocol has soundness error  <span class=blu2> 1- &epsilon;</span>, then the <span class=blu2>n</span>-fold 
+repetition of its random-terminating variant has soundness error <span class=blu2> (1- &epsilon;)<sup>&epsilon;n/m<sup>4</sup></sup></span> 
+(omitting constant factors). Hastad et al. have generalized this result to partially simulatable interactive arguments, 
+showing that the <span class=blu2> n</span>-fold repetition of an <span class=blu2> m</span>-round <span class=blu2> &delta;</span>-simulatable argument of 
+soundness error  <span class=blu2> 1- &epsilon;</span> has soundness error <span class=blu2> (1- &epsilon;)<sup>&epsilon;&delta;<sup>2</sup>n/m<sup>2</sup></sup></span>.
+When applied to random-terminating arguments, the Hastad et al. bound matches that of Haitner.
+<br> <br>
+ 
+In this work we prove that parallel repetition of random-terminating arguments reduces the soundness error at a much stronger exponential rate: 
+the soundness error of the  <span class=blu2>n</span>-fold  repetition is <span class=blu2> (1- &epsilon;)<sup>n/m</sup></span>, only an <span class=blu2>m</span> 
+factor from the optimal rate of <span class=blu2> (1- &epsilon;)<sup>n</sup></span> achievable in public-coin and three-message arguments. 
+The result generalizes to <span class=blu2> &delta;</span>- arguments, for which we prove a bound of <span class=blu2> (1- &epsilon;)<sup>&delta;n/m</sup></span>. 
+This is achieved by presenting a tight bound on a relaxed variant of the KL-divergence between the distribution induced by our reduction and its ideal variant, 
+a result whose scope extends beyond parallel repetition proofs. We prove the tightness of the above bound for random-terminating arguments, 
+by presenting a matching protocol.
+</p>
+</div>
+</li>
+
+
 <li>
 Iftach Haitner,   <a href="https://omereingold.wordpress.com/">Omer Reingold</a>,
 <a href="http://www.eecs.harvard.edu/%7Esalil/">Salil Vadhan</a> and  <a href="https://www.di.ens.fr/~wee/">Hoeteck Wee</a><br>
  <b>IE1: Inaccessible Entropy Generators and Statistically Hiding
-Commitments from One-Way Functions</b> <br>Manuscript 2020 <a  href="https://arxiv.org/abs/2010.05586">[arXiv]</a><br>
+Commitments from One-Way Functions</b> <br>
 <span class=abslide>[abstract]</span> <br>
-
+Manuscript 2020 <br>
+Draft of full version  <a  href="https://arxiv.org/abs/2010.05586">[arXiv]</a><br>
 A preliminary version, with a different notion of accessible entropy, appeared as <span class=blu1>Inaccessible Entropy [STOC '09]</span><br><br>
 <div class="box">
 <p>
@@ -631,43 +672,6 @@ on the newer notion of inaccessible entropy.
 
 
 
-
-
-<li>
-<a href="http://people.csail.mit.edu/itayberm/">Itay Berman</a> and Iftach Haitner and <a href="https://sites.google.com/view/eliadtsfadia">Eliad Tsfadia</a> <br>
-<strong>A Tight Parallel Repetition Theorem for Partially Simulatable Interactive Arguments via Smooth KL-Divergence</strong> <br>
-<span class=abslide>[abstract]</span> <br>
-Crypto 2020<br>
-Draft of full version  <a  href="https://eccc.weizmann.ac.il/report/2019/049/">[eccc]</a><br><br>
-
-<div class="box">
-<p>
-Hardness amplification is a central problem in the study of interactive protocols. 
-While "natural" parallel repetition transformation is known to reduce the soundness error of some special cases of interactive arguments: 
- three-message protocols (<span class=blu1>Bellare, Impagliazzo, and Naor[FOCS '97]</span>) and public-coin protocols (<span class=blu1>Haastad, Pass, Wilkstrom, and Pietrzak [TCC '10]</span>,<span class=blu1> Chung and Lu [TCC '10]</span> and <span class=blu1>Chung and Pass [TCC '15]</span>), 
-it fails to do so in the general case (the above <span class=blu1>Bellare, Impagliazzo, and Naor</span>; also <span class=blu1>Pietrzak and Wikstroom [TCC '07]</span>).
- <br> <br>
-
-The only known round-preserving approach that applies to all interactive arguments is <span class=blu1>Haitner's</span> random-terminating transformation  <span class=blu1>[FOCS '09, SiCOMP '13]</span>, 
-who showed that the parallel repetition of the transformed protocol reduces the soundness error at a weak exponential rate: 
-if the original <span class=blu2> m</span>-round protocol has soundness error  <span class=blu2> 1- &epsilon;</span>, then the <span class=blu2>n</span>-fold 
-repetition of its random-terminating variant has soundness error <span class=blu2> (1- &epsilon;)<sup>&epsilon;n/m<sup>4</sup></sup></span> 
-(omitting constant factors). Hastad et al. have generalized this result to partially simulatable interactive arguments, 
-showing that the <span class=blu2> n</span>-fold repetition of an <span class=blu2> m</span>-round <span class=blu2> &delta;</span>-simulatable argument of 
-soundness error  <span class=blu2> 1- &epsilon;</span> has soundness error <span class=blu2> (1- &epsilon;)<sup>&epsilon;&delta;<sup>2</sup>n/m<sup>2</sup></sup></span>.
-When applied to random-terminating arguments, the Hastad et al. bound matches that of Haitner.
-<br> <br>
- 
-In this work we prove that parallel repetition of random-terminating arguments reduces the soundness error at a much stronger exponential rate: 
-the soundness error of the  <span class=blu2>n</span>-fold  repetition is <span class=blu2> (1- &epsilon;)<sup>n/m</sup></span>, only an <span class=blu2>m</span> 
-factor from the optimal rate of <span class=blu2> (1- &epsilon;)<sup>n</sup></span> achievable in public-coin and three-message arguments. 
-The result generalizes to <span class=blu2> &delta;</span>- arguments, for which we prove a bound of <span class=blu2> (1- &epsilon;)<sup>&delta;n/m</sup></span>. 
-This is achieved by presenting a tight bound on a relaxed variant of the KL-divergence between the distribution induced by our reduction and its ideal variant, 
-a result whose scope extends beyond parallel repetition proofs. We prove the tightness of the above bound for random-terminating arguments, 
-by presenting a matching protocol.
-</p>
-</div>
-</li>
 
 
 <li>
@@ -1037,7 +1041,7 @@ We analyze  the new protocols by  presenting  a new paradigm for analyzing fairn
 <a href="http://www.cs.tau.ac.il/~cohenran/">Ran Cohen</a> and Iftach Haitner and  <a href="http://omrier.wix.com/eran-omri">Eran Omri</a>  and Lior Rotem<br>
 <strong>Characterization of Secure Multiparty Computation Without Broadcast </strong> <br>
 <span class=abslide>[abstract]</span><br>
-TCC 2016-A <a  href="http://link.springer.com/chapter/10.1007/978-3-662-49096-9_25">[link]</a><br>
+TCC 2016 (A)<br>
 Journal of Cryptology 2017 <a  href="http://rdcu.be/v7wO">[link]</a><br>
 </p>
 
@@ -1142,7 +1146,7 @@ Haitner and Omri, our result holds also for <em>weak</em> coin-flipping protocol
 Iftach Haitner and <a href="https://sites.google.com/view/eliadtsfadia">Eliad Tsfadia</a> <br>
 <strong>An Almost-Optimally Fair Three-Party Coin-Flipping Protocol</strong><br>
 <span class=abslide>[abstract]</span> <a href="papers/3PartyCF/3Party-full.ppsx">[slides]</a> <br>
-STOC 2014 <a href="papers/3PartyCF/QuasiOptimalCF_CR.pdf">[pdf]</a><br>
+STOC 2014<br>
 SIAM Journal of Computing 2017 <a href="http://epubs.siam.org/doi/abs/10.1137/15M1009147">[link]</a>   <br>
 Draft of full version <a href="papers/3PartyCF/QuasiOptimalCF_Full.pdf">[pdf]</a> <br><br>
 
@@ -1184,7 +1188,7 @@ mentioned above).
 Iftach Haitner and <a href="http://u.cs.biu.ac.il/%7Eomrier/">Eran Omri</a> and <a href="http://u.cs.biu.ac.il/%7Ezarosih/">Hila Zarosim</a><br>
 <strong>Limits on the Usefulness of Random Oracles</strong> <br>
 <span class=abslide>[abstract]</span><br>
-TCC 2013 <a href="papers/PowerofRO1/PowerOfRO_TCC.pdf">[pdf]</a><br>
+TCC 2013<br>
 Journal of Cryptology 2014  <a  href="http://link.springer.com/article/10.1007/s00145-014-9194-9?sa_campaign=email/event/articleAuthor/onlineFirst">[link]</a><br>
 Draft of full version  <a href="papers/PowerofRO1/PowerOfRO.pdf">[pdf]</a></p>
 <div class="box">
@@ -1204,7 +1208,7 @@ random oracle model,  implying that protocols for computing these functionalitie
 <a href="https://sites.google.com/site/ilankomhomepage/"> Ilan Komargodski</a> and <a href="http://www.wisdom.weizmann.ac.il/%7Enaor/">Moni Naor</a><br>
 <strong>Hardness Preserving Reductions via Cuckoo Hashing </strong><br> 
 <span class=abslide>[abstract]</span><br>
-TCC 2013 <a href="papers/Cuckoo/Cuckoo_TCC.pdf">[pdf]</a><br>
+TCC 2013<br>
 Journal of Cryptology 2018 <a href="https://link.springer.com/article/10.1007/s00145-018-9293-0">[link]</a><br>
 Draft of full version  <a href="papers/Cuckoo/Cuckoo.pdf">[pdf]</a> <br><br>
 
@@ -1235,8 +1239,8 @@ is exponentially small in the non cryptographic work.<br>
  <a href="http://people.csail.mit.edu/itayberm/">Itay Berman</a> and Iftach Haitner<br>
 <strong>From Non-Adaptive to Adaptive Pseudorandom Functions</strong><br>
 <span class=abslide>[abstract]</span><br>
+TCC 2012 <br>
 Journal of Cryptology 2013  <a  href="http://link.springer.com/article/10.1007/s00145-013-9169-2">[link]</a><br>
-TCC 2012 <a href="papers/AdaptivePRF/AdaptivePRF_TCC.pdf">[pdf]</a><br>
 Draft of full version <a href="papers/AdaptivePRF/AdaptivePRF.pdf">[pdf]</a>
 </p>
 
@@ -1257,10 +1261,10 @@ function.
 <li>
 <p>
 Iftach Haitner and <a href="http://u.cs.biu.ac.il/%7Eomrier/">Eran Omri</a><br>
-<strong>Coin Flipping with Constant Bias ImpliesOne-Way Functions</strong><br>
+<strong>Coin Flipping with Constant Bias Implies One-Way Functions</strong><br>
 <span class=abslide>[abstract]</span>&nbsp <a href="papers/CoinFlipping/Seminar.pptx">[slides]</a><br>
+FOCS 2011<br>
 SIAM Journal of Computing 2013   <a  href="http://epubs.siam.org/doi/abs/10.1137/120887631">[link]</a> <br>
-FOCS 2011 <a href="papers/CoinFlipping/CoinFlippingtoOWF_FOCS.pdf">[pdf]</a><br>
 Draft of full version <a href="papers/CoinFlipping/CoinFlippingtoOWF.pdf">[pdf]</a></p>
 
 <div class="box">
@@ -1285,9 +1289,8 @@ bias (concretely,<span class=blu2>&radic;<span style="text-decoration:overline;"
 Iftach Haitner,   <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold">Omer Reingold</a> and <a href="http://www.eecs.harvard.edu/%7Esalil/">Salil Vadhan</a><br>
 <b>Efficiency Improvements in Constructing Pseudorandom Generators from One-way Functions</b><br>
 <span class=abslide>[abstract]</span> <a href="papers/HillRevisted/HillRevisted_Full.pptx">[slides]</a> <br>
-
+STOC 2010<br>
 SIAM Journal of Computing 2013    <a  href="http://epubs.siam.org/doi/abs/10.1137/100814421">[link]</a><br>
-Annual ACM Symposium on Theory of Computing (STOC), 2010  <a href="papers/HillRevisted/HillRevisted_STOC.pdf">[pdf]</a><br>
 Draft of full version <a href="papers/HillRevisted/HillRevisted_Full.pdf">[pdf]</a>
 </p>
 
@@ -1311,8 +1314,8 @@ manner. Using <span class=blu1>Applebaum, Ishai and Kushilevitz [SICOMP '06]</sp
 Iftach Haitner<br>
 <strong>A Parallel Repetition Theorem for Any Interactive Argument </strong><br>
 <span class=abslide>[abstract]</span> <a href="papers/ArgumentPR/Seminar.pptx">[slides]</a> <br>
+FOCS 2009<br>
 SIAM Journal of Computing 2013   <a  href="http://epubs.siam.org/doi/abs/10.1137/100810630">[link]</a><br>
-IEEE Symposium on Foundations of Computer Science (FOCS), 2009<br>
 Draft of full version <a href="https://eccc.weizmann.ac.il/report/2009/027/">[eccc]</a><br><br>
 (The SICOMP version contains an eror in Prop 2.5, which we fix in the eccc version. The eror is minor 
 and has no effect on the rest of the text.)
@@ -1343,7 +1346,7 @@ verifier accepts if and only if the original verifier would.
 <a href="http://www.cs.nyu.edu/%7Edodis/">Yevgeniy Dodis</a>, Iftach Haitner and <a href="http://cs.nyu.edu/%7Etentes/Homepage.html">Aris Tentes</a><br>
 <strong>On the Instantiability of Hash-and-Sign RSA Signatures</strong><br> 
 <span class=abslide>[abstract]</span> <a href="papers/FullDomainHash/seminar.pptx">[slides]</a><br>
-TCC 2012 <a href="papers/FullDomainHash/FDH_TCC.pdf">[pdf]</a><br>
+TCC 2012<br>
 Draft of full version <a href="papers/FullDomainHash/FDH.pdf">[pdf]</a>
 </p>
 
@@ -1420,7 +1423,7 @@ homomorphic encryption.
 and <a href="http://www.cs.technion.ac.il/%7Eyuvali/">Yuval Ishai</a><br>
 <strong>Bounded Key-Dependent Message Security</strong><br>
 <span class=abslide>[abstract]</span><br>
-Advances in Cryptology - Eurocrypt, 2010 <a href="papers/BoundedKDM/boundedkdm_EuroCrypt.pdf">[pdf]</a><br>
+Eurocrypt 2010<br>
 Draft of full version <a href="papers/BoundedKDM/boundedkdm.pdf">[pdf]</a>
 </p>
 
@@ -1461,7 +1464,7 @@ usage of the query function in our proof of security makes to the KDM query func
 Iftach Haitner,  <a href="http://www.cs.princeton.edu/%7Emohammad/">Mohammad Mahmoody</a> and <a href="http://www.cs.princeton.edu/%7Edxiao/"> David Xiao</a><br>
 <strong>New Sampling Protocol and Applications to Basing Cryptographic Primitives on the Hardness of NP</strong><br>
 <span class=abslide>[abstract]</span> <br>
-IEEE Conference on Computational Complexity (CCC), 2010 <a href="papers/SampleWithSize/SampleWithSize_CCC.pdf">[pdf]</a><br>
+Complexity 2010<br>
 Draft of full version <a href="papers/SampleWithSize/SampleWithSize.pdf">[pdf]</a>
 </p>
 <div class="box" >
@@ -1530,8 +1533,8 @@ prover can convince the verifier of a false statement). These results resolve an
 <li>
 <p>Iftach Haitner,   <a href="http://www.eecs.harvard.edu/%7Ealon/">Alon Rosen</a> and  <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a><br>
  <b> On the (Im)Possibility of Arthur-Merlin Witness Hiding Protocols</b><br>
-<span class=abslide>[abstract]</span> <a href="papers/WitnessHiding/WitnessHidingTCC.ppsx">[slides]</a>]<br>
-Theory of Cryptography Conference (TCC), 2009 <a href="papers/WitnessHiding/WitnessHidingLB.pdf">[pdf]</a>
+<span class=abslide>[abstract]</span> <a href="papers/WitnessHiding/WitnessHidingTCC.ppsx">[slides]</a><br>
+TCC 2009 <a href="papers/WitnessHiding/WitnessHidingLB.pdf">[pdf]</a>
 </p>
 <div class="box" >
 <p>
@@ -1563,7 +1566,7 @@ property can be used ``against the reduction" to find witnesses unconditionally.
 Iftach Haitner and <a href="http://research.microsoft.com/users/thomahol/">Thomas Holenstein</a><br>
 <b>On the (Im)Possibility of Key Dependent Encryption</b><br>
 <span class=abslide>[abstract]</span> <a href="papers/AccessibleEntropy/AccEntSemniar_f.pptx">[slides]</a> <br>
-Theory of Cryptography Conference (TCC), 2009  <a href="papers/KDI/KDI-TCC_CR.pdf">[pdf]</a><br>
+TCC 2009<br>
 Draft of full version <a href="papers/KDI/KDI-full.pdf">[pdf]</a>
 </p>
 <div class="box"  >
@@ -1595,7 +1598,7 @@ PhD. Thesis, 2008<br>
 <p>Iftach Haitner<br>
 <b>Semi-Honest to Malicious Oblivious Transfer -- The Black-Box Way </b><br>
 <span class=abslide>[abstract]</span>  <a href="papers/SemiHonestToMalicious/SemiToMal_f.ppt">[slides]</a><br>
-Theory of Cryptography Conference (TCC), 2008 <a href="papers/SemiHonestToMalicious/SemiHonestToMalicious-TCC.pdf">[pdf]</a> <br>
+TCC 2008<br>
 Full version is part of   <a href="#BBMPC"> Black-Box Constructions of Protocols for Secure Computation</a>
 </p>
 
@@ -1622,7 +1625,7 @@ families of dense trapdoor permutations and of non trivial single-server private
 Iftach Haitner, <a href="http://www.wisdom.weizmann.ac.il/%7Eyaakovh">Jonathan J. Hoch</a> and&nbsp; <a href="http://www.wisdom.weizmann.ac.il/%7Egils/">Gil Segev</a><br>
 <b>A Linear Lower Bound on the Communication Complexity of Single-Server Private Information Retrieval</b><br>
 <span class=abslide>[abstract]</span>  <a href="papers/PIRLowerBound/PIRLowerBound.ppt">[slides]</a> <br>
-Theory of Cryptography Conference (TCC), 2008 <a href="papers/PIRLowerBound/PIRLowerBound.pdf">[pdf]</a><br>
+TCC  2008<br>
 Full version is part of  <a href="#HHRSJoint">Finding Collisions in Interactive Protocols — Tight Lower Bounds on the Round Complexity and
 Communication Complexity of Statistically Hiding Commitments</a>
 </p>
@@ -1652,7 +1655,7 @@ present a reduction that essentially preserves the communication complexity of t
 and <a href="http://www.wisdom.weizmann.ac.il/%7Egils/">Gil Segev</a><br>
 <b>Finding Collisions in Interactive Protocols -- A Tight Lower Bound on the Round Complexity of Statistically-Hiding Commitments</b><br>
 <span class=abslide>[abstract]</span> <a href="papers/FindingCollisions/FindingCollisions.pps">[slides]</a><br>
-IEEE Symposium on Foundations of Computer Science (FOCS), 2007 <a href="papers/FindingCollisions/FindingCollisions-FOCS.pdf">[pdf]</a><br>
+FOCS 2007<br>
 Full version is part of  <a href="#HHRSJoint">Finding Collisions in Interactive Protocols — Tight Lower Bounds on the Round Complexity and
 Communication Complexity of Statistically Hiding Commitments</a>
 </p>
@@ -1679,7 +1682,7 @@ additional black-box separation results.
 <p>Iftach Haitner and  <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold/"> Omer Reingold</a><br>
 <b>Statistically Hiding Commitment from Any One-Way Function </b><br>
 <span class=abslide>[abstract]</span> <a href="papers/SCfromOWF/SCfromOWF.pps">[slides]</a><br>
-Annual ACM Symposium on Theory of Computing (STOC), 2007 <a href="papers/SCfromOWF/SCfromOWF-STOC.pdf">[pdf]</a>
+STOC 2007 <a href="papers/SCfromOWF/SCfromOWF-STOC.pdf">[pdf]</a><br>
 Full version is part of <a href="#HONRV">Statistically Hiding Commitments and Statistical Zero-Knowledge Arguments from Any One-Way Function</a>
 </p>
 <div class="box" >
@@ -1695,9 +1698,8 @@ by <span class=blu1>Nguyen, Ong and Vadhan [FOCS `06]</span>, and universal one-
 <p>Iftach Haitner and  <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold/"> Omer Reingold</a><br>
 <b>A New Interactive Hashing Theorem </b><br>
 <span class=abslide>[abstract]</span> <a href="papers/IneractiveHashing/IHSeminar_F.ppt">[slides]</a><br>
-
+Complexity 2007<br>
 Journal of Cryptology 2014 <a  href="http://link.springer.com/article/10.1007/s00145-012-9139-0">[link]</a><br>
-IEEE Conference on Computational Complexity(CCC), 2007 <a  href="papers/IneractiveHashing/IneractiveHashing_Jour.pdf">[pdf]</a><br>
 Draft of full version  <a  href="papers/IneractiveHashing/IneractiveHashing_Jour.pdf">[pdf]</a>
 </p>
 <div class="box" >
@@ -1727,8 +1729,8 @@ versatile interactive hashing theorem for a more general setting than that of th
 Iftach Haitner,   <a href="http://www.wisdom.weizmann.ac.il/%7Eharnik/"> Danny Harnik</a>, and </a>Omer Reingold<br>
 <b>On the Power of the Randomized Iterate</b> <br>
 <span class=abslide>[abstract]</span> <a href="papers/RandomizedIteate/Randomized_Iterate.pps">[slides]</a><br>
+Crypto 2006<br>
 SIAM Journal of Computing 2011   <a  href="http://epubs.siam.org/doi/abs/10.1137/080721820">[link]</a><br>
-Advanced in Cryptology - CRYPTO, 2006 <a href="papers/RandomizedIteate/Randomized_Iterate_CryptoCR.pdf">[pdf]</a><br>
 Draft of full version  <a href="papers/RandomizedIteate/RandomIterate.pdf">[pdf]</a>
 </p>
 
@@ -1764,7 +1766,7 @@ factor and reduces the seed length to <span class=blu2>Θ(n<sup>7</sup>)</span> 
 and  <a href="http://www.wisdom.weizmann.ac.il/%7Ereingold/"> Omer Reingold</a><br>
 <b>On Efficient Pseudorandom Generators from Exponentially Hard One-Way Functions</b><br>
 <span class=abslide>[abstract]</span> <a href="papers/RandomizedIteate/PrgFromHard.pps">[slides]</a><br>
-International Colloquium on Automata, Languages and Programming - ICALP, 2006  <a href="papers/RandomizedIteate/PrgFromHard-ICALP.pdf">[pdf]</a><br>
+ICALP 2006<br>
 Full version is part of <a href="#RandIt">On the Power of the Randomized Iterate</a>
 </p>
 <div class="box"  >
@@ -1783,8 +1785,8 @@ functions, and further develops them.
 <p>Iftach Haitner, Omer Horvitz, <a href="http://www.cs.umd.edu/%7Ejkatz/">Jonathan Katz</a>, Chiu-Yuen Koo, Ruggero Morselli and <a href="http://www.cs.haifa.ac.il/%7Eronen/">Ronen Shaltiel</a><br>
 <b>Reducing Complexity Assumptions for Statistically-Hiding Commitment </b><br>
 <span class=abslide>[abstract]</span> <a href="papers/SCfromRegularOWF/SCfromRegularOWF.pps">[slides]</a><br>
+Eurocrypt 2005<br>
 Journal of Cryptology 2009 <a  href="http://link.springer.com/content/pdf/10.1007/s00145-007-9012-8">[link]</a><br>
-Advances in Cryptology - Eurocrypt, 2005  <a href="papers/SCfromRegularOWF/SCfromRegularOWF-eurocrypt.pdf">[pdf]</a><br>
 Draft of full version  <a href="papers/SCfromRegularOWF/SCfromRegularOWF.pdf">[pdf]</a>
 </p>
 <div class="box"  >
@@ -1809,7 +1811,7 @@ against an honest-but-curious receiver into one which is statistically hiding ev
 <p>Iftach Haitner<b><br>
 Implementing Oblivious Transfer Using a Collection of Dense Trapdoor Permutations</b><br>
 <span class=abslide>[abstract]</span> <a href="papers/OTDenseTDP/OTDenseTDP.pps">[slides]</a><br>
-Theory of Cryptography Conference (TCC), 2004  <a href="papers/OTDenseTDP/OT_Dense_TCC.pdf">[pdf]</a> <br>
+TCC 2004<br>
 Draft of full version <a href="papers/OTDenseTDP/OTDenseTDP.pdf">[pdf]</a>
 </p>
 
