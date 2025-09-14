@@ -451,14 +451,17 @@ Manuscript 2025<br>
 <a  href="https://eprint.iacr.org/2025/1535">[eprint]</a><br><br> 
 <div class="box">
 <p> 
-Sigma protocols are fundamental cryptographic tools, serving as the foundation of many practical schemes—most notably, the Schnorr identification and signature schemes. To prove the security of Sigma protocols, one typically reduces breaking a Sigma protocol to solving a presumed hard problem (e.g., computing the discrete logarithm in a certain group). In many settings, however, these reductions are not tight: given an adversary that breaks a Sigma protocol with probability 
-, the reduction only yields an adversary for the underlying problem with probability 
-. This quadratic loss affects efficiency, as it forces choosing larger security parameters to reach a target security level.
+Sigma protocols are fundamental cryptographic tools, serving as the foundation of many practical schemes—most notably, the Schnorr identification and signature schemes. To prove the security of Sigma protocols, one typically reduces breaking a Sigma protocol to solving a presumed hard problem (e.g., computing the discrete logarithm in a certain group). In many settings, however, these reductions are not tight: given an adversary that breaks a Sigma protocol with probability, 
+the reduction only yields an adversary for the underlying problem with probability. 
+This quadratic loss affects efficiency, as it forces choosing larger security parameters to reach a target security level. <br><br>
 
+In this work, we show that this quadratic loss is inherent for two natural classes of reductions. 
+For interactive protocols, we prove it for uniform-challenge, black-box reductions, which query the adversary using uniformly sampled challenges. For non-interactive protocols (i.e., in the random-oracle model), we prove it for weakly programmable, black-box reductions, which answer the adversary’s oracle queries with uniformly 
+sampled outputs. Applying our bounds to the reductions from Schnorr identification and signatures to discrete logarithm yields lower bounds that match known positive results—namely, the classical worst-case reduction of  <span class=blu1>Pointcheval and Stern (Journal of Cryptology, 2000) </span> 
+and the higher-moment reduction of  <span class=blu1> Rotem and Segev (Journal of Cryptology, 2024)</span>.
 
-In this work, we show that this quadratic loss is inherent for two natural classes of reductions. For interactive protocols, we prove it for uniform-challenge, black-box reductions, which query the adversary using uniformly sampled challenges. For non-interactive protocols (i.e., in the random-oracle model), we prove it for weakly programmable, black-box reductions, which answer the adversary’s oracle queries with uniformly sampled outputs. Applying our bounds to the reductions from Schnorr identification and signatures to discrete logarithm yields lower bounds that match known positive results—namely, the classical worst-case reduction of Pointcheval and Stern (Journal of Cryptology, 2000) and the higher-moment reduction of Rotem and Segev (Journal of Cryptology, 2024).
-
-Our approach reduces the analysis of such reductions to the values of simple hitting games—combinatorial games that we introduce. Bounding these games is our main technical contribution, and we believe these bounds can enable more modular proofs of related results.
+Our approach reduces the analysis of such reductions to the values of simple hitting games—combinatorial games that we introduce. 
+Bounding these games is our main technical contribution, and we believe these bounds can enable more modular proofs of related results.
 </p>
 </div>
 </li>
@@ -487,9 +490,10 @@ CCS 2025<br><br>
 <p> Oblivious Linear Evaluation (OLE) is an algebraic generalization of oblivious transfer (OT) that forms a critical part of a growing
 number of applications. An OLE protocol over a modulus 𝑞enables the receiver party to securely evaluate a line 𝑎·𝑋 +𝑏 chosen by
 the sender party on a secret point 𝑥∈Z𝑞. Motivated by the big efficiency gap between OLE and OT and by fast OT extension
-techniques, we revisit the question of reducing OLE to OT, aiming to improve the communication cost of known reductions.
-We start by observing that the Chinese Remainder Theorem (CRT) can be combined with a prior protocol of Gilboa (Crypto
-’99) to reduce its communication cost from 𝑂(ℓ2)to˜𝑂(ℓ)bits, for ℓ = log 𝑞. Unfortunately, whereas Gilboa’s protocol is secure against a semi-honest sender and a malicious receiver, a direct application
+techniques, we revisit the question of reducing OLE to OT, aiming to improve the communication cost of known reductions.<br><br>
+
+We start by observing that the Chinese Remainder Theorem (CRT) can be combined with a prior protocol of <span class=blu1>Gilboa (Crypto
+’99)</span> to reduce its communication cost from  <span class=blu2>𝑂(ℓ2)</span> to <span class=blu2>˜𝑂(ℓ)</span> bits, for <span class=blu2>ℓ = log 𝑞</span>. Unfortunately, whereas Gilboa’s protocol is secure against a semi-honest sender and a malicious receiver, a direct application
 of the CRT technique is only semi-honest secure (it is insecure against malicious receivers). Thus, we employ number-theoretic
 techniques to protect our CRT-based protocol against malicious receivers, while still retaining a concrete advantage over Gilboa’s
 protocol (e.g., 7.6×less communication for ℓ = 256). Furthermore, we obtain a fully malicious OLE-to-OT reduction by applying either
@@ -509,6 +513,34 @@ operations.
 </div>
 </li>
 
+
+<li>
+Iftach Haitner and <a href="https://sites.google.com/view/noammazor/home">Noam Mazor</a> and
+ <a href="https://sites.google.com/view/jadsilbak/home">Jad Silbak</a> and <a href="https://sites.google.com/view/eliadtsfadia">Eliad Tsfadia</a> and <a href="https://sites.google.com/georgetown.edu/chao-yan/home">Chao Yan</a><br>
+<strong>Mildly Accurate Computationally Differentially Private Inner Product Protocols Imply Oblivious Transfer</strong> <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span> <br>
+Crypto 2025<br>
+Draft of full version  <a  href="https://arxiv.org/html/2502.15629v1">[arxiv]</a><br><br>
+<div class="box">
+<p>
+In distributed differential privacy, multiple parties collaboratively analyze their combined
+data while protecting the privacy of each party’s data from the eyes of the others. Interestingly,
+for certain fundamental two-party functions like inner product and Hamming distance, the
+accuracy of distributed solutions significantly lags behind what can be achieved in the centralized
+model. However, under computational differential privacy, these limitations can be circumvented
+using oblivious transfer via secure multi-party computation. Yet, no results show that oblivious
+transfer is indeed necessary for accurately estimating a non-Boolean functionality. In particular,
+for the inner-product functionality, it was previously unknown whether oblivious transfer is
+necessary even for the best possible constant additive error.
+In this work, we prove that any computationally differentially private protocol that estimates
+the inner product over <span class=blu2>{-1,1}<sup>n</sup>&times;{-1,1}<sup>n</sup> </span> up to an additive error of <span class=blu2>O(n<sup>1/6</sup>)</span>, can be used to
+construct oblivious transfer. In particular, our result implies that protocols with sub-polynomial
+accuracy are equivalent to oblivious transfer. In this accuracy regime, our result improves upon
+<span class=blu1> Haitner, Mazor, Silbak, and Tsfadia [STOC ’22]</span> who showed that a key-agreement protocol is
+necessary.
+</p>
+</div>
+</li>
 
 <li>
 <a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a> and Iftach Haitner and <a href="https://yehudalindell.com">Yehuda Lindell</a> and <a href="https://www.gilsegev.net">Gil Segev</a><br>
