@@ -560,6 +560,38 @@ Verifiable random functions (VRFs) are  pseudorandom functions where the functio
 
 
 <li>
+Iftach Haitner and  <a href="https://www.gilsegev.net">Gil Segev</a><br>
+<strong>Tighter Concrete Security for the Simplest OT</strong> <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span> <br>
+Communications in Cryptology 2025<br>
+Draft of full version  <a  href="https://eprint.iacr.org/2025/493">[eprint]</a><br><br>
+<div class="box">
+<p>
+The <span class=blu1>Chou-Orlandi</span> batch oblivious transfer (OT) protocol is a particularly attractive OT protocol that 
+bridges the gap between practical efficiency and strong security guarantees and is especially notable due to its simplicity.
+The security analysis provided by Chou and Orlandi bases the security of their protocol on the hardness of the computational Diffie-Hellman (CDH) 
+problem in prime-order groups. Concretely, in groups in which no better-than-generic algorithms are known for the 
+problem, their security analysis yields that an attacker running in time <span class=blu2>t</span> and issuing 
+<span class=blu2>q</span> random-oracle queries, breaks the security of their protocol with probability at most <span class=blu2>&epsilon; &le;q<sup>2</sup>t/2<sup>&kappa;/2</sup></span>, where 
+ <span class=blu2> &kappa;</span>  is the bit-length of the group's order. This concrete bound, however, is somewhat insufficient for 256-bit groups (e.g., for 
+<span class=blu2> &kappa;= 256</span>, it does not provide any guarantee for <span class=blu2>t= 2<sup>48</sup></span> and <span class=blu2>q= 2<sup>40</sup></span>).<br><br>
+
+In this work, we establish a tighter concrete security bound for the Chou-Orlandi protocol. First, we introduce the list square Diffie-Hellman (&ell;-sqDH) problem and present a tight reduction from the security of the protocol to the hardness of 
+solving &ell;-sqDH. That is, we completely shift the task of analyzing the concrete security of the protocol to that of analyzing the concrete hardness of the  &ell;-sqDH
+ problem. Second, we reduce the hardness of the  &ell;-sqDH problem to that of the decisional Diffie-Hellman (DDH) problem without incurring a multiplicative loss. 
+ Our key observation is that although CDH and DDH have the same assumed concrete hardness, relying on the hardness of 
+ DDH enables our reduction to efficiently test the correctness of the solutions it produces. 
+
+Concretely, in groups in which no better-than-generic algorithms are known for the DDH
+ problem, our analysis yields that an attacker running in time  <span class=blu2>t</span> and issuing 
+<span class=blu2>q</span> random-oracle queries, breaks the security of the Chou-Orlandi protocol with probability at most 
+<span class=blu2>&epsilon; &le;t/2<sup>&kappa;/2</sup></span>, i.e, we eliminate the above multiplicative 
+ term <span class=blu2>q<sup>2</sup></span>.  We prove our results within the standard real-vs-ideal framework considering static corruptions by malicious adversaries, and provide a concrete security treatment by accounting for the statistical distance between a real-model execution and an ideal-model execution.</p>
+</div>
+</li>
+
+
+<li>
 Iftach Haitner and <a href="https://yehudalindell.com">Yehuda Lindell</a> and <a href="https://u.cs.biu.ac.il/~nofarie">Ariel Nof
 </a> and <a href="https://www.iacr.org/cryptodb/data/author.php?authorkey=7708">Samuel Ranellucci</a><br>
 <strong>Fast Secure Multiparty ECDSA with Practical Distributed Key Generation and Applications to Cryptocurrency Custody</strong> <img src="new.png" class=update1><br>
