@@ -452,12 +452,41 @@ See the <a href="http://cpiis.cs.tau.ac.il/postdoc-fellowships-internships/">TAU
 <ul id=pub1>
 
 
+<li>
+Idan Baril and Iftach Haitner<br>
+<strong>On the Complexity of Interactive Arguments</strong> <img src="new.png" class=update1><br>
+<span class=abslide>[abstract]</span> <br>
+Manuscript 2026<br>
+<a  href="https://eprint.iacr.org/2026/272">[eprint]</a><br><br> 
+<div class="box">
+<p> 
+We study the minimal hardness assumptions required for constructing interactive arguments
+for NP, focusing on succinct arguments—total number of bits sent by the prover is smaller
+than the witness size—and on relaxed forms of zero knowledge, such as witness indistinguishability. Known constructions of succinct arguments rely on collision-resistant hash functions
+<span class=blu1>(Kilian, STOC 92)</span>, indistinguishability obfuscation <span class=blu1>(Sahai and Waters, STOC 14)</span>, 
+the discrete logarithm assumption <span class=blu1>(Bootle et al., Eurocrypt 16)</span>, and lattice-based assumptions <span class=blu1>(Baum
+et al., Crypto 18)</span>, while known constructions of witness indistinguishability require one-way
+functions (OWFs) <span class=blu1>(Goldreich et al., FOCS 86, JACM 91)</span>. This suggests that succinct witness-indistinguishable 
+interactive arguments may require the existence of OWFs.
+</br>
+Somewhat surprisingly, we prove that the existence of fully black-box reductions from OWFs
+to succinct witness-indistinguishable interactive arguments is unlikely: the existence of such
+a reduction would imply (unconditionally) the existence of OWFs. More generally, we consider fully black-box reductions from OWFs to succinct witness-indistinguishable interactive
+arguments combined with an additional hardness assumption <span class=blu2>G</span> (e.g., NP &#8840; P/poly). Such
+reductions would show that any algorithm breaking the candidate one-way function can be
+transformed into an algorithm that either breaks the soundness of the interactive argument or
+violates the assumption <span class=blu2>G</span>. We prove that the existence of such a reduction already implies a
+black-box reduction from OWFs to <span class=blu2>G</span> <em>alone</em>.
+</p>
+</div>
+</li>
+
 
 <li>
 Iftach Haitner and <a href="https://www.iacr.org/cryptodb/data/author.php?authorkey=8633">Nikolaos Makriyannis</a><br>
 <strong>Tight Bounds on Uniform-Challenge Black-Box Reductions from Sigma Protocols</strong> <img src="new.png" class=update1><br>
 <span class=abslide>[abstract]</span> <br>
-Manuscript 2025<br>
+Crypto 2026<br>
 <a  href="https://eprint.iacr.org/2025/1535">[eprint]</a><br><br> 
 <div class="box">
 <p> 
