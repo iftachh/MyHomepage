@@ -169,44 +169,273 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
 
 <h2>Talks Content</h2>
 
-<li> Lecture 2, follows
- 
-	<ul>
-	  <li>  <a href="https://www.youtube.com/watch?v=LOVpky8upwA&list=PL8Vt-7cSFnw1gx51WHRgAtioVqAjzMS1w">What are Blockchains and What Are They For?</a></li>
-   	</ul>
+<li> Lecture 2 — What is a blockchain for?
+<h4>Topics</h4>
+
+<ul>
+<li>
+  What is a blockchain for? — Coordination among many parties when no single trusted entity exists. If a trusted party is available, you don't need a blockchain. Motivate through financial systems, where trust is often absent.
+</li>
+<li>
+  The key innovations — Bitcoin (2009): a public append-only ledger secured by replication and incentives, plus a fixed-supply digital asset. Ethereum (2015): a fully programmable blockchain computer with composability, where on-chain programs can call each other.
+</li>
+<li>
+  The ecosystem today — Key numbers: assets managed by DeFi protocols, transaction volumes, cost comparisons (e.g., international wire transfer vs. stablecoin transfer). What chains developers are building on.
+</li>
+<li>
+  The layered architecture — Following Boneh's stack: consensus/data availability layer &rarr; execution engine (blockchain computer) &rarr; applications (DApps, smart contracts) &rarr; user-facing tools. This layered view becomes the map for the rest of the seminar.
+</li>
+<li>
+  Mapping the layers to the seminar — Consensus layer &rarr; lectures 3&ndash;7. Ledger and execution models &rarr; lectures 8&ndash;9. Smart contracts and applications &rarr; lectures 10&ndash;11. Privacy &rarr; lecture 12. Fees, MEV, and PBS &rarr; lecture 13.
+</li>
+</ul>
+
+
+<h4>References</h4>
+<ul>
+
+
+<li>
+  Dan Boneh. <em>CS251: Cryptocurrencies and Blockchain Technologies &mdash; Lecture 1.</em> Stanford University, Fall 2025.
+  <a href="https://cs251.stanford.edu/lectures/lecture1.pdf">[Slides]</a>
+</li>
+<li>
+  Dan Boneh. <em>What are Blockchains and What Are They For.</em> YouTube talk.
+  <a href="https://www.youtube.com/watch?v=LOVpky8upwA">[Video]</a>
+</li>
+
+
+<li>
+  Tim Roughgarden. <em>The Science of Blockchains.</em> Lecture 1.
+  <a href="https://www.timroughgarden.algorithmsilluminated.org/s25/">[Course page]</a>
+</li>
+
+</ul>
+
 
 </li>
 
 
-<li> Lecture 3
+<li> Lecture 3 — State Machine Replication I
  
+ 
+ <h4>Topics</h4>
 	<ul>
-	  <li>  <a href="https://www.youtube.com/watch?v=LOVpky8upwA&list=PL8Vt-7cSFnw1gx51WHRgAtioVqAjzMS1w">What are Blockchains and What Are They For?</a></li>
+	 <li>
+  Deterministic state machines — A service modeled as a function from (state, input) &rarr; (state, output). If two replicas start in the same state and process the same inputs in the same order, they reach the same state. This determinism is the foundation everything else rests on.
+</li>
+<li>
+  Why replicate? — A single server is a single point of failure. Replication across independent machines provides fault tolerance and availability: the service survives even when some replicas fail.
+</li>
+<li>
+  The SMR approach — Replicate the state machine across <em>n</em> servers. The core problem reduces to ensuring all non-faulty replicas process the same sequence of requests. This decomposes into two sub-problems: agreement (every replica receives every request) and order (every replica processes them in the same sequence).
+</li>
+<li>
+  The role of total order — A totally ordered log is the central abstraction. Once you have a log that everyone agrees on, execution is deterministic and each replica can independently compute the correct state. The consensus problem is, at its core, the problem of building this shared log.
+</li>
+<li>
+  Fault models — Crash faults: a replica simply stops. Byzantine faults: a replica can behave arbitrarily, including sending contradictory messages. The key result: tolerating Byzantine faults requires <em>n</em> &gt; 3<em>f</em> replicas. We state and give intuition for this bound via the Byzantine Generals story.
+</li>
+<li>
+  Concrete example — Walk through a simple replicated key-value store to make the abstraction tangible: how client requests enter the system, how they get ordered, and how replicas execute and respond.
+</li>
    	</ul>
+
+
+<h4>References</h4>
+<ul>
+<li>
+  Tim Roughgarden. <em>The Science of Blockchains.</em> Lectures 2&ndash;3.
+  <a href="https://www.timroughgarden.algorithmsilluminated.org/s25/">[Course page]</a>
+</li>
+
+<li>
+  Fred B. Schneider. <em>Implementing Fault-Tolerant Services Using the State Machine Approach: A Tutorial.</em> ACM Computing Surveys 22(4), pp. 299&ndash;319, 1990.
+  <a href="https://www.cs.cornell.edu/fbs/publications/SMSurvey.pdf">[PDF]</a>
+</li>
+<li>
+  Leslie Lamport, Robert Shostak, Marshall Pease. <em>The Byzantine Generals Problem.</em> ACM TOPLAS 4(3), pp. 382&ndash;401, 1982. Assign sections I&ndash;IV.
+  <a href="https://lamport.azurewebsites.net/pubs/byz.pdf">[PDF]</a>
+</li>
+<li>
+  Ittai Abraham, Kartik Nayak, Ling Ren. <em>Consensus for State Machine Replication.</em> Decentralized Thoughts blog.
+  <a href="https://decentralizedthoughts.github.io/2019-10-15-consensus-for-state-machine-replication/">[Link]</a>
+</li>
+</ul>
+
+
+</ul>
+
 
 </li>
 
-<li> Lecture 4
+<li> Lecture 4 —  State Machine Replication II
  
-	<ul>
-	  <li>  <a href="https://www.youtube.com/watch?v=LOVpky8upwA&list=PL8Vt-7cSFnw1gx51WHRgAtioVqAjzMS1w">What are Blockchains and What Are They For?</a></li>
-   	</ul>
+	<h4>Topics</h4>
+
+<li>
+  Safety vs. liveness — Define precisely. Safety: no two honest replicas disagree. Liveness: every request is eventually processed. The fundamental tension: you want both, but achieving both simultaneously is constrained.
+</li>
+<li>
+  The FLP impossibility — In a fully asynchronous network, no deterministic protocol can guarantee both safety and liveness with even one crash fault. Walk through the bivalence intuition: the adversary can always keep the system undecided by controlling scheduling.
+</li>
+<li>
+  Network models — Synchrony (known bounded delay &Delta;), asynchrony (no bound), partial synchrony (bound exists but is unknown, or holds only after some unknown GST). Partial synchrony as the practical sweet spot.
+</li>
+<li>
+  The DLS result — Under partial synchrony, consensus is solvable for <em>f</em> &lt; <em>n</em>/3 Byzantine faults. This is the theoretical foundation for PBFT, Tendermint, HotStuff, and all the BFT protocols students will encounter later.
+</li>
+<li>
+  The Sybil problem — All of the above assumes a known, fixed set of <em>n</em> participants. In an open, permissionless setting, one entity can create arbitrarily many identities, breaking the <em>f</em> &lt; <em>n</em>/3 assumption entirely.
+</li>
+<li>
+  The bridge to PoW/PoS — Sybil resistance requires tying identity to a scarce resource (computation, capital). Preview of how Nakamoto consensus and proof-of-stake address this, setting up lectures 5 and 6.
+</li>
+
+
+
+<h4>References</h4>
+<ul>
+<li>
+  Tim Roughgarden. <em>The Science of Blockchains.</em> Lectures 4&ndash;5 and Bonus Lecture 1.
+  <a href="https://www.timroughgarden.algorithmsilluminated.org/s25/">[Course page]</a>
+</li>
+<li>
+  Michael J. Fischer, Nancy A. Lynch, Michael S. Paterson. <em>Impossibility of Distributed Consensus with One Faulty Process.</em> JACM 32(2), pp. 374&ndash;382, 1985.
+  <a href="https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf">[PDF]</a>
+</li>
+<li>
+  Cynthia Dwork, Nancy Lynch, Larry Stockmeyer. <em>Consensus in the Presence of Partial Synchrony.</em> JACM 35(2), pp. 288&ndash;323, 1988. Assign sections 1&ndash;3.
+  <a href="https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf">[PDF]</a>
+</li>
+<li>
+  John R. Douceur. <em>The Sybil Attack.</em> IPTPS 2002, LNCS 2429.
+  <a href="https://www.freehaven.net/anonbib/cache/sybil.pdf">[PDF]</a>
+</li>
+<li>
+  Elaine Shi. <em>Foundations of Distributed Consensus and Blockchains</em> (preliminary draft), Chapters 3&ndash;4 and 12.
+  <a href="https://elaineshi.com/docs/blockchain-book.pdf">[PDF]</a>
+</li>
+</ul>
+
+<li> Lecture 5 — Proof of Work
+ 
+<h4>Topics</h4>
+
+<ul>
+<li>
+  Resource-based Sybil resistance — Recap the Sybil problem from lecture 4. Proof of Work ties voting power to computational effort: one CPU, one vote. This makes it costly to dominate the system.
+</li>
+<li>
+  Hash puzzles and mining — Finding a nonce such that H(block || nonce) &lt; target. The puzzle is hard to solve, easy to verify. Difficulty adjustment: keeping block time roughly constant as total hash power changes.
+</li>
+<li>
+  Leader election via PoW — Whoever solves the puzzle first proposes the next block and earns the block reward. This is a randomized, memoryless lottery &mdash; probability of winning is proportional to hash power.
+</li>
+<li>
+  The longest-chain rule — When a node sees multiple valid chains, it follows the longest (most work). This is the fork-choice rule that drives convergence. Honest miners always extend the longest chain they know of.
+</li>
+<li>
+  Forks and confirmations — Forks happen naturally due to network delay (two miners solve nearly simultaneously). They resolve as one chain grows longer. Confirmation depth: waiting <em>k</em> blocks reduces the probability of a reversal exponentially. The 6-confirmation convention.
+</li>
+<li>
+  Security intuition — The honest majority assumption: as long as honest miners control &gt;50% of hash power, the honest chain grows faster in expectation. Brief sketch of why an attacker with &lt;50% falls behind (random walk / gambler's ruin argument).
+</li>
+<li>
+  Selfish mining — A strategy where a miner withholds blocks to gain an advantage. Shows that the true security threshold is slightly below 50%. Briefly discuss the impact on chain quality.
+</li>
+
+</ul>
+<h4>References</h4>
+<ul>
+<li>
+  Tim Roughgarden. <em>The Science of Blockchains.</em> Lectures 7, 20&ndash;21.
+  <a href="https://www.timroughgarden.algorithmsilluminated.org/s25/">[Course page]</a>
+</li>
+
+<li>
+  Satoshi Nakamoto. <em>Bitcoin: A Peer-to-Peer Electronic Cash System.</em> 2008.
+  <a href="https://bitcoin.org/bitcoin.pdf">[PDF]</a>
+</li>
+<li>
+  Juan Garay, Aggelos Kiayias, Nikos Leonardos. <em>The Bitcoin Backbone Protocol: Analysis and Applications.</em> EUROCRYPT 2015.
+  <a href="https://eprint.iacr.org/2014/765.pdf">[PDF]</a>
+</li>
+<li>
+  Ittay Eyal, Emin G&uuml;n Sirer. <em>Majority Is Not Enough: Bitcoin Mining Is Vulnerable.</em> FC 2014 / CACM 2018.
+  <a href="https://arxiv.org/abs/1311.0243">[arXiv]</a>
+</li>
+<li>
+  Decentralized Thoughts. <em>Nakamoto's Longest-Chain Wins Protocol.</em>
+  <a href="https://decentralizedthoughts.github.io/2021-10-15-Nakamoto-Consensus/">[Link]</a>
+</li>
+</ul>
+
+</body>
+</html>
 
 </li>
 
-<li> Lecture 5
+<li> Lecture 6 — Proof of Stake
  
-	<ul>
-	  <li>  <a href="https://www.youtube.com/watch?v=LOVpky8upwA&list=PL8Vt-7cSFnw1gx51WHRgAtioVqAjzMS1w">What are Blockchains and What Are They For?</a></li>
-   	</ul>
 
+
+<h4>Topics</h4>
+<ul>
+<li>
+  From computation to capital — PoW ties security to energy expenditure; PoS ties it to economic stake. Validators lock up capital instead of burning electricity. Sybil resistance through scarcity of coins rather than scarcity of hash power.
 </li>
+<li>
+  Validator selection and committees — How validators are chosen to propose and attest to blocks. Randomized selection weighted by stake. The role of committees in scaling attestation (not every validator votes on every slot).
+</li>
+<li>
+  BFT-style finality — Unlike PoW's probabilistic finality, PoS protocols can achieve economic finality: once a block is finalized, reverting it requires destroying a provably large amount of stake. Connection to the BFT protocols from lecture 4 (PBFT, Tendermint, HotStuff).
+</li>
+<li>
+  Slashing — The enforcement mechanism: validators who sign contradictory messages (equivocate) or violate protocol rules have their stake destroyed. This creates a direct economic cost for misbehavior, replacing PoW's energy cost with capital risk.
+</li>
+<li>
+  Nothing-at-stake and long-range attacks — The core theoretical concern: unlike PoW, creating an alternative history costs nothing in old keys. Long-range attacks: an adversary who held stake in the past can try to rewrite history from that point. Why this is fundamentally different from PoW's security model.
+</li>
+<li>
+  Weak subjectivity — The solution to long-range attacks: new or returning nodes must obtain a recent trusted checkpoint (not just the genesis block). This is a real trust assumption that PoW does not require. Tradeoffs and practical implications.
+</li>
+<li>
+  Ethereum's Gasper as a case study — Briefly walk through Ethereum's PoS design: the beacon chain, epochs/slots, LMD-GHOST fork choice combined with Casper FFG finality. Concrete illustration of how the above concepts fit together in a live system.
+</li>
+</ul>
 
-<li> Lecture 6
- 
-	<ul>
-	  <li>  <a href="https://www.youtube.com/watch?v=LOVpky8upwA&list=PL8Vt-7cSFnw1gx51WHRgAtioVqAjzMS1w">What are Blockchains and What Are They For?</a></li>
-   	</ul>
+<h4>References</h4>
+<ul>
+
+<li>
+  Tim Roughgarden. <em>The Science of Blockchains.</em> Lectures 22&ndash;23.
+  <a href="https://www.timroughgarden.algorithmsilluminated.org/s25/">[Course page]</a>
+</li>
+<li>
+  Vitalik Buterin, Virgil Griffith. <em>Casper the Friendly Finality Gadget.</em> 2017.
+  <a href="https://arxiv.org/abs/1710.09437">[arXiv]</a>
+</li>
+<li>
+  Vitalik Buterin, Diego Hernandez, Thor Kamphefner, Khiem Pham, Zhi Qiao, Danny Ryan, Juhyeok Sin, Ying Wang, Yan X Zhang. <em>Combining GHOST and Casper.</em> 2020.
+  <a href="https://arxiv.org/abs/2003.03052">[arXiv]</a>
+</li>
+<li>
+  Aggelos Kiayias, Alexander Russell, Bernardo David, Roman Oliynykov. <em>Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol.</em> CRYPTO 2017.
+  <a href="https://eprint.iacr.org/2016/889.pdf">[PDF]</a>
+</li>
+<li>
+  Vitalik Buterin. <em>Proof of Stake FAQ.</em> Ethereum documentation.
+  <a href="https://vitalik.eth.limo/general/2017/12/31/pos_faq.html">[Link]</a>
+</li>
+<li>
+  Ethereum Foundation. <em>Proof-of-Stake (PoS).</em> ethereum.org.
+  <a href="https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/">[Link]</a>
+</li>
+</ul>
+
+</body>
+</html>
 
 </li>
 
