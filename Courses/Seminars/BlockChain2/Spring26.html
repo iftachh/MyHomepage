@@ -4,6 +4,19 @@
  <meta charset=utf-8">
  <title>Seminar on Blockchain and Cryptocurrencies</title> 
  <style>td{text-align:center;padding:5px} </style>
+ 
+ 
+ <style>
+    /* Select all list items within an unordered or ordered list */
+    ul li, ol li {
+        margin-bottom: 15px; /* Adjust this value as needed for the desired space */
+    }
+
+    /* Optional: Remove the margin from the last list item to prevent extra space at the end of the list */
+    ul li:last-child, ol li:last-child {
+        margin-bottom: 0;
+    }
+</style>
 </head>
 
 <body style = "padding-left:40px; font-size:120%">
@@ -32,16 +45,11 @@ In each meeting one student will cover a single topic as listed below.
 <h2>Prerequisites</h2>
 Background in the theory of computation (Algorithm, Computability, Complexity) is required. Cryptography course, like Foundation of Cryptography or Introduction to Modern Cryptography, is recommended but not required. 
 
-<h2>Presentations</h2>
-Power Point presentations are acceptable, but white boards ones are preferable.<br>
-To do a good job one needs to <strong>read background material</strong>, see the reading section. <br> 
-
-In addition, the speakers of the week will have to give me a <strong>practice talk</strong> a week before (right after the talk of that week).
 
 
 <h2> Grade </h2> 
-<li> 20% Talk preparation</li>
-<li> 70% The talk</li>
+<li> 30% Talk preparation</li>
+<li> 60% The talk</li>
 <li> 10% Participation</li>
 
 
@@ -182,9 +190,9 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
           
 
 
-<br><br>
+<br>
 
-<h2>Additional Reading/Viewing</h2>
+<h2 id="reading"> Additional Reading/Viewing</h2>
 
 
   <li> <a href="https://elaineshi.com/docs/blockchain-book.pdf" target="_blank">Foundations of Distributed Consensus and Blockchains, book by Elaine Shi</a>
@@ -195,36 +203,82 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
 			
 <br><br><br>
 
-<h1>Talks Content</h1>
 
 
-<br><h3>Lecture 2 — What is a blockchain for?</h3>
+
+<h2>General Guidlines for Your Talk</h2>
+
+<ul>
+
+<li> Each talk spans over two academic hours (50 minutes each), with 10 minutes break in between. </li> 
+
+<li> Give a <strong> whiteboard talk</strong>, unless getting explicit permission from me. </li> 
+
+
+<li> To do a good job one needs to <strong>read background material</strong>, see <a href="#reading">the Additional Reading section</a>. </li> 
+
+
+<li> The speakers of the week will have to give me a <strong>practice talk</strong> a week before (right after the talk of that week). </li> 
+
+
+
+
+ <li> The content of each talk is given in the <a href="#content">Talks Content section</a>. You do not have to follow  all suggestions, but do address each of the topics.</li> 
+ 
+ <li> Make sure to <strong> define all relevant notions</strong>. Even you do not use them, subsequent talks might.<
+ 
+ li> 
+</ul>
+
+<br><br>
+
+
+
+
+
+<h1 id="content">Talks Content</h1>
+
+
+<h3>Lecture 2 — What is a blockchain for?</h3>
 
 <h4>Topics</h4>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blockchain Seminar — Lectures 2–13</title>
+</head>
+<body>
+
+<h3>Lecture 2 — What Is a Blockchain?</h3>
+
+<h4>Topics</h4>
 <ul>
 <li>
-  What is a blockchain for? — Coordination among many parties when no single trusted entity exists. If a trusted party is available, you don't need a blockchain. Motivate through financial systems, where trust is often absent.
+  <strong>What is a blockchain for?</strong><br>
+  Coordination among many parties when no single trusted entity exists. If a trusted party is available, you don't need a blockchain. Motivate through financial systems, where trust is often absent.
 </li>
 <li>
-  The key innovations — Bitcoin (2009): a public append-only ledger secured by replication and incentives, plus a fixed-supply digital asset. Ethereum (2015): a fully programmable blockchain computer with composability, where on-chain programs can call each other.
+  <strong>The key innovations</strong><br>
+  Bitcoin (2009): a public append-only ledger secured by replication and incentives, plus a fixed-supply digital asset. Ethereum (2015): a fully programmable blockchain computer with composability, where on-chain programs can call each other.
 </li>
 <li>
-  The ecosystem today — Key numbers: assets managed by DeFi protocols, transaction volumes, cost comparisons (e.g., international wire transfer vs. stablecoin transfer). What chains developers are building on.
+  <strong>The ecosystem today</strong><br>
+  Key numbers: assets managed by DeFi protocols, transaction volumes, cost comparisons (e.g., international wire transfer vs. stablecoin transfer). What chains developers are building on.
 </li>
 <li>
-  The layered architecture — Following Boneh's stack: consensus/data availability layer &rarr; execution engine (blockchain computer) &rarr; applications (DApps, smart contracts) &rarr; user-facing tools. This layered view becomes the map for the rest of the seminar.
+  <strong>The layered architecture</strong><br>
+  Following Boneh's stack: consensus/data availability layer &rarr; execution engine (blockchain computer) &rarr; applications (DApps, smart contracts) &rarr; user-facing tools. This layered view becomes the map for the rest of the seminar.
 </li>
 <li>
-  Mapping the layers to the seminar — Consensus layer &rarr; lectures 3&ndash;7. Ledger and execution models &rarr; lectures 8&ndash;9. Smart contracts and applications &rarr; lectures 10&ndash;11. Privacy &rarr; lecture 12. Fees, MEV, and PBS &rarr; lecture 13.
+  <strong>Mapping the layers to the seminar</strong><br>
+  Consensus layer &rarr; lectures 3&ndash;7. Ledger and execution models &rarr; lectures 8&ndash;9. Smart contracts and applications &rarr; lectures 10&ndash;11. Privacy &rarr; lecture 12. Fees, MEV, and PBS &rarr; lecture 13.
 </li>
 </ul>
 
-
 <h4>References</h4>
 <ul>
-
-
 <li>
   Dan Boneh. <em>CS251: Cryptocurrencies and Blockchain Technologies &mdash; Lecture 1.</em> Stanford University, Fall 2025.
   <a href="https://cs251.stanford.edu/lectures/lecture1.pdf">[Slides]</a>
@@ -233,45 +287,42 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   Dan Boneh. <em>What are Blockchains and What Are They For.</em> YouTube talk.
   <a href="https://www.youtube.com/watch?v=LOVpky8upwA">[Video]</a>
 </li>
-
-
 <li>
   Tim Roughgarden. <em>The Science of Blockchains.</em> Lecture 1.
   <a href="https://www.timroughgarden.algorithmsilluminated.org/s25/">[Course page]</a>
 </li>
-
 </ul>
-
-
-</li>
 
 
 <br><br><h3>Lecture 3 — State Machine Replication I</h3>
 
- 
- 
- <h4>Topics</h4>
-	<ul>
-	 <li>
-  Deterministic state machines — A service modeled as a function from (state, input) &rarr; (state, output). If two replicas start in the same state and process the same inputs in the same order, they reach the same state. This determinism is the foundation everything else rests on.
+<h4>Topics</h4>
+<ul>
+<li>
+  <strong>Deterministic state machines</strong><br>
+  A service modeled as a function from (state, input) &rarr; (state, output). If two replicas start in the same state and process the same inputs in the same order, they reach the same state. This determinism is the foundation everything else rests on.
 </li>
 <li>
-  Why replicate? — A single server is a single point of failure. Replication across independent machines provides fault tolerance and availability: the service survives even when some replicas fail.
+  <strong>Why replicate?</strong><br>
+  A single server is a single point of failure. Replication across independent machines provides fault tolerance and availability: the service survives even when some replicas fail.
 </li>
 <li>
-  The SMR approach — Replicate the state machine across <em>n</em> servers. The core problem reduces to ensuring all non-faulty replicas process the same sequence of requests. This decomposes into two sub-problems: agreement (every replica receives every request) and order (every replica processes them in the same sequence).
+  <strong>The SMR approach</strong><br>
+  Replicate the state machine across <em>n</em> servers. The core problem reduces to ensuring all non-faulty replicas process the same sequence of requests. This decomposes into two sub-problems: agreement (every replica receives every request) and order (every replica processes them in the same sequence).
 </li>
 <li>
-  The role of total order — A totally ordered log is the central abstraction. Once you have a log that everyone agrees on, execution is deterministic and each replica can independently compute the correct state. The consensus problem is, at its core, the problem of building this shared log.
+  <strong>The role of total order</strong><br>
+  A totally ordered log is the central abstraction. Once you have a log that everyone agrees on, execution is deterministic and each replica can independently compute the correct state. The consensus problem is, at its core, the problem of building this shared log.
 </li>
 <li>
-  Fault models — Crash faults: a replica simply stops. Byzantine faults: a replica can behave arbitrarily, including sending contradictory messages. The key result: tolerating Byzantine faults requires <em>n</em> &gt; 3<em>f</em> replicas. We state and give intuition for this bound via the Byzantine Generals story.
+  <strong>Fault models</strong><br>
+  Crash faults: a replica simply stops. Byzantine faults: a replica can behave arbitrarily, including sending contradictory messages. The key result: tolerating Byzantine faults requires <em>n</em> &gt; 3<em>f</em> replicas. We state and give intuition for this bound via the Byzantine Generals story.
 </li>
 <li>
-  Concrete example — Walk through a simple replicated key-value store to make the abstraction tangible: how client requests enter the system, how they get ordered, and how replicas execute and respond.
+  <strong>Concrete example</strong><br>
+  Walk through a simple replicated key-value store to make the abstraction tangible: how client requests enter the system, how they get ordered, and how replicas execute and respond.
 </li>
-   	</ul>
-
+</ul>
 
 <h4>References</h4>
 <ul>
@@ -279,7 +330,6 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   Tim Roughgarden. <em>The Science of Blockchains.</em> Lectures 2&ndash;3.
   <a href="https://www.timroughgarden.algorithmsilluminated.org/s25/">[Course page]</a>
 </li>
-
 <li>
   Fred B. Schneider. <em>Implementing Fault-Tolerant Services Using the State Machine Approach: A Tutorial.</em> ACM Computing Surveys 22(4), pp. 299&ndash;319, 1990.
   <a href="https://www.cs.cornell.edu/fbs/publications/SMSurvey.pdf">[PDF]</a>
@@ -295,33 +345,35 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
 </ul>
 
 
+<br><br><h3>Lecture 4 — State Machine Replication II</h3>
 
-<br><br> <h3>Lecture 4 —  State Machine Replication II</h3>
-
-
- 
-	<h4>Topics</h4>
-
+<h4>Topics</h4>
+<ul>
 <li>
-  Safety vs. liveness — Define precisely. Safety: no two honest replicas disagree. Liveness: every request is eventually processed. The fundamental tension: you want both, but achieving both simultaneously is constrained.
+  <strong>Safety vs. liveness</strong><br>
+  Define precisely. Safety: no two honest replicas disagree. Liveness: every request is eventually processed. The fundamental tension: you want both, but achieving both simultaneously is constrained.
 </li>
 <li>
-  The FLP impossibility — In a fully asynchronous network, no deterministic protocol can guarantee both safety and liveness with even one crash fault. Walk through the bivalence intuition: the adversary can always keep the system undecided by controlling scheduling.
+  <strong>The FLP impossibility</strong><br>
+  In a fully asynchronous network, no deterministic protocol can guarantee both safety and liveness with even one crash fault. Walk through the bivalence intuition: the adversary can always keep the system undecided by controlling scheduling.
 </li>
 <li>
-  Network models — Synchrony (known bounded delay &Delta;), asynchrony (no bound), partial synchrony (bound exists but is unknown, or holds only after some unknown GST). Partial synchrony as the practical sweet spot.
+  <strong>Network models</strong><br>
+  Synchrony (known bounded delay &Delta;), asynchrony (no bound), partial synchrony (bound exists but is unknown, or holds only after some unknown GST). Partial synchrony as the practical sweet spot.
 </li>
 <li>
-  The DLS result — Under partial synchrony, consensus is solvable for <em>f</em> &lt; <em>n</em>/3 Byzantine faults. This is the theoretical foundation for PBFT, Tendermint, HotStuff, and all the BFT protocols students will encounter later.
+  <strong>The DLS result</strong><br>
+  Under partial synchrony, consensus is solvable for <em>f</em> &lt; <em>n</em>/3 Byzantine faults. This is the theoretical foundation for PBFT, Tendermint, HotStuff, and all the BFT protocols students will encounter later.
 </li>
 <li>
-  The Sybil problem — All of the above assumes a known, fixed set of <em>n</em> participants. In an open, permissionless setting, one entity can create arbitrarily many identities, breaking the <em>f</em> &lt; <em>n</em>/3 assumption entirely.
+  <strong>The Sybil problem</strong><br>
+  All of the above assumes a known, fixed set of <em>n</em> participants. In an open, permissionless setting, one entity can create arbitrarily many identities, breaking the <em>f</em> &lt; <em>n</em>/3 assumption entirely.
 </li>
 <li>
-  The bridge to PoW/PoS — Sybil resistance requires tying identity to a scarce resource (computation, capital). Preview of how Nakamoto consensus and proof-of-stake address this, setting up lectures 5 and 6.
+  <strong>The bridge to PoW/PoS</strong><br>
+  Sybil resistance requires tying identity to a scarce resource (computation, capital). Preview of how Nakamoto consensus and proof-of-stake address this, setting up lectures 5 and 6.
 </li>
-
-
+</ul>
 
 <h4>References</h4>
 <ul>
@@ -350,40 +402,44 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
 
 <br><br><h3>Lecture 5 — Proof of Work</h3>
 
- 
 <h4>Topics</h4>
-
 <ul>
 <li>
-  Resource-based Sybil resistance — Recap the Sybil problem from lecture 4. Proof of Work ties voting power to computational effort: one CPU, one vote. This makes it costly to dominate the system.
+  <strong>Resource-based Sybil resistance</strong><br>
+  Recap the Sybil problem from lecture 4. Proof of Work ties voting power to computational effort: one CPU, one vote. This makes it costly to dominate the system.
 </li>
 <li>
-  Hash puzzles and mining — Finding a nonce such that H(block || nonce) &lt; target. The puzzle is hard to solve, easy to verify. Difficulty adjustment: keeping block time roughly constant as total hash power changes.
+  <strong>Hash puzzles and mining</strong><br>
+  Finding a nonce such that H(block || nonce) &lt; target. The puzzle is hard to solve, easy to verify. Difficulty adjustment: keeping block time roughly constant as total hash power changes.
 </li>
 <li>
-  Leader election via PoW — Whoever solves the puzzle first proposes the next block and earns the block reward. This is a randomized, memoryless lottery &mdash; probability of winning is proportional to hash power.
+  <strong>Leader election via PoW</strong><br>
+  Whoever solves the puzzle first proposes the next block and earns the block reward. This is a randomized, memoryless lottery &mdash; probability of winning is proportional to hash power.
 </li>
 <li>
-  The longest-chain rule — When a node sees multiple valid chains, it follows the longest (most work). This is the fork-choice rule that drives convergence. Honest miners always extend the longest chain they know of.
+  <strong>The longest-chain rule</strong><br>
+  When a node sees multiple valid chains, it follows the longest (most work). This is the fork-choice rule that drives convergence. Honest miners always extend the longest chain they know of.
 </li>
 <li>
-  Forks and confirmations — Forks happen naturally due to network delay (two miners solve nearly simultaneously). They resolve as one chain grows longer. Confirmation depth: waiting <em>k</em> blocks reduces the probability of a reversal exponentially. The 6-confirmation convention.
+  <strong>Forks and confirmations</strong><br>
+  Forks happen naturally due to network delay (two miners solve nearly simultaneously). They resolve as one chain grows longer. Confirmation depth: waiting <em>k</em> blocks reduces the probability of a reversal exponentially. The 6-confirmation convention.
 </li>
 <li>
-  Security intuition — The honest majority assumption: as long as honest miners control &gt;50% of hash power, the honest chain grows faster in expectation. Brief sketch of why an attacker with &lt;50% falls behind (random walk / gambler's ruin argument).
+  <strong>Security intuition</strong><br>
+  The honest majority assumption: as long as honest miners control &gt;50% of hash power, the honest chain grows faster in expectation. Brief sketch of why an attacker with &lt;50% falls behind (random walk / gambler's ruin argument).
 </li>
 <li>
-  Selfish mining — A strategy where a miner withholds blocks to gain an advantage. Shows that the true security threshold is slightly below 50%. Briefly discuss the impact on chain quality.
+  <strong>Selfish mining</strong><br>
+  A strategy where a miner withholds blocks to gain an advantage. Shows that the true security threshold is slightly below 50%. Briefly discuss the impact on chain quality.
 </li>
-
 </ul>
+
 <h4>References</h4>
 <ul>
 <li>
   Tim Roughgarden. <em>The Science of Blockchains.</em> Lectures 7, 20&ndash;21.
   <a href="https://www.timroughgarden.algorithmsilluminated.org/s25/">[Course page]</a>
 </li>
-
 <li>
   Satoshi Nakamoto. <em>Bitcoin: A Peer-to-Peer Electronic Cash System.</em> 2008.
   <a href="https://bitcoin.org/bitcoin.pdf">[PDF]</a>
@@ -402,43 +458,43 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
 </li>
 </ul>
 
-</body>
-</html>
 
-</li>
-
-
- <br><br><h3>Lecture 6 — Proof of Stake</h3>
-
+<br><br><h3>Lecture 6 — Proof of Stake</h3>
 
 <h4>Topics</h4>
 <ul>
 <li>
-  From computation to capital — PoW ties security to energy expenditure; PoS ties it to economic stake. Validators lock up capital instead of burning electricity. Sybil resistance through scarcity of coins rather than scarcity of hash power.
+  <strong>From computation to capital</strong><br>
+  PoW ties security to energy expenditure; PoS ties it to economic stake. Validators lock up capital instead of burning electricity. Sybil resistance through scarcity of coins rather than scarcity of hash power.
 </li>
 <li>
-  Validator selection and committees — How validators are chosen to propose and attest to blocks. Randomized selection weighted by stake. The role of committees in scaling attestation (not every validator votes on every slot).
+  <strong>Validator selection and committees</strong><br>
+  How validators are chosen to propose and attest to blocks. Randomized selection weighted by stake. The role of committees in scaling attestation (not every validator votes on every slot).
 </li>
 <li>
-  BFT-style finality — Unlike PoW's probabilistic finality, PoS protocols can achieve economic finality: once a block is finalized, reverting it requires destroying a provably large amount of stake. Connection to the BFT protocols from lecture 4 (PBFT, Tendermint, HotStuff).
+  <strong>BFT-style finality</strong><br>
+  Unlike PoW's probabilistic finality, PoS protocols can achieve economic finality: once a block is finalized, reverting it requires destroying a provably large amount of stake. Connection to the BFT protocols from lecture 4 (PBFT, Tendermint, HotStuff).
 </li>
 <li>
-  Slashing — The enforcement mechanism: validators who sign contradictory messages (equivocate) or violate protocol rules have their stake destroyed. This creates a direct economic cost for misbehavior, replacing PoW's energy cost with capital risk.
+  <strong>Slashing</strong><br>
+  The enforcement mechanism: validators who sign contradictory messages (equivocate) or violate protocol rules have their stake destroyed. This creates a direct economic cost for misbehavior, replacing PoW's energy cost with capital risk.
 </li>
 <li>
-  Nothing-at-stake and long-range attacks — The core theoretical concern: unlike PoW, creating an alternative history costs nothing in old keys. Long-range attacks: an adversary who held stake in the past can try to rewrite history from that point. Why this is fundamentally different from PoW's security model.
+  <strong>Nothing-at-stake and long-range attacks</strong><br>
+  The core theoretical concern: unlike PoW, creating an alternative history costs nothing in old keys. Long-range attacks: an adversary who held stake in the past can try to rewrite history from that point. Why this is fundamentally different from PoW's security model.
 </li>
 <li>
-  Weak subjectivity — The solution to long-range attacks: new or returning nodes must obtain a recent trusted checkpoint (not just the genesis block). This is a real trust assumption that PoW does not require. Tradeoffs and practical implications.
+  <strong>Weak subjectivity</strong><br>
+  The solution to long-range attacks: new or returning nodes must obtain a recent trusted checkpoint (not just the genesis block). This is a real trust assumption that PoW does not require. Tradeoffs and practical implications.
 </li>
 <li>
-  Ethereum's Gasper as a case study — Briefly walk through Ethereum's PoS design: the beacon chain, epochs/slots, LMD-GHOST fork choice combined with Casper FFG finality. Concrete illustration of how the above concepts fit together in a live system.
+  <strong>Ethereum's Gasper as a case study</strong><br>
+  Briefly walk through Ethereum's PoS design: the beacon chain, epochs/slots, LMD-GHOST fork choice combined with Casper FFG finality. Concrete illustration of how the above concepts fit together in a live system.
 </li>
 </ul>
 
 <h4>References</h4>
 <ul>
-
 <li>
   Tim Roughgarden. <em>The Science of Blockchains.</em> Lectures 22&ndash;23.
   <a href="https://www.timroughgarden.algorithmsilluminated.org/s25/">[Course page]</a>
@@ -465,53 +521,57 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
 </li>
 </ul>
 
-</body>
-</html>
-
-
 
 <br><br><h3>Lecture 7 — Federated Byzantine Agreement</h3>
- 
+
 <h4>Topics</h4>
 <ul>
 <li>
-  Motivation — Classical BFT assumes a fixed, known validator set chosen by some authority. Permissionless consensus (PoW/PoS) opens membership but introduces Sybil problems and resource costs. FBA offers a third path: each node individually declares whom it trusts, and global agreement emerges from the overlap of those local trust decisions. No central authority picks the validator set; no resource expenditure is required.
+  <strong>Motivation</strong><br>
+  Classical BFT assumes a fixed, known validator set chosen by some authority. Permissionless consensus (PoW/PoS) opens membership but introduces Sybil problems and resource costs. FBA offers a third path: each node individually declares whom it trusts, and global agreement emerges from the overlap of those local trust decisions. No central authority picks the validator set; no resource expenditure is required.
 </li>
 <li>
-  Quorum slices and quorums — Each node defines a <em>quorum slice</em>: a set of peers it considers sufficient for agreement. A <em>quorum</em> is any set of nodes where every member's slice requirement is satisfied within the set. Key insight: quorums are a global, emergent property even though each node only specifies local preferences.
+  <strong>Quorum slices and quorums</strong><br>
+  Each node defines a <em>quorum slice</em>: a set of peers it considers sufficient for agreement. A <em>quorum</em> is any set of nodes where every member's slice requirement is satisfied within the set. Key insight: quorums are a global, emergent property even though each node only specifies local preferences.
 </li>
 <li>
-  Quorum intersection and safety — Two quorums that share at least one honest node cannot finalize contradictory statements. If quorum intersection holds system-wide, the network enjoys the same safety guarantee as classical BFT — no two honest nodes will disagree. If intersection fails (the network "bifurcates"), independent partitions can diverge without detecting it.
+  <strong>Quorum intersection and safety</strong><br>
+  Two quorums that share at least one honest node cannot finalize contradictory statements. If quorum intersection holds system-wide, the network enjoys the same safety guarantee as classical BFT — no two honest nodes will disagree. If intersection fails (the network "bifurcates"), independent partitions can diverge without detecting it.
 </li>
 <li>
-  Liveness and blocked sets — A set of nodes is <em>blocked</em> if it depends on faulty or silent nodes to form any quorum. Blocked nodes cannot make progress even if they are honest. FBA therefore does not guarantee liveness for all participants — only for those whose trust graph remains well-connected after removing faulty nodes. Contrast with PoW/PoS, where every honest node with network access eventually makes progress.
+  <strong>Liveness and blocked sets</strong><br>
+  A set of nodes is <em>blocked</em> if it depends on faulty or silent nodes to form any quorum. Blocked nodes cannot make progress even if they are honest. FBA therefore does not guarantee liveness for all participants — only for those whose trust graph remains well-connected after removing faulty nodes. Contrast with PoW/PoS, where every honest node with network access eventually makes progress.
 </li>
 <li>
-  Stellar Consensus Protocol (SCP) — Concrete instantiation of FBA. SCP uses <em>federated voting</em> (vote → accept → confirm) and a <em>nomination</em> phase for value proposal followed by a <em>ballot</em> phase for commit/abort, loosely inspired by two-phase commit and Paxos. Walk through a simplified round to show how nomination converges and ballots finalize.
+  <strong>Stellar Consensus Protocol (SCP)</strong><br>
+  Concrete instantiation of FBA. SCP uses <em>federated voting</em> (vote &rarr; accept &rarr; confirm) and a <em>nomination</em> phase for value proposal followed by a <em>ballot</em> phase for commit/abort, loosely inspired by two-phase commit and Paxos. Walk through a simplified round to show how nomination converges and ballots finalize.
 </li>
 <li>
-  Trust graph topology in practice — Stellar's real network is dominated by a small tier-1 set of organizations whose slices heavily overlap, producing strong quorum intersection but also concentration. Discussion: does FBA in practice converge toward a de-facto permissioned core? Comparison with how PoS stake distribution also tends to concentrate.
+  <strong>Trust graph topology in practice</strong><br>
+  Stellar's real network is dominated by a small tier-1 set of organizations whose slices heavily overlap, producing strong quorum intersection but also concentration. Discussion: does FBA in practice converge toward a de-facto permissioned core? Comparison with how PoS stake distribution also tends to concentrate.
 </li>
 <li>
-  Tradeoffs summary — FBA avoids energy cost and explicit stake lockup but introduces a subjective trust assumption. Safety depends on the trust graph staying well-connected; there is no automatic protocol-level punishment for misbehavior (no slashing analogue). Best suited for networks where participants have real-world reasons to identify and trust specific counterparts (e.g., financial institutions, payment anchors).
+  <strong>Tradeoffs summary</strong><br>
+  FBA avoids energy cost and explicit stake lockup but introduces a subjective trust assumption. Safety depends on the trust graph staying well-connected; there is no automatic protocol-level punishment for misbehavior (no slashing analogue). Best suited for networks where participants have real-world reasons to identify and trust specific counterparts (e.g., financial institutions, payment anchors).
 </li>
 </ul>
+
 <h4>References</h4>
 <ul>
 <li>
-  Marta Lokhava, Giuliano Losa, David Mazières, Graydon Hoare, Nicolas Barry, Eli Gafni, Jonathan Jove, Rafał Malinowsky, Jed McCaleb. <em>Fast and Secure Global Payments with Stellar.</em> 2019.
+  Marta Lokhava, Giuliano Losa, David Mazi&egrave;res, Graydon Hoare, Nicolas Barry, Eli Gafni, Jonathan Jove, Rafa&#322; Malinowsky, Jed McCaleb. <em>Fast and Secure Global Payments with Stellar.</em> 2019.
   <a href="https://www.scs.stanford.edu/~dm/home/papers/lokhava:stellar-core.pdf">[PDF]</a>
 </li>
 <li>
-  David Mazières. <em>The Stellar Consensus Protocol: A Federated Model for Internet-level Consensus.</em> Stellar Development Foundation, 2015.
+  David Mazi&egrave;res. <em>The Stellar Consensus Protocol: A Federated Model for Internet-level Consensus.</em> Stellar Development Foundation, 2015.
   <a href="https://www.stellar.org/papers/stellar-consensus-protocol">[PDF]</a>
 </li>
 <li>
-  Marta Lokhava, Giuliano Losa, David Mazières, Graydon Hoare, Nicolas Barry, Eli Gafni, Jonathan Jove, Rafał Malinowsky, Jed McCaleb. <em>Fast and Secure Global Payments with Stellar.</em> SOSP 2019.
+  Marta Lokhava, Giuliano Losa, David Mazi&egrave;res, Graydon Hoare, Nicolas Barry, Eli Gafni, Jonathan Jove, Rafa&#322; Malinowsky, Jed McCaleb. <em>Fast and Secure Global Payments with Stellar.</em> SOSP 2019.
   <a href="https://dl.acm.org/doi/10.1145/3341301.3359636">[ACM]</a>
 </li>
 <li>
-  Álvaro García-Pérez, Alexei Gotsman, Yuri Meshman, Pedro Rodrigues. <em>Federated Byzantine Quorum Systems.</em> OPODIS 2018.
+  &Aacute;lvaro Garc&iacute;a-P&eacute;rez, Alexei Gotsman, Yuri Meshman, Pedro Rodrigues. <em>Federated Byzantine Quorum Systems.</em> OPODIS 2018.
   <a href="https://drops.dagstuhl.de/opus/volltexte/2018/10080/">[PDF]</a>
 </li>
 <li>
@@ -519,39 +579,42 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   <a href="https://developers.stellar.org/docs/learn/fundamentals/stellar-consensus-protocol">[Link]</a>
 </li>
 </ul>
-</body>
-</html>
+
 
 <br><br><h3>Lecture 8 — UTXO</h3>
 
-
- 
-
-<body>
 <h4>Topics</h4>
 <ul>
 <li>
-  From consensus to execution — Lectures 3–7 established how nodes agree on an ordered log of transactions. This lecture asks: what does a transaction actually <em>look like</em>, and what state does the ledger maintain? The UTXO model is Bitcoin's answer: the ledger is a set of unspent outputs, and a transaction consumes some outputs and creates new ones.
+  <strong>From consensus to execution</strong><br>
+  Lectures 3–7 established how nodes agree on an ordered log of transactions. This lecture asks: what does a transaction actually <em>look like</em>, and what state does the ledger maintain? The UTXO model is Bitcoin's answer: the ledger is a set of unspent outputs, and a transaction consumes some outputs and creates new ones.
 </li>
 <li>
-  Anatomy of a Bitcoin transaction — Inputs reference previous outputs by (txid, index) and provide an unlocking script (scriptSig). Outputs specify an amount and a locking script (scriptPubKey). A transaction is valid if every input correctly unlocks its referenced output, no output is already spent, and the sum of input values ≥ sum of output values (the difference is the fee).
+  <strong>Anatomy of a Bitcoin transaction</strong><br>
+  Inputs reference previous outputs by (txid, index) and provide an unlocking script (scriptSig). Outputs specify an amount and a locking script (scriptPubKey). A transaction is valid if every input correctly unlocks its referenced output, no output is already spent, and the sum of input values &ge; sum of output values (the difference is the fee).
 </li>
 <li>
-  The UTXO set as global state — At any point the ledger state is the set of all unspent transaction outputs. Applying a block means removing the consumed UTXOs and adding the newly created ones. There is no "balance" field — a wallet's balance is simply the sum of UTXOs it can unlock. Implications for how nodes store and index state.
+  <strong>The UTXO set as global state</strong><br>
+  At any point the ledger state is the set of all unspent transaction outputs. Applying a block means removing the consumed UTXOs and adding the newly created ones. There is no "balance" field — a wallet's balance is simply the sum of UTXOs it can unlock. Implications for how nodes store and index state.
 </li>
 <li>
-  Script: Bitcoin's minimal scripting language — Bitcoin transactions are validated by a simple stack-based, deliberately non-Turing-complete scripting language. Common patterns: Pay-to-Public-Key-Hash (P2PKH), Pay-to-Script-Hash (P2SH), multisig. The language is intentionally limited to keep validation fast and predictable — a design philosophy that contrasts sharply with Ethereum (next lecture).
+  <strong>Script: Bitcoin's minimal scripting language</strong><br>
+  Bitcoin transactions are validated by a simple stack-based, deliberately non-Turing-complete scripting language. Common patterns: Pay-to-Public-Key-Hash (P2PKH), Pay-to-Script-Hash (P2SH), multisig. The language is intentionally limited to keep validation fast and predictable — a design philosophy that contrasts sharply with Ethereum (next lecture).
 </li>
 <li>
-  Transaction graph and privacy — Because every input explicitly references a previous output, the full transaction graph is visible on-chain. This makes Bitcoin pseudonymous, not anonymous: addresses are unlinkable in theory, but heuristics (common-input-ownership, change-output detection) can cluster them. Brief preview of the privacy discussion in Lecture 12.
+  <strong>Transaction graph and privacy</strong><br>
+  Because every input explicitly references a previous output, the full transaction graph is visible on-chain. This makes Bitcoin pseudonymous, not anonymous: addresses are unlinkable in theory, but heuristics (common-input-ownership, change-output detection) can cluster them. Brief preview of the privacy discussion in Lecture 12.
 </li>
 <li>
-  Concurrency-friendliness of UTXOs — Since each UTXO can only be consumed once and transactions reference specific outputs, two transactions that touch disjoint UTXO sets are trivially independent. This makes parallel validation straightforward and conflict detection simple — a property the account model does not naturally share.
+  <strong>Concurrency-friendliness of UTXOs</strong><br>
+  Since each UTXO can only be consumed once and transactions reference specific outputs, two transactions that touch disjoint UTXO sets are trivially independent. This makes parallel validation straightforward and conflict detection simple — a property the account model does not naturally share.
 </li>
 <li>
-  Limitations and extensions — The UTXO model makes stateful computation awkward: there is no persistent storage, no loops, and expressing complex conditions requires chaining multiple transactions. Extensions like Bitcoin's Taproot (Schnorr signatures, MAST) expand expressiveness while preserving the UTXO philosophy. Comparison: why Ethereum chose a fundamentally different model (Lecture 9).
+  <strong>Limitations and extensions</strong><br>
+  The UTXO model makes stateful computation awkward: there is no persistent storage, no loops, and expressing complex conditions requires chaining multiple transactions. Extensions like Bitcoin's Taproot (Schnorr signatures, MAST) expand expressiveness while preserving the UTXO philosophy. Comparison: why Ethereum chose a fundamentally different model (Lecture 9).
 </li>
 </ul>
+
 <h4>References</h4>
 <ul>
 <li>
@@ -580,37 +643,42 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   <a href="https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki">[Link]</a>
 </li>
 </ul>
-</body>
-</html>
+
 
 <br><br><h3>Lecture 9 — Account Model</h3>
 
- 
-	
 <h4>Topics</h4>
 <ul>
 <li>
-  From UTXOs to accounts — The UTXO model treats the ledger as a set of discrete, one-time-use coins. The account model (introduced by Ethereum) instead maintains a global state mapping addresses to persistent account objects. Each account has a balance, a nonce (to prevent replay), and — for contract accounts — storage and code. Transactions mutate this global state directly.
+  <strong>From UTXOs to accounts</strong><br>
+  The UTXO model treats the ledger as a set of discrete, one-time-use coins. The account model (introduced by Ethereum) instead maintains a global state mapping addresses to persistent account objects. Each account has a balance, a nonce (to prevent replay), and — for contract accounts — storage and code. Transactions mutate this global state directly.
 </li>
 <li>
-  Two kinds of accounts — Externally Owned Accounts (EOAs) are controlled by a private key and can initiate transactions. Contract accounts hold EVM bytecode and are activated when called. Only EOAs can originate a transaction; contracts execute in response. Implications for the user experience and for composability.
+  <strong>Two kinds of accounts</strong><br>
+  Externally Owned Accounts (EOAs) are controlled by a private key and can initiate transactions. Contract accounts hold EVM bytecode and are activated when called. Only EOAs can originate a transaction; contracts execute in response. Implications for the user experience and for composability.
 </li>
 <li>
-  State transitions as computation — A transaction in the account model is not just a transfer; it is a function call that reads and writes global state. The Ethereum Virtual Machine (EVM) is a stack-based, quasi-Turing-complete execution environment. Every operation has a defined gas cost, and a transaction specifies a gas limit. If execution exceeds the limit, all state changes revert but the fee is still paid. This is fundamentally more expressive than Bitcoin Script.
+  <strong>State transitions as computation</strong><br>
+  A transaction in the account model is not just a transfer; it is a function call that reads and writes global state. The Ethereum Virtual Machine (EVM) is a stack-based, quasi-Turing-complete execution environment. Every operation has a defined gas cost, and a transaction specifies a gas limit. If execution exceeds the limit, all state changes revert but the fee is still paid. This is fundamentally more expressive than Bitcoin Script.
 </li>
 <li>
-  Gas as metering — Gas serves two purposes: (1) it guarantees termination by bounding computation, and (2) it prices the use of shared resources (CPU, storage, bandwidth). Different opcodes cost different amounts of gas. Storage writes (SSTORE) are particularly expensive because they impose a permanent burden on all future full nodes. Brief discussion of gas pricing challenges and historical repricing events (e.g., the Shanghai DoS attacks of 2016).
+  <strong>Gas as metering</strong><br>
+  Gas serves two purposes: (1) it guarantees termination by bounding computation, and (2) it prices the use of shared resources (CPU, storage, bandwidth). Different opcodes cost different amounts of gas. Storage writes (SSTORE) are particularly expensive because they impose a permanent burden on all future full nodes. Brief discussion of gas pricing challenges and historical repricing events (e.g., the Shanghai DoS attacks of 2016).
 </li>
 <li>
-  Global state and its costs — The account model's global state (a Merkle-Patricia trie mapping every account and storage slot) must be maintained by every full node. State growth is a long-term scalability concern: unlike transaction history, state cannot be pruned without losing the ability to validate new blocks. Contrast with UTXO, where the active set is typically smaller and old UTXOs naturally get consumed.
+  <strong>Global state and its costs</strong><br>
+  The account model's global state (a Merkle-Patricia trie mapping every account and storage slot) must be maintained by every full node. State growth is a long-term scalability concern: unlike transaction history, state cannot be pruned without losing the ability to validate new blocks. Contrast with UTXO, where the active set is typically smaller and old UTXOs naturally get consumed.
 </li>
 <li>
-  Concurrency challenges — Because transactions can read and write overlapping parts of the global state, determining which transactions are independent is harder than in the UTXO model. Naive sequential execution is the default; parallel execution requires dependency analysis (e.g., Solana's explicit account-access declarations, or Aptos's Block-STM optimistic concurrency).
+  <strong>Concurrency challenges</strong><br>
+  Because transactions can read and write overlapping parts of the global state, determining which transactions are independent is harder than in the UTXO model. Naive sequential execution is the default; parallel execution requires dependency analysis (e.g., Solana's explicit account-access declarations, or Aptos's Block-STM optimistic concurrency).
 </li>
 <li>
-  Design comparison: UTXO vs. Account — UTXO offers natural parallelism, simple verification, and better base-layer privacy (no address reuse by default). The account model offers richer programmability, simpler mental model for developers, and native support for persistent state. Neither is strictly dominant; the choice reflects different priorities (Bitcoin as sound money vs. Ethereum as a programmable platform). This sets up the smart-contracts discussion in Lecture 10.
+  <strong>Design comparison: UTXO vs. Account</strong><br>
+  UTXO offers natural parallelism, simple verification, and better base-layer privacy (no address reuse by default). The account model offers richer programmability, simpler mental model for developers, and native support for persistent state. Neither is strictly dominant; the choice reflects different priorities (Bitcoin as sound money vs. Ethereum as a programmable platform). This sets up the smart-contracts discussion in Lecture 10.
 </li>
 </ul>
+
 <h4>References</h4>
 <ul>
 <li>
@@ -639,36 +707,42 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   <a href="https://arxiv.org/abs/2203.06871">[arXiv]</a>
 </li>
 </ul>
-</body>
-</html>
+
 
 <br><br><h3>Lecture 10 — Smart Contracts</h3>
 
- 
 <h4>Topics</h4>
 <ul>
 <li>
-  What is a smart contract? — A smart contract is a program stored on-chain whose execution is enforced by the consensus protocol. Once deployed, its code is immutable (unless explicitly designed to be upgradeable) and anyone can invoke it by sending a transaction. The blockchain acts as both the execution environment and the court of last resort — there is no external enforcement mechanism. Contrast with traditional legal contracts: code replaces ambiguity, but also replaces flexibility.
+  <strong>What is a smart contract?</strong><br>
+  A smart contract is a program stored on-chain whose execution is enforced by the consensus protocol. Once deployed, its code is immutable (unless explicitly designed to be upgradeable) and anyone can invoke it by sending a transaction. The blockchain acts as both the execution environment and the court of last resort — there is no external enforcement mechanism. Contrast with traditional legal contracts: code replaces ambiguity, but also replaces flexibility.
 </li>
 <li>
-  Programmable transactions and composability — Smart contracts can call other contracts within a single transaction, enabling arbitrary composition of on-chain logic. A user can atomically swap tokens, deposit collateral, and borrow assets in one transaction by chaining contract calls. This composability is the foundation of the DeFi ecosystem (Lecture 11) and is sometimes called "money legos." It is also a key source of complexity and risk.
+  <strong>Programmable transactions and composability</strong><br>
+  Smart contracts can call other contracts within a single transaction, enabling arbitrary composition of on-chain logic. A user can atomically swap tokens, deposit collateral, and borrow assets in one transaction by chaining contract calls. This composability is the foundation of the DeFi ecosystem (Lecture 11) and is sometimes called "money legos." It is also a key source of complexity and risk.
 </li>
 <li>
-  Development languages and compilation — Solidity (Ethereum) as the dominant high-level language: syntax, types, storage vs. memory, function visibility. Brief mention of alternatives: Vyper (Python-like, deliberately less expressive), Move (resource-oriented, linear types), Rust-based contracts (Solana, NEAR). All compile down to bytecode executed by a virtual machine. The language shapes which bugs are easy or hard to write.
+  <strong>Development languages and compilation</strong><br>
+  Solidity (Ethereum) as the dominant high-level language: syntax, types, storage vs. memory, function visibility. Brief mention of alternatives: Vyper (Python-like, deliberately less expressive), Move (resource-oriented, linear types), Rust-based contracts (Solana, NEAR). All compile down to bytecode executed by a virtual machine. The language shapes which bugs are easy or hard to write.
 </li>
 <li>
-  Contract interaction patterns — Common patterns that recur across DeFi and beyond: token standards (ERC-20 as a minimal fungible-token interface, ERC-721 for NFTs), the approve/transferFrom pattern for delegated spending, and proxy patterns for upgradeability. Standards enable permissionless interoperability: any contract that speaks ERC-20 can integrate with any DEX or lending protocol without coordination.
+  <strong>Contract interaction patterns</strong><br>
+  Common patterns that recur across DeFi and beyond: token standards (ERC-20 as a minimal fungible-token interface, ERC-721 for NFTs), the approve/transferFrom pattern for delegated spending, and proxy patterns for upgradeability. Standards enable permissionless interoperability: any contract that speaks ERC-20 can integrate with any DEX or lending protocol without coordination.
 </li>
 <li>
-  Security pitfall: reentrancy — Detailed walkthrough of the reentrancy vulnerability. When contract A calls contract B, B can call back into A before A's state updates are complete, violating A's invariants. The 2016 DAO hack as the canonical example: an attacker drained roughly 3.6 million ETH by repeatedly re-entering a withdrawal function. Defenses: the checks-effects-interactions pattern, reentrancy guards (mutexes), and pull-over-push withdrawal designs. Why this class of bug persists despite being well-known.
+  <strong>Security pitfall: reentrancy</strong><br>
+  Detailed walkthrough of the reentrancy vulnerability. When contract A calls contract B, B can call back into A before A's state updates are complete, violating A's invariants. The 2016 DAO hack as the canonical example: an attacker drained roughly 3.6 million ETH by repeatedly re-entering a withdrawal function. Defenses: the checks-effects-interactions pattern, reentrancy guards (mutexes), and pull-over-push withdrawal designs. Why this class of bug persists despite being well-known.
 </li>
 <li>
-  Broader vulnerability landscape — Brief survey of other common pitfalls: integer overflow/underflow (largely mitigated since Solidity 0.8), oracle manipulation (feeding a contract a false price), access-control errors (unprotected admin functions), and front-running (transaction ordering exploits, previewing Lecture 13). The common thread: smart contracts operate in an adversarial, permissionless environment where every external input and every ordering assumption can be exploited.
+  <strong>Broader vulnerability landscape</strong><br>
+  Brief survey of other common pitfalls: integer overflow/underflow (largely mitigated since Solidity 0.8), oracle manipulation (feeding a contract a false price), access-control errors (unprotected admin functions), and front-running (transaction ordering exploits, previewing Lecture 13). The common thread: smart contracts operate in an adversarial, permissionless environment where every external input and every ordering assumption can be exploited.
 </li>
 <li>
-  Auditing, verification, and the limits of "code is law" — The practice of security audits, bug bounties, and formal verification tools (e.g., Certora, Halmos). Despite these, exploits remain frequent because audit coverage is incomplete and economic incentives to attack are high. Discussion of the tension between immutability ("code is law") and the practical need for upgradeability, governance, and emergency pauses. The DAO fork as a case study in social consensus overriding on-chain finality.
+  <strong>Auditing, verification, and the limits of "code is law"</strong><br>
+  The practice of security audits, bug bounties, and formal verification tools (e.g., Certora, Halmos). Despite these, exploits remain frequent because audit coverage is incomplete and economic incentives to attack are high. Discussion of the tension between immutability ("code is law") and the practical need for upgradeability, governance, and emergency pauses. The DAO fork as a case study in social consensus overriding on-chain finality.
 </li>
 </ul>
+
 <h4>References</h4>
 <ul>
 <li>
@@ -696,36 +770,42 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   <a href="http://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/">[Link]</a>
 </li>
 </ul>
-</body>
-</html>
+
 
 <br><br><h3>Lecture 11 — DeFi Applications</h3>
 
- 
 <h4>Topics</h4>
 <ul>
 <li>
-  What is DeFi? — Decentralized finance replaces trusted intermediaries (banks, brokers, exchanges) with smart contracts that execute financial logic on-chain. Anyone can interact with these contracts permissionlessly, and the rules are publicly auditable. Key promise: composability turns individual primitives into a programmable financial stack. Key risk: bugs, oracle failures, and economic exploits propagate through the same composability.
+  <strong>What is DeFi?</strong><br>
+  Decentralized finance replaces trusted intermediaries (banks, brokers, exchanges) with smart contracts that execute financial logic on-chain. Anyone can interact with these contracts permissionlessly, and the rules are publicly auditable. Key promise: composability turns individual primitives into a programmable financial stack. Key risk: bugs, oracle failures, and economic exploits propagate through the same composability.
 </li>
 <li>
-  Automated Market Makers (AMMs) — Traditional exchanges use order books; AMMs replace them with a deterministic pricing function over liquidity pools. Constant-product markets (Uniswap v2): two-token pools where x · y = k determines the price. Liquidity providers deposit both assets and earn fees; in return they bear impermanent loss when prices move. Uniswap v3's concentrated liquidity: LPs choose a price range, increasing capital efficiency but also complexity and active management.
+  <strong>Automated Market Makers (AMMs)</strong><br>
+  Traditional exchanges use order books; AMMs replace them with a deterministic pricing function over liquidity pools. Constant-product markets (Uniswap v2): two-token pools where x &middot; y = k determines the price. Liquidity providers deposit both assets and earn fees; in return they bear impermanent loss when prices move. Uniswap v3's concentrated liquidity: LPs choose a price range, increasing capital efficiency but also complexity and active management.
 </li>
 <li>
-  Lending and liquidation — Overcollateralized lending protocols (Aave, Compound): users deposit collateral and borrow up to a loan-to-value ratio. Interest rates are set algorithmically as a function of pool utilization. When a borrower's collateral value falls below the liquidation threshold, any third party can repay part of the debt and seize collateral at a discount. Liquidations keep the system solvent but can cascade during sharp market drops, creating systemic stress.
+  <strong>Lending and liquidation</strong><br>
+  Overcollateralized lending protocols (Aave, Compound): users deposit collateral and borrow up to a loan-to-value ratio. Interest rates are set algorithmically as a function of pool utilization. When a borrower's collateral value falls below the liquidation threshold, any third party can repay part of the debt and seize collateral at a discount. Liquidations keep the system solvent but can cascade during sharp market drops, creating systemic stress.
 </li>
 <li>
-  Stablecoins — Tokens designed to track a reference price (usually $1). Three families: (1) fiat-backed / custodial (USDC, USDT) — simple but centralized and censorable; (2) crypto-collateralized (DAI / MakerDAO) — overcollateralized vaults, governance-set parameters, liquidation mechanisms; (3) algorithmic / undercollateralized — attempt to maintain the peg via elastic supply or arbitrage incentives, historically fragile (Terra/UST collapse as case study). Stablecoins are the most widely used DeFi primitive and the critical bridge to traditional finance.
+  <strong>Stablecoins</strong><br>
+  Tokens designed to track a reference price (usually $1). Three families: (1) fiat-backed / custodial (USDC, USDT) — simple but centralized and censorable; (2) crypto-collateralized (DAI / MakerDAO) — overcollateralized vaults, governance-set parameters, liquidation mechanisms; (3) algorithmic / undercollateralized — attempt to maintain the peg via elastic supply or arbitrage incentives, historically fragile (Terra/UST collapse as case study). Stablecoins are the most widely used DeFi primitive and the critical bridge to traditional finance.
 </li>
 <li>
-  Oracles — Many DeFi contracts need off-chain data (asset prices, interest rates). An oracle is any mechanism that brings external information on-chain. Chainlink's decentralized oracle network as the dominant design: multiple independent node operators report data, and an aggregation contract produces a canonical answer. Oracle manipulation attacks: if an attacker can move the reported price — by manipulating a low-liquidity spot market or exploiting a stale feed — they can trigger profitable liquidations or drain lending pools. The oracle problem is fundamental: blockchains are deterministic and isolated by design.
+  <strong>Oracles</strong><br>
+  Many DeFi contracts need off-chain data (asset prices, interest rates). An oracle is any mechanism that brings external information on-chain. Chainlink's decentralized oracle network as the dominant design: multiple independent node operators report data, and an aggregation contract produces a canonical answer. Oracle manipulation attacks: if an attacker can move the reported price — by manipulating a low-liquidity spot market or exploiting a stale feed — they can trigger profitable liquidations or drain lending pools. The oracle problem is fundamental: blockchains are deterministic and isolated by design.
 </li>
 <li>
-  Composability in action — and when it breaks — A concrete example of DeFi composition: flash loans. A user borrows an arbitrary amount with no collateral, executes a sequence of contract calls, and repays within the same transaction — if repayment fails, the entire transaction reverts atomically. Flash loans enable capital-free arbitrage and liquidation, but they also amplify exploits by giving any attacker effectively unlimited capital for the duration of one transaction. Walk through a simplified flash-loan-funded oracle-manipulation attack.
+  <strong>Composability in action — and when it breaks</strong><br>
+  A concrete example of DeFi composition: flash loans. A user borrows an arbitrary amount with no collateral, executes a sequence of contract calls, and repays within the same transaction — if repayment fails, the entire transaction reverts atomically. Flash loans enable capital-free arbitrage and liquidation, but they also amplify exploits by giving any attacker effectively unlimited capital for the duration of one transaction. Walk through a simplified flash-loan-funded oracle-manipulation attack.
 </li>
 <li>
-  Systemic risk and open questions — DeFi protocols share collateral, liquidity, and oracle feeds, creating hidden interdependencies. A failure in one protocol can cascade: the collapse of Terra/UST in May 2022 triggered liquidations across multiple lending markets and destabilized several other stablecoins. Open questions: how to measure systemic risk in a permissionless system, whether governance can respond fast enough to crises, and the growing tension between decentralization and regulatory compliance.
+  <strong>Systemic risk and open questions</strong><br>
+  DeFi protocols share collateral, liquidity, and oracle feeds, creating hidden interdependencies. A failure in one protocol can cascade: the collapse of Terra/UST in May 2022 triggered liquidations across multiple lending markets and destabilized several other stablecoins. Open questions: how to measure systemic risk in a permissionless system, whether governance can respond fast enough to crises, and the growing tension between decentralization and regulatory compliance.
 </li>
 </ul>
+
 <h4>References</h4>
 <ul>
 <li>
@@ -754,39 +834,46 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   <a href="https://research.chain.link/whitepaper-v2.pdf">[PDF]</a>
 </li>
 </ul>
-</body>
-</html>
+
 
 <br><br><h3>Lecture 12 — Privacy in Cryptocurrencies</h3>
 
- 
 <h4>Topics</h4>
 <ul>
 <li>
-  The privacy problem — Public blockchains are radically transparent: every transaction, amount, and address is permanently visible to everyone. Bitcoin and Ethereum are pseudonymous, not anonymous — once a pseudonym is linked to a real identity (through an exchange, a payment, or metadata), the entire transaction history is exposed. Blockchain analytics firms (Chainalysis, Elliptic) routinely deanonymize users. Privacy is not just a personal preference; it is a prerequisite for fungibility (if coins with certain histories are worth less, the currency is not truly fungible).
+  <strong>The privacy problem</strong><br>
+  Public blockchains are radically transparent: every transaction, amount, and address is permanently visible to everyone. Bitcoin and Ethereum are pseudonymous, not anonymous — once a pseudonym is linked to a real identity (through an exchange, a payment, or metadata), the entire transaction history is exposed. Blockchain analytics firms (Chainalysis, Elliptic) routinely deanonymize users. Privacy is not just a personal preference; it is a prerequisite for fungibility (if coins with certain histories are worth less, the currency is not truly fungible).
 </li>
 <li>
-  Deanonymization techniques — Common-input-ownership heuristic: inputs spent together likely belong to the same wallet. Change-output detection: identifying which output returns value to the sender. Timing and network-level analysis: correlating transaction broadcast times with IP addresses. These heuristics are imperfect but effective at scale, especially when combined with off-chain data (exchange KYC records, public addresses posted online). Connection back to the UTXO transaction graph discussion in Lecture 8.
+  <strong>Deanonymization techniques</strong><br>
+  Common-input-ownership heuristic: inputs spent together likely belong to the same wallet. Change-output detection: identifying which output returns value to the sender. Timing and network-level analysis: correlating transaction broadcast times with IP addresses. These heuristics are imperfect but effective at scale, especially when combined with off-chain data (exchange KYC records, public addresses posted online). Connection back to the UTXO transaction graph discussion in Lecture 8.
 </li>
 <li>
-  Mixing and CoinJoin — The simplest privacy technique: multiple users combine their inputs and outputs into a single transaction, breaking the link between sender and receiver. CoinJoin (Bitcoin): a collaborative protocol where participants jointly construct a transaction with equal-valued outputs. Limitations: requires coordination, equal denominations reduce flexibility, and sophisticated analysis can sometimes unmix. Centralized mixers (tumblers) add counterparty risk. Wasabi Wallet and JoinMarket as practical implementations.
+  <strong>Mixing and CoinJoin</strong><br>
+  The simplest privacy technique: multiple users combine their inputs and outputs into a single transaction, breaking the link between sender and receiver. CoinJoin (Bitcoin): a collaborative protocol where participants jointly construct a transaction with equal-valued outputs. Limitations: requires coordination, equal denominations reduce flexibility, and sophisticated analysis can sometimes unmix. Centralized mixers (tumblers) add counterparty risk. Wasabi Wallet and JoinMarket as practical implementations.
 </li>
 <li>
-  Ring signatures and stealth addresses — Monero's approach: each transaction input is signed using a <em>ring signature</em> that includes the real input and several decoy inputs drawn from the blockchain. An observer cannot determine which ring member is the true spender. Stealth addresses: the sender derives a one-time destination address for every payment, so the recipient's public address never appears on-chain. Together, ring signatures hide the sender and stealth addresses hide the receiver.
+  <strong>Ring signatures and stealth addresses</strong><br>
+  Monero's approach: each transaction input is signed using a <em>ring signature</em> that includes the real input and several decoy inputs drawn from the blockchain. An observer cannot determine which ring member is the true spender. Stealth addresses: the sender derives a one-time destination address for every payment, so the recipient's public address never appears on-chain. Together, ring signatures hide the sender and stealth addresses hide the receiver.
 </li>
 <li>
-  Confidential Transactions — Hiding amounts: Pedersen commitments allow a transaction to commit to an output value without revealing it, while a range proof guarantees the committed value is non-negative (preventing inflation). Used in Monero (RingCT combines ring signatures with confidential amounts) and in Elements/Liquid (Bitcoin sidechain). Tradeoff: range proofs add significant size to transactions — Bulletproofs reduced this cost substantially but did not eliminate it.
+  <strong>Confidential Transactions</strong><br>
+  Hiding amounts: Pedersen commitments allow a transaction to commit to an output value without revealing it, while a range proof guarantees the committed value is non-negative (preventing inflation). Used in Monero (RingCT combines ring signatures with confidential amounts) and in Elements/Liquid (Bitcoin sidechain). Tradeoff: range proofs add significant size to transactions — Bulletproofs reduced this cost substantially but did not eliminate it.
 </li>
 <li>
-  Zero-knowledge proofs for privacy — Zcash's approach: a shielded transaction proves in zero knowledge that the sender owns unspent notes, that the transaction balances, and that no double-spend occurs — without revealing sender, receiver, or amount. The blockchain stores only nullifiers (spent-note identifiers) and commitments. Originally used zk-SNARKs with a trusted setup (Groth16); newer proposals use transparent setups (Halo 2). Maximum theoretical privacy, but the shielded pool's anonymity set is only as large as the number of users who actually opt in — and in practice most Zcash transactions remained transparent.
+  <strong>Zero-knowledge proofs for privacy</strong><br>
+  Zcash's approach: a shielded transaction proves in zero knowledge that the sender owns unspent notes, that the transaction balances, and that no double-spend occurs — without revealing sender, receiver, or amount. The blockchain stores only nullifiers (spent-note identifiers) and commitments. Originally used zk-SNARKs with a trusted setup (Groth16); newer proposals use transparent setups (Halo 2). Maximum theoretical privacy, but the shielded pool's anonymity set is only as large as the number of users who actually opt in — and in practice most Zcash transactions remained transparent.
 </li>
 <li>
-  Privacy Pools — A proposal (Buterin, Illum, Nadler, Schär, Soleimani, 2023) to reconcile privacy with regulatory compliance. Users transact through a mixing pool — preserving unlinkability — but attach a zero-knowledge proof of membership in an <em>association set</em>, demonstrating that their funds do not originate from sanctioned or illicit sources without revealing the specific transaction history. This separates the privacy guarantee (hiding the link between deposit and withdrawal) from the compliance guarantee (proving legitimacy of origin). Association sets can be curated by different providers with different inclusion criteria, allowing a spectrum of compliance levels. Open questions: who defines the association sets, what happens when sets disagree, and whether regulators will accept probabilistic compliance.
+  <strong>Privacy Pools</strong><br>
+  A proposal (Buterin, Illum, Nadler, Sch&auml;r, Soleimani, 2023) to reconcile privacy with regulatory compliance. Users transact through a mixing pool — preserving unlinkability — but attach a zero-knowledge proof of membership in an <em>association set</em>, demonstrating that their funds do not originate from sanctioned or illicit sources without revealing the specific transaction history. This separates the privacy guarantee (hiding the link between deposit and withdrawal) from the compliance guarantee (proving legitimacy of origin). Association sets can be curated by different providers with different inclusion criteria, allowing a spectrum of compliance levels. Open questions: who defines the association sets, what happens when sets disagree, and whether regulators will accept probabilistic compliance.
 </li>
 <li>
-  Tradeoffs summary — Every privacy technique carries costs: larger transactions (ring signatures, range proofs), latency (mixing coordination), smaller anonymity sets (shielded pools that few use), reduced auditability, or additional trust assumptions (trusted setups). There is no free privacy — each design point trades off cost, usability, and strength of the guarantee. The fundamental tension remains: blockchains are designed for transparency and verifiability, while privacy requires hiding information. How much of this tension can be resolved by cryptography (Privacy Pools, selective disclosure) versus how much is irreducibly a policy and social question is an open debate.
+  <strong>Tradeoffs summary</strong><br>
+  Every privacy technique carries costs: larger transactions (ring signatures, range proofs), latency (mixing coordination), smaller anonymity sets (shielded pools that few use), reduced auditability, or additional trust assumptions (trusted setups). There is no free privacy — each design point trades off cost, usability, and strength of the guarantee. The fundamental tension remains: blockchains are designed for transparency and verifiability, while privacy requires hiding information. How much of this tension can be resolved by cryptography (Privacy Pools, selective disclosure) versus how much is irreducibly a policy and social question is an open debate.
 </li>
 </ul>
+
 <h4>References</h4>
 <ul>
 <li>
@@ -802,52 +889,58 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   <a href="https://ledgerjournal.org/ojs/ledger/article/view/34">[Link]</a>
 </li>
 <li>
-  Eli Ben-Sasson, Alessandro Chiesa, Christina Garman, Matthew Green, Ian Miers, Eran Tromer, Madars Virza. <em>Zerocash: Decentralized Anonymous Payments from Bitcoin.</em> S&P 2014.
+  Eli Ben-Sasson, Alessandro Chiesa, Christina Garman, Matthew Green, Ian Miers, Eran Tromer, Madars Virza. <em>Zerocash: Decentralized Anonymous Payments from Bitcoin.</em> S&amp;P 2014.
   <a href="https://eprint.iacr.org/2014/349.pdf">[PDF]</a>
 </li>
 <li>
-  Benedikt Bünz, Jonathan Bootle, Dan Boneh, Andrew Poelstra, Pieter Wuille, Greg Maxwell. <em>Bulletproofs: Short Proofs for Confidential Transactions and More.</em> S&P 2018.
+  Benedikt B&uuml;nz, Jonathan Bootle, Dan Boneh, Andrew Poelstra, Pieter Wuille, Greg Maxwell. <em>Bulletproofs: Short Proofs for Confidential Transactions and More.</em> S&amp;P 2018.
   <a href="https://eprint.iacr.org/2017/1066.pdf">[PDF]</a>
 </li>
 <li>
-  Malte Möser, Kyle Soska, Ethan Heilman, Kevin Lee, Henry Heffan, Shashvat Srivastava, Kyle Hogan, Jason Hennessey, Andrew Miller, Arvind Narayanan, Nicolas Christin. <em>An Empirical Analysis of Traceability in the Monero Blockchain.</em> PETS 2018.
+  Malte M&ouml;ser, Kyle Soska, Ethan Heilman, Kevin Lee, Henry Heffan, Shashvat Srivastava, Kyle Hogan, Jason Hennessey, Andrew Miller, Arvind Narayanan, Nicolas Christin. <em>An Empirical Analysis of Traceability in the Monero Blockchain.</em> PETS 2018.
   <a href="https://arxiv.org/abs/1704.04299">[arXiv]</a>
 </li>
 <li>
-  Vitalik Buterin, Jacob Illum, Matthias Nadler, Fabian Schär, Ameen Soleimani. <em>Blockchain Privacy and Regulatory Compliance: Towards a Practical Equilibrium.</em> 2023.
+  Vitalik Buterin, Jacob Illum, Matthias Nadler, Fabian Sch&auml;r, Ameen Soleimani. <em>Blockchain Privacy and Regulatory Compliance: Towards a Practical Equilibrium.</em> 2023.
   <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4563364">[SSRN]</a>
 </li>
 </ul>
-</body>
-</html>
 
-<br><br><h3>Lecture 13 — Fees, MEV & PBS</h3>
 
+<br><br><h3>Lecture 13 — Fees, MEV &amp; PBS</h3>
 
 <h4>Topics</h4>
 <ul>
 <li>
-  Blockspace as a scarce resource — Every block has a capacity limit (gas limit in Ethereum, weight in Bitcoin). When demand exceeds supply, the protocol needs a mechanism to allocate space. Transaction fees serve this role: users bid for inclusion, and the protocol (or the block producer) decides which transactions to include. This makes blockspace a market, and fee mechanism design is market design.
+  <strong>Blockspace as a scarce resource</strong><br>
+  Every block has a capacity limit (gas limit in Ethereum, weight in Bitcoin). When demand exceeds supply, the protocol needs a mechanism to allocate space. Transaction fees serve this role: users bid for inclusion, and the protocol (or the block producer) decides which transactions to include. This makes blockspace a market, and fee mechanism design is market design.
 </li>
 <li>
-  First-price auctions and their problems — Bitcoin and pre-EIP-1559 Ethereum used a simple first-price auction: users set a gas price, and miners included the highest-paying transactions. Problems: users have no good strategy for choosing a bid (overpay or risk not being included), fees are volatile and hard to predict, and the mechanism is not incentive-compatible — rational users waste effort estimating the minimum winning bid.
+  <strong>First-price auctions and their problems</strong><br>
+  Bitcoin and pre-EIP-1559 Ethereum used a simple first-price auction: users set a gas price, and miners included the highest-paying transactions. Problems: users have no good strategy for choosing a bid (overpay or risk not being included), fees are volatile and hard to predict, and the mechanism is not incentive-compatible — rational users waste effort estimating the minimum winning bid.
 </li>
 <li>
-  EIP-1559 and dynamic base fees — Ethereum's fee reform (August 2021): each block has a protocol-computed <em>base fee</em> that adjusts up or down depending on whether the previous block was above or below a target size. The base fee is burned (not paid to the proposer). Users additionally include a <em>priority fee</em> (tip) to incentivize the proposer. Key properties: fee estimation becomes trivial in normal conditions (just pay the base fee plus a small tip), the mechanism is approximately incentive-compatible, and burning the base fee aligns monetary policy with network usage. Connection to mechanism design: EIP-1559 can be understood as a posted-price mechanism with a dynamic reserve.
+  <strong>EIP-1559 and dynamic base fees</strong><br>
+  Ethereum's fee reform (August 2021): each block has a protocol-computed <em>base fee</em> that adjusts up or down depending on whether the previous block was above or below a target size. The base fee is burned (not paid to the proposer). Users additionally include a <em>priority fee</em> (tip) to incentivize the proposer. Key properties: fee estimation becomes trivial in normal conditions (just pay the base fee plus a small tip), the mechanism is approximately incentive-compatible, and burning the base fee aligns monetary policy with network usage. Connection to mechanism design: EIP-1559 can be understood as a posted-price mechanism with a dynamic reserve.
 </li>
 <li>
-  Maximal Extractable Value (MEV) — The block producer chooses not just <em>which</em> transactions to include but in what <em>order</em>. This ordering power is economically valuable. MEV is the total value a block producer can extract by optimally ordering, inserting, or censoring transactions. Examples: DEX arbitrage (inserting a trade that corrects a price discrepancy), sandwich attacks (front-running and back-running a large swap to profit from the price impact), and liquidation racing (being first to liquidate an undercollateralized position). MEV exists because DeFi applications leak value through publicly visible pending transactions.
+  <strong>Maximal Extractable Value (MEV)</strong><br>
+  The block producer chooses not just <em>which</em> transactions to include but in what <em>order</em>. This ordering power is economically valuable. MEV is the total value a block producer can extract by optimally ordering, inserting, or censoring transactions. Examples: DEX arbitrage (inserting a trade that corrects a price discrepancy), sandwich attacks (front-running and back-running a large swap to profit from the price impact), and liquidation racing (being first to liquidate an undercollateralized position). MEV exists because DeFi applications leak value through publicly visible pending transactions.
 </li>
 <li>
-  The mempool as an information channel — Pending transactions sit in a public mempool before inclusion. Searchers — sophisticated actors who monitor the mempool — detect MEV opportunities and compete to capture them by submitting their own transactions with precise ordering requirements. This competition can be wasteful (priority gas auctions that bid up fees and congest the network) and harmful to users (sandwich attacks extract value directly from ordinary swaps). The mempool turns blockchains into an adversarial information environment.
+  <strong>The mempool as an information channel</strong><br>
+  Pending transactions sit in a public mempool before inclusion. Searchers — sophisticated actors who monitor the mempool — detect MEV opportunities and compete to capture them by submitting their own transactions with precise ordering requirements. This competition can be wasteful (priority gas auctions that bid up fees and congest the network) and harmful to users (sandwich attacks extract value directly from ordinary swaps). The mempool turns blockchains into an adversarial information environment.
 </li>
 <li>
-  Proposer–Builder Separation (PBS) — A structural response to MEV concentration. In naive PoS, the validator who proposes a block also builds it, creating an incentive to run sophisticated MEV-extraction strategies — which favors large, well-resourced operators and threatens decentralization. PBS separates the roles: <em>builders</em> compete to construct the most valuable block, and the <em>proposer</em> simply selects the highest-paying block via a sealed-bid auction (MEV-Boost in Ethereum today). The proposer need not know what is inside the block. This preserves validator decentralization but concentrates building power — the builder market is currently dominated by a small number of firms.
+  <strong>Proposer–Builder Separation (PBS)</strong><br>
+  A structural response to MEV concentration. In naive PoS, the validator who proposes a block also builds it, creating an incentive to run sophisticated MEV-extraction strategies — which favors large, well-resourced operators and threatens decentralization. PBS separates the roles: <em>builders</em> compete to construct the most valuable block, and the <em>proposer</em> simply selects the highest-paying block via a sealed-bid auction (MEV-Boost in Ethereum today). The proposer need not know what is inside the block. This preserves validator decentralization but concentrates building power — the builder market is currently dominated by a small number of firms.
 </li>
 <li>
-  Open problems and current research — Builder centralization: a small number of builders win most blocks, raising censorship concerns. Inclusion lists (FOCIL): a proposal to let proposers force-include certain transactions, limiting builders' censorship power. Encrypted mempools and order-fair sequencing: hiding transaction content until ordering is committed, reducing front-running. The broader question: can mechanism design tame MEV, or is some extraction an unavoidable cost of permissionless, composable finance?
+  <strong>Open problems and current research</strong><br>
+  Builder centralization: a small number of builders win most blocks, raising censorship concerns. Inclusion lists (FOCIL): a proposal to let proposers force-include certain transactions, limiting builders' censorship power. Encrypted mempools and order-fair sequencing: hiding transaction content until ordering is committed, reducing front-running. The broader question: can mechanism design tame MEV, or is some extraction an unavoidable cost of permissionless, composable finance?
 </li>
 </ul>
+
 <h4>References</h4>
 <ul>
 <li>
@@ -862,7 +955,7 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   <a href="https://timroughgarden.org/papers/eip1559.pdf">[PDF]</a>
 </li>
 <li>
-  Philip Daian, Steven Goldfeder, Tyler Kell, Yunqi Li, Xueyuan Zhao, Iddo Bentov, Lorenz Breidenbach, Ari Juels. <em>Flash Boys 2.0: Frontrunning, Transaction Reordering, and Consensus Instability in Decentralized Exchanges.</em> S&P 2020.
+  Philip Daian, Steven Goldfeder, Tyler Kell, Yunqi Li, Xueyuan Zhao, Iddo Bentov, Lorenz Breidenbach, Ari Juels. <em>Flash Boys 2.0: Frontrunning, Transaction Reordering, and Consensus Instability in Decentralized Exchanges.</em> S&amp;P 2020.
   <a href="https://arxiv.org/abs/1904.05234">[arXiv]</a>
 </li>
 <li>
@@ -870,7 +963,7 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   <a href="https://arxiv.org/abs/2401.12120">[arXiv]</a>
 </li>
 <li>
-  Burak Öz, Danning Sui, Thomas Thiery, Florian Matthes. <em>Who Wins Ethereum Block Building Auctions and Why?</em> 2024.
+  Burak &Ouml;z, Danning Sui, Thomas Thiery, Florian Matthes. <em>Who Wins Ethereum Block Building Auctions and Why?</em> 2024.
   <a href="https://arxiv.org/abs/2407.13931">[arXiv]</a>
 </li>
 <li>
@@ -878,6 +971,8 @@ In addition, the speakers of the week will have to give me a <strong>practice ta
   <a href="https://boost.flashbots.net/">[Link]</a>
 </li>
 </ul>
+
 </body>
+</html></body>
 </html>
 
